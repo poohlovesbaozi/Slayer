@@ -1,0 +1,1432 @@
+fileFormatVersion: 2
+guid: c97a875ef5f169042b8eae84922fdd27
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638276993445253343
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: MiniBlacksmith_Frame_0
+    originalName: 
+    pivot: {x: 0.61538464, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 110
+      width: 13
+      height: 13
+    spriteID: 0448d5ec7460f334392c6d50347985bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 110}
+  - name: MiniBlacksmith_Frame_1
+    originalName: 
+    pivot: {x: 0.61538464, y: -0.083333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 130
+      width: 13
+      height: 12
+    spriteID: 9e77929178cd363468e6176b511e36e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 130}
+  - name: MiniBlacksmith_Frame_2
+    originalName: 
+    pivot: {x: 0.61538464, y: -0.083333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 150
+      width: 13
+      height: 12
+    spriteID: f161302bf9959974c8973edd764adb0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 150}
+  - name: MiniBlacksmith_Frame_3
+    originalName: 
+    pivot: {x: 0.61538464, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 131
+      width: 13
+      height: 13
+    spriteID: 9d942ca42d40dab4cb4a42f9123389b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 131}
+  - name: MiniBlacksmith_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 198
+      width: 14
+      height: 13
+    spriteID: 4f720fd11320e7e408d0a5e6d6fef221
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 198}
+  - name: MiniBlacksmith_Frame_5
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 152
+      width: 13
+      height: 13
+    spriteID: 1fe8d0b846735ca4595c6cbbf086d38c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 152}
+  - name: MiniBlacksmith_Frame_6
+    originalName: 
+    pivot: {x: 0.4375, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 71
+      width: 16
+      height: 13
+    spriteID: 403319c5495c73e439a9ea6e6d25677e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 71}
+  - name: MiniBlacksmith_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 219
+      width: 14
+      height: 13
+    spriteID: a19031be6abfd2c41a3bf9d7986b16cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 219}
+  - name: MiniBlacksmith_Frame_8
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 173
+      width: 13
+      height: 13
+    spriteID: f3fca5d1d25fd0d45a21411325ad44a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 173}
+  - name: MiniBlacksmith_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: -0.083333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 71
+      y: 45
+      width: 12
+      height: 12
+    spriteID: fb8ba423f056cbd4692fe540647b359d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 45}
+  - name: MiniBlacksmith_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 170
+      width: 12
+      height: 13
+    spriteID: d77e177cf8451a3479a4fe01d5407cf8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 170}
+  - name: MiniBlacksmith_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 191
+      width: 12
+      height: 13
+    spriteID: 34fe807fa51f11441827b51f74ffdf7f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 191}
+  - name: MiniBlacksmith_Frame_12
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 194
+      width: 13
+      height: 13
+    spriteID: eed3f7eeec5daea4a8190dfc88ef630b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 194}
+  - name: MiniBlacksmith_Frame_13
+    originalName: 
+    pivot: {x: 0.4375, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 92
+      width: 16
+      height: 13
+    spriteID: a1366d1273153f941a203786a7e65ce3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 92}
+  - name: MiniBlacksmith_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 4
+      width: 14
+      height: 13
+    spriteID: 6710c6f3c9626484d8657d8685b4c05b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 4}
+  - name: MiniBlacksmith_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 25
+      width: 14
+      height: 13
+    spriteID: 33436e0079a43914e817fb4ab5f602cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 25}
+  - name: MiniBlacksmith_Frame_16
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 27
+      width: 15
+      height: 14
+    spriteID: 7a26a6db43bac39489e6a475af2228b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 27}
+  - name: MiniBlacksmith_Frame_17
+    originalName: 
+    pivot: {x: 0.4375, y: -0.06666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 16
+      height: 15
+    spriteID: bce9ecec9ac46b848952a14dbf1a8d7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: MiniBlacksmith_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 46
+      width: 14
+      height: 13
+    spriteID: a243792d053f14847b71fdb4952cd16e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 46}
+  - name: MiniBlacksmith_Frame_19
+    originalName: 
+    pivot: {x: 0.54545456, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 71
+      y: 23
+      width: 11
+      height: 14
+    spriteID: de67fb6ecbfea354f88db1f0a0252e09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 23}
+  - name: MiniBlacksmith_Frame_20
+    originalName: 
+    pivot: {x: 0.54545456, y: -0.083333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 71
+      y: 65
+      width: 11
+      height: 12
+    spriteID: 644fa39255170094bbf1798b3444bce5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 65}
+  - name: MiniBlacksmith_Frame_21
+    originalName: 
+    pivot: {x: 0.61538464, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 215
+      width: 13
+      height: 13
+    spriteID: 70ec6dc51de6849458bbbb685bcdfaf0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 215}
+  - name: MiniBlacksmith_Frame_22
+    originalName: 
+    pivot: {x: 0.6, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 49
+      width: 15
+      height: 14
+    spriteID: 29c0dc1c1e5762b4a9178c7a3b53230c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 49}
+  - name: MiniBlacksmith_Frame_23
+    originalName: 
+    pivot: {x: 0.6, y: -0.083333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 240
+      width: 15
+      height: 12
+    spriteID: 343b8911d409dd34cacf130f6226c4ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 240}
+  - name: MiniBlacksmith_Frame_24
+    originalName: 
+    pivot: {x: 0.61538464, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 236
+      width: 13
+      height: 13
+    spriteID: e74f4653e27511640a52ceeb4b12601b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 236}
+  - name: MiniBlacksmith_Frame_25
+    originalName: 
+    pivot: {x: 0.6428572, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 134
+      width: 14
+      height: 14
+    spriteID: 217b4042294233d4a9d3e047e4105cf5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 134}
+  - name: MiniBlacksmith_Frame_26
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 67
+      width: 13
+      height: 14
+    spriteID: df021c08e1635694db0c8155f133f7f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 67}
+  - name: MiniBlacksmith_Frame_27
+    originalName: 
+    pivot: {x: 0.6, y: -0.09090909}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 71
+      y: 4
+      width: 15
+      height: 11
+    spriteID: d3f84e03e7ab5704893ed453bae725c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 4}
+  - name: MiniBlacksmith_Frame_28
+    originalName: 
+    pivot: {x: 0.61538464, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 4
+      width: 13
+      height: 13
+    spriteID: 62097ad5ab8624e4e9632d3ad49c1adb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 4}
+  - name: MiniBlacksmith_Frame_29
+    originalName: 
+    pivot: {x: 0.61538464, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 25
+      width: 13
+      height: 13
+    spriteID: 4775571c37c3384448f78269c1af8e4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 25}
+  - name: MiniBlacksmith_Frame_30
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 46
+      width: 13
+      height: 13
+    spriteID: f5e5826f8a3457f408974f37a5b8519d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 46}
+  - name: MiniBlacksmith_Frame_31
+    originalName: 
+    pivot: {x: 0.53333336, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 156
+      width: 15
+      height: 13
+    spriteID: d137d32bc55e5054e8422b744e1d9609
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 156}
+  - name: MiniBlacksmith_Frame_32
+    originalName: 
+    pivot: {x: 0.3846154, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 67
+      width: 13
+      height: 13
+    spriteID: 82cbbf4368570d6498acccde1ea25722
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 67}
+  - name: MiniBlacksmith_Frame_33
+    originalName: 
+    pivot: {x: 0.4166667, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 212
+      width: 12
+      height: 13
+    spriteID: 27b9176efbc1ae340920e1f7dacf6801
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 212}
+  - name: MiniBlacksmith_Frame_34
+    originalName: 
+    pivot: {x: 0.4166667, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 233
+      width: 12
+      height: 13
+    spriteID: 4e29870bed8110c4bbea3e6c162c816c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 233}
+  - name: MiniBlacksmith_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 71
+      y: 85
+      width: 10
+      height: 13
+    spriteID: 5604444d7604f1549b82e037d639506c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 85}
+  - name: MiniBlacksmith_Frame_36
+    originalName: 
+    pivot: {x: 0.61538464, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 88
+      width: 13
+      height: 13
+    spriteID: bf2ffa1f1a1cfcf4b9375d98b2a9a089
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 88}
+  - name: MiniBlacksmith_Frame_37
+    originalName: 
+    pivot: {x: 0.625, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 113
+      width: 16
+      height: 13
+    spriteID: de2aab322109b3c41ada5050f261984c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 113}
+  - name: MiniBlacksmith_Frame_38
+    originalName: 
+    pivot: {x: 0.6, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 177
+      width: 15
+      height: 13
+    spriteID: d120d92e52201ab4a842449647d0d4ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 177}
+  - name: MiniBlacksmith_Frame_39
+    originalName: 
+    pivot: {x: 0.61538464, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 109
+      width: 13
+      height: 13
+    spriteID: 5b289a45cfbc150438dc84206225d443
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 109}
+  - name: MiniBlacksmith_Frame_40
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 89
+      width: 14
+      height: 13
+    spriteID: 5eca906b20389af459dd9c0d3a19aadb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 89}
+  - name: MiniBlacksmith_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: -0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 94
+      y: 4
+      width: 16
+      height: 10
+    spriteID: efff629106440684b93fc303a77bfe7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 94, y: 4}
+  - name: MiniBlacksmith_Frame_42
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 94
+      y: 38
+      width: 18
+      height: 7
+    spriteID: b6302d03ba1035a49848d45e1640a9a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 94, y: 38}
+  - name: MiniBlacksmith_Frame_43
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 94
+      y: 22
+      width: 18
+      height: 8
+    spriteID: 3d57b4b4e70acc84382a9a1910e27b1f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 94, y: 22}
+  - name: MiniBlacksmith_Frame_44
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 94
+      y: 53
+      width: 18
+      height: 7
+    spriteID: 2263646f744a88c409f2c7c3cfadae99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 94, y: 53}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1580533853
+    name: MiniBlacksmith
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: MiniBlacksmith_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 8
+        y: 1
+        width: 13
+        height: 13
+      spriteId: 0448d5ec7460f334392c6d50347985bc
+    - name: MiniBlacksmith_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 8
+        y: 1
+        width: 13
+        height: 12
+      spriteId: 9e77929178cd363468e6176b511e36e7
+    - name: MiniBlacksmith_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 8
+        y: 1
+        width: 13
+        height: 12
+      spriteId: f161302bf9959974c8973edd764adb0c
+    - name: MiniBlacksmith_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 8
+        y: 1
+        width: 13
+        height: 13
+      spriteId: 9d942ca42d40dab4cb4a42f9123389b6
+    - name: MiniBlacksmith_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 9
+        y: 1
+        width: 14
+        height: 13
+      spriteId: 4f720fd11320e7e408d0a5e6d6fef221
+    - name: MiniBlacksmith_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 9
+        y: 1
+        width: 13
+        height: 13
+      spriteId: 1fe8d0b846735ca4595c6cbbf086d38c
+    - name: MiniBlacksmith_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 9
+        y: 1
+        width: 16
+        height: 13
+      spriteId: 403319c5495c73e439a9ea6e6d25677e
+    - name: MiniBlacksmith_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 9
+        y: 1
+        width: 14
+        height: 13
+      spriteId: a19031be6abfd2c41a3bf9d7986b16cd
+    - name: MiniBlacksmith_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 9
+        y: 1
+        width: 13
+        height: 13
+      spriteId: f3fca5d1d25fd0d45a21411325ad44a0
+    - name: MiniBlacksmith_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 10
+        y: 1
+        width: 12
+        height: 12
+      spriteId: fb8ba423f056cbd4692fe540647b359d
+    - name: MiniBlacksmith_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 10
+        y: 1
+        width: 12
+        height: 13
+      spriteId: d77e177cf8451a3479a4fe01d5407cf8
+    - name: MiniBlacksmith_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 10
+        y: 1
+        width: 12
+        height: 13
+      spriteId: 34fe807fa51f11441827b51f74ffdf7f
+    - name: MiniBlacksmith_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 9
+        y: 1
+        width: 13
+        height: 13
+      spriteId: eed3f7eeec5daea4a8190dfc88ef630b
+    - name: MiniBlacksmith_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 9
+        y: 1
+        width: 16
+        height: 13
+      spriteId: a1366d1273153f941a203786a7e65ce3
+    - name: MiniBlacksmith_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 9
+        y: 1
+        width: 14
+        height: 13
+      spriteId: 6710c6f3c9626484d8657d8685b4c05b
+    - name: MiniBlacksmith_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 9
+        y: 1
+        width: 14
+        height: 13
+      spriteId: 33436e0079a43914e817fb4ab5f602cb
+    - name: MiniBlacksmith_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 9
+        y: 1
+        width: 15
+        height: 14
+      spriteId: 7a26a6db43bac39489e6a475af2228b0
+    - name: MiniBlacksmith_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 9
+        y: 1
+        width: 16
+        height: 15
+      spriteId: bce9ecec9ac46b848952a14dbf1a8d7e
+    - name: MiniBlacksmith_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 9
+        y: 1
+        width: 14
+        height: 13
+      spriteId: a243792d053f14847b71fdb4952cd16e
+    - name: MiniBlacksmith_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 10
+        y: 1
+        width: 11
+        height: 14
+      spriteId: de67fb6ecbfea354f88db1f0a0252e09
+    - name: MiniBlacksmith_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 10
+        y: 1
+        width: 11
+        height: 12
+      spriteId: 644fa39255170094bbf1798b3444bce5
+    - name: MiniBlacksmith_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 8
+        y: 1
+        width: 13
+        height: 13
+      spriteId: 70ec6dc51de6849458bbbb685bcdfaf0
+    - name: MiniBlacksmith_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 14
+      spriteId: 29c0dc1c1e5762b4a9178c7a3b53230c
+    - name: MiniBlacksmith_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 12
+      spriteId: 343b8911d409dd34cacf130f6226c4ea
+    - name: MiniBlacksmith_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 8
+        y: 1
+        width: 13
+        height: 13
+      spriteId: e74f4653e27511640a52ceeb4b12601b
+    - name: MiniBlacksmith_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 7
+        y: 1
+        width: 14
+        height: 14
+      spriteId: 217b4042294233d4a9d3e047e4105cf5
+    - name: MiniBlacksmith_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 10
+        y: 1
+        width: 13
+        height: 14
+      spriteId: df021c08e1635694db0c8155f133f7f6
+    - name: MiniBlacksmith_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 11
+      spriteId: d3f84e03e7ab5704893ed453bae725c6
+    - name: MiniBlacksmith_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 8
+        y: 1
+        width: 13
+        height: 13
+      spriteId: 62097ad5ab8624e4e9632d3ad49c1adb
+    - name: MiniBlacksmith_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 8
+        y: 1
+        width: 13
+        height: 13
+      spriteId: 4775571c37c3384448f78269c1af8e4b
+    - name: MiniBlacksmith_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 9
+        y: 1
+        width: 13
+        height: 13
+      spriteId: f5e5826f8a3457f408974f37a5b8519d
+    - name: MiniBlacksmith_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 8
+        y: 1
+        width: 15
+        height: 13
+      spriteId: d137d32bc55e5054e8422b744e1d9609
+    - name: MiniBlacksmith_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 11
+        y: 1
+        width: 13
+        height: 13
+      spriteId: 82cbbf4368570d6498acccde1ea25722
+    - name: MiniBlacksmith_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 11
+        y: 1
+        width: 12
+        height: 13
+      spriteId: 27b9176efbc1ae340920e1f7dacf6801
+    - name: MiniBlacksmith_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 11
+        y: 1
+        width: 12
+        height: 13
+      spriteId: 4e29870bed8110c4bbea3e6c162c816c
+    - name: MiniBlacksmith_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 11
+        y: 1
+        width: 10
+        height: 13
+      spriteId: 5604444d7604f1549b82e037d639506c
+    - name: MiniBlacksmith_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 8
+        y: 1
+        width: 13
+        height: 13
+      spriteId: bf2ffa1f1a1cfcf4b9375d98b2a9a089
+    - name: MiniBlacksmith_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 6
+        y: 1
+        width: 16
+        height: 13
+      spriteId: de2aab322109b3c41ada5050f261984c
+    - name: MiniBlacksmith_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 13
+      spriteId: d120d92e52201ab4a842449647d0d4ae
+    - name: MiniBlacksmith_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 8
+        y: 1
+        width: 13
+        height: 13
+      spriteId: 5b289a45cfbc150438dc84206225d443
+    - name: MiniBlacksmith_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 8
+        y: 1
+        width: 14
+        height: 13
+      spriteId: 5eca906b20389af459dd9c0d3a19aadb
+    - name: MiniBlacksmith_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 8
+        y: 1
+        width: 16
+        height: 10
+      spriteId: efff629106440684b93fc303a77bfe7e
+    - name: MiniBlacksmith_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 8
+        y: 1
+        width: 18
+        height: 7
+      spriteId: b6302d03ba1035a49848d45e1640a9a5
+    - name: MiniBlacksmith_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 8
+        y: 1
+        width: 18
+        height: 8
+      spriteId: 3d57b4b4e70acc84382a9a1910e27b1f
+    - name: MiniBlacksmith_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 8
+        y: 1
+        width: 18
+        height: 7
+      spriteId: 2263646f744a88c409f2c7c3cfadae99
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 32, y: 32}
