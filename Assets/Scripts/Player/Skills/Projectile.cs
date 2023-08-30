@@ -9,20 +9,20 @@ public class Projectile : MonoBehaviour
     [SerializeField] float attackRate;
     [SerializeField] float range;
     public Vector2 shootDir;
-    Vector2 moveDir;
-    private void Start() {
-        moveDir=shootDir.normalized;
-    }
+
     private void OnEnable()
     {
         StartCoroutine(FlyTowardsEnemy());
     }
-
+    //需要在disable的时候停止协程，否则协程会一直执行，其中的参数不会更新。
+    private void OnDisable() {
+        StopCoroutine(FlyTowardsEnemy());
+    }
     IEnumerator FlyTowardsEnemy()
     {
         while (gameObject.activeSelf)
         {
-            transform.Translate(moveDir * flySpd * Time.deltaTime);
+            transform.Translate(shootDir * flySpd * Time.deltaTime);
             yield return null;
         }
 
