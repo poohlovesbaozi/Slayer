@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Pool System\Pool.cs" />
      <Compile Include="Assets\Scripts\Player\Skills\Hammer.cs" />
      <Compile Include="Assets\Settings\InputSystem\PlayerInputControl.cs" />
+     <Compile Include="Assets\Scripts\Enemy\SpawnEnemy.cs" />
      <Compile Include="Assets\Scripts\Pool System\PoolManager.cs" />
      <Compile Include="Assets\Scripts\Player\Skills\AutoDeactivate.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />

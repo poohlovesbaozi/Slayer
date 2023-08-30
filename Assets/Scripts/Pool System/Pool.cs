@@ -7,8 +7,8 @@ using UnityEngine;
 public class Pool
 {
     public GameObject Prefab => prefab;
-    public int Size=>size;
-    public int RuntimeSize=>queue.Count;
+    public int Size => size;
+    public int RuntimeSize => queue.Count;
 
     [SerializeField] GameObject prefab;
     [SerializeField] int size = 1;
@@ -46,18 +46,25 @@ public class Pool
         queue.Enqueue(availableObject);
         return availableObject;
     }
+    #region 准备预制体的重载
+    public GameObject PreparedObeject()
+    {
+        GameObject preparedObject = AvailableObject();
+        preparedObject.SetActive(true);
+        return preparedObject;
+    }
     /// <summary>
     /// 启用制作好的对象
     /// </summary>
     /// <param name="shootDir"></param>
-    public GameObject PreparedObeject(Vector2 shootDir)
+    public GameObject PreparedObeject(Vector3 position)
     {
         GameObject preparedObject = AvailableObject();
         preparedObject.SetActive(true);
-        preparedObject.GetComponent<Projectile>().shootDir = shootDir;
+        preparedObject.transform.position = position;
         return preparedObject;
     }
-    public GameObject PreparedObeject(Vector2 shootDir,Vector3 position)
+    public GameObject PreparedObeject(Vector3 position,Vector2 shootDir )
     {
         GameObject preparedObject = AvailableObject();
         preparedObject.SetActive(true);
@@ -66,7 +73,7 @@ public class Pool
         return preparedObject;
     }
 
-    public GameObject PreparedObeject(Vector2 shootDir,Vector3 position, Quaternion rotation)
+    public GameObject PreparedObeject(Vector3 position,Vector2 shootDir , Quaternion rotation)
     {
         GameObject preparedObject = AvailableObject();
         preparedObject.SetActive(true);
@@ -75,7 +82,7 @@ public class Pool
         preparedObject.transform.rotation = rotation;
         return preparedObject;
     }
-    public GameObject PreparedObeject(Vector2 shootDir,Vector3 position, Quaternion rotation, Vector3 localScale)
+    public GameObject PreparedObeject(Vector3 position,Vector2 shootDir, Quaternion rotation, Vector3 localScale)
     {
         GameObject preparedObject = AvailableObject();
         preparedObject.SetActive(true);
@@ -85,5 +92,5 @@ public class Pool
         preparedObject.transform.localScale = localScale;
         return preparedObject;
     }
-
+    #endregion
 }

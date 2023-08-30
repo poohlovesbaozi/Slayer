@@ -13,7 +13,7 @@ public class Character : MonoBehaviour
 
     public UnityEvent<Transform> OnTakeDamage;
     public UnityEvent OnDie;
-    private void Start()
+    private void OnEnable()
     {
         hp = maxHp;
     }

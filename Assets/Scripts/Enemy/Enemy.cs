@@ -72,6 +72,10 @@ public class Enemy : MonoBehaviour
         isHit = false;
 
     }
+    public void OnDie(){
+        
+        gameObject.SetActive(false);
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, checkRadius);

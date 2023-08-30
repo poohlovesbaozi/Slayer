@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
     }
     IEnumerator FireCoroutine()
     {
-        PoolManager.Release(projectile, shootDir, transform.position);
+        PoolManager.Release(projectile, transform.position, shootDir);
         yield return waitForFireInterval;
         canFire = true;
     }
