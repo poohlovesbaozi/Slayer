@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5584efffee70cd44489dd1b59cc9a41f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - camera: {instanceID: 0}
+  - target: {instanceID: 0}
+  - canvas: {instanceID: 0}
+  - greenHealthImage: {instanceID: 0}
+  - redHealthImage: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -49,11 +49,14 @@
      <Compile Include="Assets\Scripts\Enemy\LilRed.cs" />
      <Compile Include="Assets\Scripts\General\Character.cs" />
      <Compile Include="Assets\Scripts\Pool System\Pool.cs" />
+     <Compile Include="Assets\Scripts\UI\PlayerHealthBar.cs" />
      <Compile Include="Assets\Scripts\Player\Skills\Hammer.cs" />
      <Compile Include="Assets\Settings\InputSystem\PlayerInputControl.cs" />
      <Compile Include="Assets\Scripts\Enemy\SpawnEnemy.cs" />
      <Compile Include="Assets\Scripts\Pool System\PoolManager.cs" />
      <Compile Include="Assets\Scripts\Player\Skills\AutoDeactivate.cs" />
+     <Compile Include="Assets\Scripts\UI\UIManager.cs" />
+     <Compile Include="Assets\Scripts\ScriptableObject\CharacterEventSO.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.5f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -694,6 +697,9 @@
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
         <HintPath>D:\game project\Slayer\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>D:\game project\Slayer\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Burst.Editor">
         <HintPath>D:\game project\Slayer\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
@@ -849,6 +855,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
         <HintPath>D:\game project\Slayer\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>D:\game project\Slayer\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
         <HintPath>D:\game project\Slayer\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
