@@ -5497,7 +5497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenHealthImage: {fileID: 1212724115}
-  rectTransform: {fileID: 289375224}
+  playerTrans: {fileID: 2024273592}
 --- !u!1 &1666981395
 GameObject:
   m_ObjectHideFlags: 0
