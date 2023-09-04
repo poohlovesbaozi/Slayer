@@ -70,7 +70,7 @@ public class Enemy : MonoBehaviour
         // isHit = false;
 
     }
-    public void OnDie(){
+    protected virtual void OnDie(){
         
         gameObject.SetActive(false);
     }

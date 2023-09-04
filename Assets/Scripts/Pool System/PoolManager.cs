@@ -5,17 +5,17 @@ using UnityEngine;
 
 public class PoolManager : MonoBehaviour
 {
-    [SerializeField] Pool[] projectilePools;
+    [SerializeField] Pool[] Pools;
     static Dictionary<GameObject, Pool> dict;
     private void Start()
     {
         dict = new();
-        Initialize(projectilePools);
+        Initialize(Pools);
     }
 #if UNITY_EDITOR
     private void OnDestroy()
     {
-        CheckPoolSize(projectilePools);
+        CheckPoolSize(Pools);
     }
 #endif
     void CheckPoolSize(Pool[] pools)

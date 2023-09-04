@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc62bbbd35ac914aae13e555e8728be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 50
+  maxHp: 30
   hp: 0
   characterStats: {fileID: 0}
   invulnerableDuration: 0
@@ -305,6 +305,7 @@ MonoBehaviour:
   spd: 0.5
   attacker: {fileID: 0}
   target: {fileID: 0}
+  Item: {fileID: 780054717090332722, guid: 0826ea439f9474e4c84fdeddbdd9c030, type: 3}
 --- !u!114 &-2428000826992415455
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gem : MonoBehaviour
+public class Item : MonoBehaviour
 {
     [SerializeField] float checkRadius;
     [SerializeField] LayerMask playerLayer;
@@ -29,6 +29,10 @@ public class Gem : MonoBehaviour
         transform.Translate(moveDir/100);
         yield return null;
         moving=false;
+    }
+    private void OnTriggerStay2D(Collider2D other) {
+        // if (other.name=="player")
+        gameObject.SetActive(false);
     }
 
     bool CheckReachable()
