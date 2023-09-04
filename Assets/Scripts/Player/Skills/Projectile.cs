@@ -6,8 +6,6 @@ public class Projectile : MonoBehaviour
 {
     [Header("属性")]
     [SerializeField] float flySpd;
-    [SerializeField] float attackRate;
-    [SerializeField] float range;
     public Vector2 shootDir;
 
     private void OnEnable()

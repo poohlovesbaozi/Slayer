@@ -3,24 +3,29 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    [Header("基本属性")]
-    public float hp;
     public float maxHp;
+    public float hp;
+    [Header("组件")]
+    [SerializeField] CharacterStats characterStats;
     [Header("免疫伤害")]
-    public float invulnerableDuration;
-    private float invulnerableCounter;
-    public bool isInvulnerable;
+    [SerializeField] float invulnerableDuration;
+    [SerializeField] float invulnerableCounter;
+    [SerializeField] bool isInvulnerable;
 
     public UnityEvent<Character> OnHealthChange;
     public UnityEvent<Transform> OnTakeDamage;
     public UnityEvent OnDie;
+    private void Awake() {
+        characterStats=GetComponent<CharacterStats>();
+    }
     private void Start()
     {
         OnHealthChange?.Invoke(this);
     }
     private void OnEnable()
     {
-        hp = maxHp;
+        characterStats.maxHp=maxHp;
+        hp=maxHp;
     }
     private void Update()
     {

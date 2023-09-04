@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4845588344791206038}
   - component: {fileID: 2909233655141188897}
   - component: {fileID: 7172571376649044579}
+  - component: {fileID: -2428000826992415455}
   m_Layer: 9
   m_Name: Lil Red
   m_TagString: Untagged
@@ -210,9 +211,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc62bbbd35ac914aae13e555e8728be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 0
   maxHp: 50
+  hp: 0
+  characterStats: {fileID: 0}
   invulnerableDuration: 0
+  invulnerableCounter: 0
   isInvulnerable: 1
   OnHealthChange:
     m_PersistentCalls:
@@ -300,6 +303,18 @@ MonoBehaviour:
   moveDir: {x: 0, y: 0}
   hitForce: 0.5
   spd: 0.5
-  isHit: 0
   attacker: {fileID: 0}
   target: {fileID: 0}
+--- !u!114 &-2428000826992415455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7530421276635104848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bfbd1fa57e969e43a63fdd5558e3ee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterData: {fileID: 11400000, guid: 31c45439dcee8ae44a7d361389a7d1b6, type: 2}

@@ -12,7 +12,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] float hitForce;
     [SerializeField] float spd;
     [Header("状态")]
-    [SerializeField] bool isHit;
     [Header("组件")]
     public Transform attacker;
     [SerializeField] Transform target;
@@ -60,7 +59,6 @@ public class Enemy : MonoBehaviour
     public void OnTakeDamage(Transform attacker)
     {
         this.attacker = attacker;
-        isHit = true;
         anim.SetTrigger("Hit");
         Vector2 dir = (transform.position - attacker.position).normalized;
         StartCoroutine(OnHurt(dir));
@@ -69,7 +67,7 @@ public class Enemy : MonoBehaviour
     {
         rb.AddForce(dir * hitForce, ForceMode2D.Impulse);
         yield return new WaitForSeconds(0.5f);
-        isHit = false;
+        // isHit = false;
 
     }
     public void OnDie(){
