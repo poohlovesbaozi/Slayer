@@ -106,6 +106,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -115,8 +128,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 112
-        width: 123
-        height: 30
+        width: 133
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,7 +150,7 @@ TextureImporter:
         x: 146
         y: 228
         width: 28
-        height: 12
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +210,10 @@ TextureImporter:
       name: school_bus_3
       rect:
         serializedVersion: 2
-        x: 10
+        x: 3
         y: 16
-        width: 28
-        height: 83
+        width: 42
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,9 +231,9 @@ TextureImporter:
       name: school_bus_2
       rect:
         serializedVersion: 2
-        x: 58
+        x: 52
         y: 32
-        width: 28
+        width: 40
         height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -242,7 +255,7 @@ TextureImporter:
         x: 0
         y: 224
         width: 48
-        height: 20
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,7 +297,7 @@ TextureImporter:
         x: 96
         y: 224
         width: 48
-        height: 20
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,7 +318,7 @@ TextureImporter:
         x: 48
         y: 224
         width: 48
-        height: 20
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,237 +433,6 @@ TextureImporter:
       bones: []
       spriteID: 8eecaa3a4e211f8438e50dcbfcc32786
       internalID: 1243468284
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vehicles_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 244
-        width: 48
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fde8f6498245084584f9799c1c4d0d5
-      internalID: -792425500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vehicles_13
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 244
-        width: 48
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9718c6a4a8360d34e8dd285980d2527b
-      internalID: -1720818175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vehicles_14
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 244
-        width: 48
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c208ab357b3bbb49bb85ddc7d272256
-      internalID: -2115885415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vehicles_15
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 240
-        width: 28
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1f1d424f97b4cc40a6113e5a7746526
-      internalID: 1949950427
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vehicles_16
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 142
-        width: 123
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb707b54922a4534083b184c219b3af8
-      internalID: 101611391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vehicles_17
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 112
-        width: 12
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1ed516c16510af42853f41a792e898b
-      internalID: -356285306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vehicles_18
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 16
-        width: 7
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d39f3055775f26a4d8f180119fb715af
-      internalID: 1889590182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vehicles_19
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 16
-        width: 7
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e0a93715d9d99a44987dcbacc1f6387
-      internalID: -1679775236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vehicles_20
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 99
-        width: 28
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c40c4e9355f047f48838f821b0156959
-      internalID: -1586112430
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vehicles_21
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 101
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29ee0f35baf641f4c9ca8b6b6d05a15a
-      internalID: -230512949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vehicles_22
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 101
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e221d3bf8784f0742afdf2d92adcf346
-      internalID: -1118479162
       vertices: []
       indices: 
       edges: []

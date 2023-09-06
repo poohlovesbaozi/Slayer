@@ -3,18 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class Gem : MonoBehaviour
 {
     [SerializeField] float checkRadius;
     [SerializeField] LayerMask playerLayer;
     [SerializeField] Transform target;
     Vector2 moveDir;
-    bool moving=false;
+    bool moving;
+    private void OnEnable()
+    {
+        moving = false;
+    }
     private void Update()
     {
         if (CheckReachable() && !moving)
         {
-            moving=true;
+            moving = true;
             moveDir = target.position - transform.position;
             StartCoroutine(MoveToTarget(moveDir));
         }
@@ -26,12 +30,13 @@ public class Item : MonoBehaviour
 
     IEnumerator MoveToTarget(Vector2 moveDir)
     {
-        transform.Translate(moveDir/100);
+        transform.Translate(moveDir / 100);
         yield return null;
-        moving=false;
+        moving = false;
     }
-    private void OnTriggerStay2D(Collider2D other) {
-        // if (other.name=="player")
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        other.GetComponentInParent<Character>().azureGem++;
         gameObject.SetActive(false);
     }
 

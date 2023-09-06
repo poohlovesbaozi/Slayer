@@ -10,19 +10,45 @@ public class SpawnEnemy : MonoBehaviour
     Vector2 faceDir;
     [SerializeField] int maxAmount;
     [SerializeField] int currentAmount;
+    [SerializeField] float checkRadius;
+    [SerializeField] LayerMask playerLayer;
+    Vector3 targetPos;
+    bool spawning;
     private void Start()
     {
-        currentAmount=0;
+        spawning = false;
+        currentAmount = 0;
         waitForSpawnInterval = new(spawnInterval);
-        StartCoroutine(SpawnMinions());
+    }
+    private void Update()
+    {
+        if (DetectPlayer() && !spawning)
+        {
+            StartCoroutine(SpawnMinions());
+        }
+    }
+    bool DetectPlayer()
+    {
+        var obj = Physics2D.OverlapCircle(transform.position, checkRadius, playerLayer);
+        if (obj)
+        {
+            targetPos = obj.transform.position;
+            return true;
+        }
+        return false;
     }
     IEnumerator SpawnMinions()
     {
-        while (currentAmount<maxAmount)
+        spawning = true;
+        while (currentAmount < maxAmount)
         {
             yield return waitForSpawnInterval;
             PoolManager.Release(minion, transform.position);
             currentAmount++;
         }
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position, checkRadius);
     }
 }

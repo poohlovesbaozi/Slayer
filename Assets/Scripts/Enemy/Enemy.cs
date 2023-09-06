@@ -70,8 +70,7 @@ public class Enemy : MonoBehaviour
         // isHit = false;
 
     }
-    protected virtual void OnDie(){
-        
+    protected virtual void OnDie(){     
         gameObject.SetActive(false);
     }
     private void OnDrawGizmosSelected()
