@@ -216,6 +216,9 @@ MonoBehaviour:
   invulnerableDuration: 0
   invulnerableCounter: 0
   isInvulnerable: 1
+  OnGemChange:
+    m_PersistentCalls:
+      m_Calls: []
   OnHealthChange:
     m_PersistentCalls:
       m_Calls: []

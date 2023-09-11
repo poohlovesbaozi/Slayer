@@ -30,13 +30,16 @@ public class Enemy : MonoBehaviour
     {
         Move();
     }
+    private void OnDisable() {
+        StopAllCoroutines();
+    }
     protected virtual void Move()
     {
         if (DetectTarget())
         {
             int faceDir=(int) transform.localScale.x;
             moveDir = target.position - transform.position;
-            rb.velocity = moveDir * spd;
+            rb.velocity = (moveDir * spd).normalized;
             if (moveDir.x>0){
                 faceDir=1;
             }

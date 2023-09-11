@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7209749582998647729}
   - component: {fileID: 247765499468467634}
   - component: {fileID: 3591032583492635012}
-  - component: {fileID: 4343917482343635694}
   m_Layer: 10
   m_Name: hammer
   m_TagString: Untagged
@@ -76,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1955300181
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 10
   m_Sprite: {fileID: -793089675, guid: e824011824058014c9ba2053b2227b89, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -160,8 +159,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flySpd: 5
-  attackRate: 0
-  range: 0
   shootDir: {x: 0, y: 0}
 --- !u!114 &3591032583492635012
 MonoBehaviour:
@@ -177,30 +174,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyGameObject: 0
   lifeTime: 3
---- !u!50 &4343917482343635694
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 855673481109642593}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 1408
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 4

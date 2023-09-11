@@ -8,6 +8,8 @@ public class Gem : MonoBehaviour
     [SerializeField] float checkRadius;
     [SerializeField] LayerMask playerLayer;
     [SerializeField] Transform target;
+    [SerializeField] GameObject player;
+    
     Vector2 moveDir;
     bool moving;
     private void OnEnable()
@@ -36,7 +38,8 @@ public class Gem : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D other)
     {
-        other.GetComponentInParent<Character>().azureGem++;
+        player=GameObject.Find("Player");
+        player.GetComponent<Character>().azureGem++;
         gameObject.SetActive(false);
     }
 

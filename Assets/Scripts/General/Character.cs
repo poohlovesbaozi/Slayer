@@ -8,7 +8,6 @@ public class Character : MonoBehaviour
     public float maxHp;
     public float hp;
     public int azureGem;
-    public int currentGem;
 
     [Header("免疫伤害")]
     [SerializeField] float invulnerableDuration;
@@ -22,20 +21,18 @@ public class Character : MonoBehaviour
 
     private void Start()
     {
-        currentGem=0;
         OnGemChange?.Invoke(this);
         OnHealthChange?.Invoke(this);
     }
     private void OnEnable()
     {
-        hp=maxHp;
+        hp = maxHp;
     }
     private void Update()
     {
-        if (currentGem!=azureGem){
-            currentGem=azureGem;
-            OnGemChange?.Invoke(this);
-        }
+
+        OnGemChange?.Invoke(this);
+
         if (isInvulnerable)
         {
             invulnerableCounter -= Time.deltaTime;

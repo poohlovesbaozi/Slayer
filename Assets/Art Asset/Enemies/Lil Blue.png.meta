@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 47dd63ec48239d347828566fa4226ac2
+guid: d41b226a580b4be4dbd6f57b09123b34
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,6 +94,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -110,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_0
+      name: Lil Blue_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 48
-        width: 16
-        height: 24
+        width: 10
+        height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20ab30a45bc6cf14480754655f145346
-      internalID: 808713166
+      spriteID: 281f5e4c8168bc74386a6151e08736d1
+      internalID: 1484599755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_1
+      name: Lil Blue_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 24
-        width: 16
-        height: 24
+        width: 10
+        height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57d3e664c7a9003429c581ad0ec084fd
-      internalID: 1051908383
+      spriteID: 827c120d6853ef845bfe033eea382a47
+      internalID: 603035017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_2
+      name: Lil Blue_2
       rect:
         serializedVersion: 2
-        x: 16
+        x: 19
         y: 24
-        width: 16
-        height: 24
+        width: 10
+        height: 14
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f3e3d2931777004da9864494c6c77ae
-      internalID: -1939559638
+      spriteID: 717aedf66dafea4438e8ebad8c4b0d98
+      internalID: -783573414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_3
+      name: Lil Blue_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 35
         y: 24
-        width: 16
-        height: 24
+        width: 10
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7dc0cc989a302641bdbe0bd9e90ef20
-      internalID: 1188382360
+      spriteID: 0d69b79e9698e1e4da4b036f5a55eb47
+      internalID: -1380676531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_4
+      name: Lil Blue_4
       rect:
         serializedVersion: 2
-        x: 48
+        x: 51
         y: 24
-        width: 16
-        height: 24
+        width: 10
+        height: 14
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9799fd087bac1464ba4c1254a0c34a2c
-      internalID: -1476291129
+      spriteID: 19d2f2062a7cdb54ba713a43e4a033a6
+      internalID: 1570831158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_5
+      name: Lil Blue_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 24
+        x: 2
+        y: 1
+        width: 11
+        height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f84741643f18f149992f5dbb9e2e92e
-      internalID: 1213714158
+      spriteID: c0f33f60839c86c43847eb72fbff6a7d
+      internalID: -414343980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_6
+      name: Lil Blue_6
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 24
+        x: 17
+        y: 2
+        width: 13
+        height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66987a2be04275a4e9632bb3b3ce95a0
-      internalID: 1691667997
+      spriteID: 122a886f87e2635479ab4aa8e5dbf11b
+      internalID: -1826340400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_7
+      name: Lil Blue_7
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 0
-        width: 16
-        height: 24
+        width: 12
+        height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e2825ecdcabc674ba7370ea46dc88d2
-      internalID: -1704472981
+      spriteID: 7d21bcc725488b643b280d44f3234b21
+      internalID: -1565825311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_8
+      name: Lil Blue_8
       rect:
         serializedVersion: 2
-        x: 48
+        x: 51
         y: 0
-        width: 16
-        height: 24
+        width: 10
+        height: 14
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,8 +305,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd88d04c35c7eb54688da9fd0b79771d
-      internalID: -628427778
+      spriteID: 2cfd136d8e392f646a786b952d23e4d8
+      internalID: -36632338
       vertices: []
       indices: 
       edges: []
@@ -309,15 +322,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      enemy_0: 808713166
-      enemy_1: 1051908383
-      enemy_2: -1939559638
-      enemy_3: 1188382360
-      enemy_4: -1476291129
-      enemy_5: 1213714158
-      enemy_6: 1691667997
-      enemy_7: -1704472981
-      enemy_8: -628427778
+      Lil Blue_0: 1484599755
+      Lil Blue_1: 603035017
+      Lil Blue_2: -783573414
+      Lil Blue_3: -1380676531
+      Lil Blue_4: 1570831158
+      Lil Blue_5: -414343980
+      Lil Blue_6: -1826340400
+      Lil Blue_7: -1565825311
+      Lil Blue_8: -36632338
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

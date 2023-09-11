@@ -51,7 +51,9 @@
      <Compile Include="Assets\Scripts\Enemy\LilRed.cs" />
      <Compile Include="Assets\Scripts\General\Character.cs" />
      <Compile Include="Assets\Scripts\Pool System\Pool.cs" />
+     <Compile Include="Assets\Scripts\Player\Skills\GemProjectile.cs" />
      <Compile Include="Assets\Scripts\UI\PlayerHealthBar.cs" />
+     <Compile Include="Assets\Scripts\Follower\FollowerController.cs" />
      <Compile Include="Assets\Scripts\Player\Skills\Hammer.cs" />
      <Compile Include="Assets\Settings\InputSystem\PlayerInputControl.cs" />
      <Compile Include="Assets\Scripts\Enemy\SpawnEnemy.cs" />

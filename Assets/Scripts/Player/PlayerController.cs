@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     // [Header("事件")]
     // public UnityEvent OnFire;
     // public UnityEvent OnStopFire;
-    private void Awake()
+    protected virtual void Awake()
     {
         inputControl = new PlayerInputControl();
         rb = GetComponent<Rigidbody2D>();
@@ -36,15 +36,15 @@ public class PlayerController : MonoBehaviour
         shootDir = new Vector2(0, 0);
         waitForFireInterval = new(fireInterval);
     }
-    private void OnEnable()
+    protected virtual void OnEnable()
     {
         inputControl.Enable();
     }
-    private void OnDisable()
+    protected virtual void OnDisable()
     {
         inputControl.Disable();
     }
-    private void Update()
+    protected virtual void Update()
     {
         inputDirection = inputControl.GamePlay.Move.ReadValue<Vector2>();
     }
@@ -53,10 +53,11 @@ public class PlayerController : MonoBehaviour
         DetectEnemy();
         Move();
     }
-    public void Move()
+    protected virtual void Move()
     {
         //人物移动
         rb.velocity = inputDirection * spd * Time.deltaTime;
+        //控制角色面朝方向
         faceDir = (int)transform.localScale.x;
         if (inputDirection.x > 0)
             faceDir = 1;
@@ -71,7 +72,7 @@ public class PlayerController : MonoBehaviour
         inputControl.GamePlay.Disable();
     }
     #region 开火
-    private void DetectEnemy()
+    protected virtual void DetectEnemy()
     {
         var obj = Physics2D.OverlapCircle(transform.position, checkRadius, enemyLayer);
         if (obj && canFire)
@@ -82,7 +83,7 @@ public class PlayerController : MonoBehaviour
             canFire = false;
         }
     }
-    public void Fire()
+    protected virtual void Fire()
     {
         StartCoroutine(nameof(FireCoroutine));
     }
