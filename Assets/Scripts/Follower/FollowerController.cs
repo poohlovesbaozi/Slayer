@@ -9,6 +9,8 @@ public class FollowerController : PlayerController
     Rigidbody2D followerRb;
     [SerializeField] Character playerCharacter;
     [SerializeField] float followerSpd;
+    [SerializeField] float stopDistance;
+    bool waitForRescue;
     int followerFaceDir;
     protected override void Awake()
     {
@@ -27,24 +29,45 @@ public class FollowerController : PlayerController
     {
 
     }
+    private void FixedUpdate()
+    {
+        if (!waitForRescue)
+        {
+            DetectEnemy();
+            Move();
+        }
+    }
     protected override void Move()
     {
-        followerRb.velocity = ((target.position - transform.position) * followerSpd).normalized;
+        if (Vector3.Distance(transform.position, target.position) > stopDistance)
+        {
+            followerRb.velocity = (target.position - transform.position) * followerSpd * Time.deltaTime;
+        }
+        else
+        {
+            followerRb.velocity = Vector3.zero;
+        }
         //控制角色面朝方向
         followerFaceDir = (int)transform.localScale.x;
-        if (inputDirection.x > 0)
+        if (followerRb.velocity.x > 0)
             followerFaceDir = 1;
-        if (inputDirection.x < 0)
+        if (followerRb.velocity.x < 0)
             followerFaceDir = -1;
 
         transform.localScale = new Vector3(followerFaceDir, 1, 1);
     }
-    protected override void DetectEnemy(){
-        if (playerCharacter.azureGem>0){
+    protected override void PlayerDie(){
+        waitForRescue=true;
+    }
+    protected override void DetectEnemy()
+    {
+        if (playerCharacter.azureGem > 0)
+        {
             base.DetectEnemy();
         }
     }
-    protected override void Fire(){
+    protected override void Fire()
+    {
         base.Fire();
         playerCharacter.azureGem--;
     }

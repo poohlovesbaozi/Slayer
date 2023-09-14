@@ -24,7 +24,8 @@ public class UIManager : MonoBehaviour
     private void OnHealthEvent(Character character)
     {
         float percentage=character.hp/character.maxHp;
-        playerHealthBar.OnHealthChange(percentage);
+        character.GetComponentInChildren<PlayerHealthBar>().OnHealthChange(percentage);
+                             
     }
     void OnGemChange(Character character){
         gemCount.OnGemChange(character.azureGem);

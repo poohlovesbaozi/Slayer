@@ -23,9 +23,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] int faceDir;
     public bool isDead;
     [SerializeField] bool canFire;
-    // [Header("事件")]
-    // public UnityEvent OnFire;
-    // public UnityEvent OnStopFire;
+    [Header("test")]
+    [SerializeField] List<Character> followers;
+    [SerializeField] Character followerChar;
+    [SerializeField] Attack testAttacker;
     protected virtual void Awake()
     {
         inputControl = new PlayerInputControl();
@@ -46,12 +47,22 @@ public class PlayerController : MonoBehaviour
     }
     protected virtual void Update()
     {
+        //directly abstract follower's hp
+#if UNITY_EDITOR
+        if (inputControl.GamePlay.Test.IsPressed())
+        {
+            followerChar.TakeDamage(testAttacker);
+        }
+#endif
         inputDirection = inputControl.GamePlay.Move.ReadValue<Vector2>();
     }
     private void FixedUpdate()
     {
-        DetectEnemy();
-        Move();
+        if (!isDead)
+        {
+            DetectEnemy();
+            Move();
+        }
     }
     protected virtual void Move()
     {
@@ -66,7 +77,7 @@ public class PlayerController : MonoBehaviour
 
         transform.localScale = new Vector3(faceDir, 1, 1);
     }
-    public void PlayerDie()
+    protected virtual void PlayerDie()
     {
         isDead = true;
         inputControl.GamePlay.Disable();
