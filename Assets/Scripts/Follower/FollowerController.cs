@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Permissions;
 using UnityEditor.Callbacks;
 using UnityEngine;
 
@@ -10,8 +12,12 @@ public class FollowerController : PlayerController
     [SerializeField] Character playerCharacter;
     [SerializeField] float followerSpd;
     [SerializeField] float stopDistance;
-    bool waitForRescue;
+    public bool followerDown;
     int followerFaceDir;
+    [Header("等待救援参数")]
+    [SerializeField] float rescueDuration;
+    [SerializeField] float rescueCheckRadius;
+    [SerializeField] LayerMask playerLayer;
     protected override void Awake()
     {
         followerRb = GetComponent<Rigidbody2D>();
@@ -31,10 +37,14 @@ public class FollowerController : PlayerController
     }
     private void FixedUpdate()
     {
-        if (!waitForRescue)
+        if (!followerDown)
         {
             DetectEnemy();
             Move();
+        }
+        else
+        {
+            ToBeRescued();
         }
     }
     protected override void Move()
@@ -56,8 +66,27 @@ public class FollowerController : PlayerController
 
         transform.localScale = new Vector3(followerFaceDir, 1, 1);
     }
-    protected override void PlayerDie(){
-        waitForRescue=true;
+    protected override void PlayerDie()
+    {
+        followerDown = true;
+        gameObject.layer = LayerMask.NameToLayer("Injured");
+    }
+    private void ToBeRescued()
+    {
+        var rescueTime = new WaitForSeconds(rescueDuration);
+        if (Physics2D.OverlapCircle(transform.position, rescueCheckRadius, playerLayer))
+        {
+            StartCoroutine(BeingRescued(rescueTime));
+        }
+        StopCoroutine(BeingRescued(rescueTime));
+    }
+    IEnumerator BeingRescued(WaitForSeconds rescueTime)
+    {
+        //TODO set rescue progress bar active
+        yield return rescueTime;
+        if (followerDown)
+        GetComponent<Character>().hp += 50;
+        followerDown = false;
     }
     protected override void DetectEnemy()
     {

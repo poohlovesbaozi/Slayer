@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: f0b31d4a267fc2d48a83492de506a5f8, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -93178,13 +93178,13 @@ PrefabInstance:
       addedObject: {fileID: 1199653618}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 16bbeed4b019c68478d7c50ba71de13b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1199653617}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 16bbeed4b019c68478d7c50ba71de13b, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1199653616}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 16bbeed4b019c68478d7c50ba71de13b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1199653621}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 16bbeed4b019c68478d7c50ba71de13b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1199653624}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 16bbeed4b019c68478d7c50ba71de13b, type: 3}
 --- !u!4 &108858485 stripped
 Transform:
@@ -96122,7 +96122,7 @@ MonoBehaviour:
   OnTakeDamage:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1199653617}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerAnimation, Assembly-CSharp
         m_MethodName: PlayerGetHit
         m_Mode: 1
@@ -96149,18 +96149,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1199653617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199653613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e05a86700be48b54cb19c475198070a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &1199653618
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -96211,7 +96199,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 3072
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -96300,6 +96288,24 @@ MonoBehaviour:
   playerCharacter: {fileID: 2024273589}
   followerSpd: 50
   stopDistance: 2
+  followerDown: 0
+  rescueDuration: 3
+  rescueCheckRadius: 1
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!114 &1199653624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199653613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c0ec5683793ca4487806b5fa18ec6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1204247872
 GameObject:
   m_ObjectHideFlags: 0
@@ -98370,7 +98376,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 3072
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

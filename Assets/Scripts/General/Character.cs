@@ -32,7 +32,7 @@ public class Character : MonoBehaviour
     {
 
         OnGemChange?.Invoke(this);
-
+        OnHealthChange?.Invoke(this);
         if (isInvulnerable)
         {
             invulnerableCounter -= Time.deltaTime;

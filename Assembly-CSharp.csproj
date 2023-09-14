@@ -40,7 +40,6 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.5f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\General\PhysicsCheck.cs" />
      <Compile Include="Assets\Scripts\Player\Skills\Projectile.cs" />
      <Compile Include="Assets\Scripts\ScriptableObject\VoidEventSO.cs" />
      <Compile Include="Assets\Scripts\General\Attack.cs" />
@@ -59,6 +58,7 @@
      <Compile Include="Assets\Scripts\Enemy\SpawnEnemy.cs" />
      <Compile Include="Assets\Scripts\Pool System\PoolManager.cs" />
      <Compile Include="Assets\Scripts\Player\Skills\AutoDeactivate.cs" />
+     <Compile Include="Assets\Scripts\Follower\FollowerAnimation.cs" />
      <Compile Include="Assets\Scripts\UI\UIManager.cs" />
      <Compile Include="Assets\Scripts\ScriptableObject\CharacterEventSO.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />
