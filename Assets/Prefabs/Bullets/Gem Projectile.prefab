@@ -114,8 +114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482b4d1103d8dfe49bb9d6b1e81e5174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flySpd: 5
+  flySpd: 4
   shootDir: {x: 0, y: 0}
+  playerCharacter: {fileID: 0}
 --- !u!61 &6579402876636905314
 BoxCollider2D:
   m_ObjectHideFlags: 0

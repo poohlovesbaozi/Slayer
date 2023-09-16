@@ -38,7 +38,7 @@ public class Gem : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D other)
     {
-        player=GameObject.Find("Player");
+        player=GameObject.Find("@Player");
         player.GetComponent<Character>().azureGem++;
         gameObject.SetActive(false);
     }

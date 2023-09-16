@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class GemProjectile : Projectile
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    [SerializeField] Character playerCharacter;
+    bool firstTime;
+    private void Awake() {
+        playerCharacter=GameObject.Find("@Player").GetComponent<Character>();
+        firstTime=true;
     }
-
-    // Update is called once per frame
-    void Update()
+    protected override void OnEnable()
     {
-        
+        base.OnEnable();
+        //第一次执行时，即生成pool时，不执行，之后每次生成都执行一次。
+        if (!firstTime)
+        playerCharacter.azureGem--;
+        firstTime=false;
     }
 }

@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Security.Permissions;
 using UnityEditor.Callbacks;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FollowerController : PlayerController
 {
+    [SerializeField] Image helpSign;
     [SerializeField] Transform target;
     Rigidbody2D followerRb;
     [SerializeField] Character playerCharacter;
@@ -25,7 +26,8 @@ public class FollowerController : PlayerController
     //父类的inputControl不需要
     protected override void OnEnable()
     {
-
+        //图一乐
+        helpSign.enabled = followerDown;
     }
     protected override void OnDisable()
     {
@@ -68,6 +70,7 @@ public class FollowerController : PlayerController
     }
     protected override void PlayerDie()
     {
+        helpSign.enabled = true;
         followerDown = true;
         gameObject.layer = LayerMask.NameToLayer("Injured");
     }
@@ -85,8 +88,9 @@ public class FollowerController : PlayerController
         //TODO set rescue progress bar active
         yield return rescueTime;
         if (followerDown)
-        GetComponent<Character>().hp += 50;
+            GetComponent<Character>().hp += 50;
         followerDown = false;
+        helpSign.enabled = false;
     }
     protected override void DetectEnemy()
     {
@@ -98,6 +102,5 @@ public class FollowerController : PlayerController
     protected override void Fire()
     {
         base.Fire();
-        playerCharacter.azureGem--;
     }
 }

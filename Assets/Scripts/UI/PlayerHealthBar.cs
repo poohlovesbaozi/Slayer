@@ -8,9 +8,10 @@ public class PlayerHealthBar : MonoBehaviour
 {
     [SerializeField] Image greenHealthImage;
     [SerializeField] Transform playerTrans;
+
     private void Update()
     {
-        greenHealthImage.fillOrigin = -(int)playerTrans.localScale.x;
+            transform.localScale=new Vector3(playerTrans.localScale.x,1,1);
     }
 
     /// <summary>

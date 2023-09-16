@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] float flySpd;
     public Vector2 shootDir;
 
-    private void OnEnable()
+    protected virtual void OnEnable()
     {
         StartCoroutine(FlyTowardsEnemy());
     }
