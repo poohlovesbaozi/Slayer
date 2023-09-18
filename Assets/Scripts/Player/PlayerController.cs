@@ -10,18 +10,19 @@ public class PlayerController : MonoBehaviour
     [Header("组件")]
     private Rigidbody2D rb;
     [SerializeField] GameObject projectile;
-    [Header("数值")]
+    [Header("检测")]
     [SerializeField] float checkRadius;
     [SerializeField] LayerMask enemyLayer;
     [SerializeField] Vector2 bottomOffset;
-    [SerializeField] Vector2 shootDir;
+    public bool isDead;
+    [Header("移动")]
+    [SerializeField] int faceDir;
     public Vector2 inputDirection;
     public float spd;
-    WaitForSeconds waitForFireInterval;
+    [Header("攻击")]
     [SerializeField] float fireInterval;
-    [Header("状态")]
-    [SerializeField] int faceDir;
-    public bool isDead;
+    WaitForSeconds waitForFireInterval;
+    [SerializeField] Vector2 shootDir;
     [SerializeField] bool canFire;
     [Header("test")]
     [SerializeField] List<Character> followers;
@@ -32,7 +33,7 @@ public class PlayerController : MonoBehaviour
         inputControl = new PlayerInputControl();
         rb = GetComponent<Rigidbody2D>();
     }
-    private void Start()
+    protected virtual void Start()
     {
         shootDir = new Vector2(0, 0);
         waitForFireInterval = new(fireInterval);

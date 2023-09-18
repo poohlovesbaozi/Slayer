@@ -93106,7 +93106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 16bbeed4b019c68478d7c50ba71de13b, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1160356261127867848, guid: 16bbeed4b019c68478d7c50ba71de13b, type: 3}
       propertyPath: m_Controller
@@ -93122,11 +93122,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 16bbeed4b019c68478d7c50ba71de13b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.37
+      value: 15.99
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 16bbeed4b019c68478d7c50ba71de13b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.75
+      value: 15.81
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 16bbeed4b019c68478d7c50ba71de13b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -93201,7 +93201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 113803696}
   - component: {fileID: 113803697}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93420,7 +93420,7 @@ GameObject:
   - component: {fileID: 204129074}
   - component: {fileID: 204129073}
   - component: {fileID: 204129072}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Health Bar Canvas (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96319,7 +96319,7 @@ GameObject:
   - component: {fileID: 1204247873}
   - component: {fileID: 1204247875}
   - component: {fileID: 1204247874}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Health Bar Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96664,7 +96664,7 @@ GameObject:
   - component: {fileID: 1240619704}
   - component: {fileID: 1240619706}
   - component: {fileID: 1240619705}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Health Bar Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97225,13 +97225,13 @@ GameObject:
   - component: {fileID: 1609493536}
   - component: {fileID: 1609493535}
   - component: {fileID: 1609493534}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Help Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1609493533
 RectTransform:
   m_ObjectHideFlags: 0
@@ -97279,7 +97279,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609493532}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

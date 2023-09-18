@@ -63,6 +63,7 @@ public class Enemy : MonoBehaviour
     {
         this.attacker = attacker;
         anim.SetTrigger("Hit");
+        //TODO play audio clip 
         Vector2 dir = (transform.position - attacker.position).normalized;
         StartCoroutine(OnHurt(dir));
     }
@@ -70,7 +71,6 @@ public class Enemy : MonoBehaviour
     {
         rb.AddForce(dir * hitForce, ForceMode2D.Impulse);
         yield return new WaitForSeconds(0.5f);
-        // isHit = false;
 
     }
     protected virtual void OnDie(){     

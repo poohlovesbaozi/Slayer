@@ -11,6 +11,7 @@ public class Projectile : MonoBehaviour
     protected virtual void OnEnable()
     {
         StartCoroutine(FlyTowardsEnemy());
+        //TODO play audio clip
     }
     //需要在disable的时候停止协程，否则协程会一直执行，其中的参数不会更新。
     private void OnDisable() {
