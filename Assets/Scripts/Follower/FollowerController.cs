@@ -18,14 +18,16 @@ public class FollowerController : PlayerController
     int followerFaceDir;
     [Header("等待救援参数")]
     [SerializeField] float rescueDuration;
+    float rescueCounter;
     [SerializeField] float rescueCheckRadius;
     [SerializeField] LayerMask playerLayer;
-    protected override void Start() {
+    protected override void Start()
+    {
         base.Start();
-        followerCharacter=GetComponent<Character>();
-        followerDown=true;
+        followerCharacter = GetComponent<Character>();
+        followerDown = true;
         helpSign.enabled = followerDown;
-        followerCharacter.hp=0;
+        followerCharacter.hp = 0;
     }
     protected override void Awake()
     {
@@ -79,28 +81,31 @@ public class FollowerController : PlayerController
     {
         helpSign.enabled = true;
         followerDown = true;
+        rescueCounter = rescueDuration;
         gameObject.layer = LayerMask.NameToLayer("Injured");
     }
     private void ToBeRescued()
     {
-        var rescueTime = new WaitForSeconds(rescueDuration);
+        //TODO maybe sound?
         if (Physics2D.OverlapCircle(transform.position, rescueCheckRadius, playerLayer))
         {
-            print("yea");
-            StartCoroutine(BeingRescued(rescueTime));
+            rescueCounter -= Time.deltaTime;
+            //逐渐增加血条，血条满时就会被救起
+            followerCharacter.hp+=Time.deltaTime/rescueDuration*followerCharacter.maxHp;
+            if (rescueCounter <= 0)
+            {
+                followerCharacter.hp=70;
+                followerDown = false;
+                helpSign.enabled = false;
+                gameObject.layer = LayerMask.NameToLayer("Player");
+            }
         }
-        StopCoroutine(BeingRescued(rescueTime));
-    }
-    IEnumerator BeingRescued(WaitForSeconds rescueTime)
-    {
-        yield return rescueTime;
-        if (followerDown){
-            GetComponent<Character>().hp = 50;
-        followerDown = false;
-        helpSign.enabled = false;
-        gameObject.layer=LayerMask.NameToLayer("Player");
+        else{
+            followerCharacter.hp=0;
+            rescueCounter=rescueDuration;
         }
     }
+
     protected override void DetectEnemy()
     {
         if (playerCharacter.azureGem > 0)
@@ -108,7 +113,8 @@ public class FollowerController : PlayerController
             base.DetectEnemy();
         }
     }
-    private void OnDrawGizmosSelected() {
+    private void OnDrawGizmosSelected()
+    {
         Gizmos.DrawWireSphere(transform.position, rescueCheckRadius);
     }
 }

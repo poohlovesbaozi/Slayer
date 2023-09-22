@@ -7,49 +7,45 @@ public class Enemy : MonoBehaviour
     [Header("检测")]
     [SerializeField] LayerMask playerLayer;
     [SerializeField] float checkRadius;
-    [SerializeField] Vector2 moveDir;
     [Header("数值")]
     [SerializeField] float hitForce;
-    [SerializeField] float spd;
-    [Header("状态")]
+    public float spd;
+
     [Header("组件")]
     public Transform attacker;
-    [SerializeField] Transform target;
-    Animator anim;
-    Rigidbody2D rb;
-    private void Awake()
+    [SerializeField] public Transform target;
+    [HideInInspector]public Animator anim;
+    [HideInInspector]public Rigidbody2D rb;
+    BaseState currentState;
+    protected BaseState moveState;
+    protected BaseState skill_1State;
+    protected BaseState skill_2State;
+    protected BaseState skill_3State;
+    protected virtual void Awake()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
+    private void OnEnable() {
+        currentState=moveState;
+        currentState.OnEnter(this);
+    }
     private void Update()
     {
         anim.SetFloat("velocity", Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.y));
+        currentState.LogicUpdate();
+        
     }
     private void FixedUpdate()
     {
-        Move();
+        currentState.LogicUpdate();
+
     }
     private void OnDisable() {
-        StopAllCoroutines();
+        currentState.OnExit();
     }
-    protected virtual void Move()
-    {
-        if (DetectTarget())
-        {
-            int faceDir=(int) transform.localScale.x;
-            moveDir = target.position - transform.position;
-            rb.velocity = (moveDir * spd).normalized;
-            if (moveDir.x>0){
-                faceDir=1;
-            }
-            if (moveDir.x<0){
-                faceDir=-1;
-            }
-            transform.localScale=new Vector3(faceDir,1,1);
-        }
-    }
-    bool DetectTarget()
+
+    public bool DetectTarget()
     {
         var target = Physics2D.OverlapCircle(transform.position, checkRadius, playerLayer);
         if (target)
@@ -65,16 +61,22 @@ public class Enemy : MonoBehaviour
         anim.SetTrigger("Hit");
         //TODO play audio clip 
         Vector2 dir = (transform.position - attacker.position).normalized;
-        StartCoroutine(OnHurt(dir));
-    }
-    IEnumerator OnHurt(Vector2 dir)
-    {
         rb.AddForce(dir * hitForce, ForceMode2D.Impulse);
-        yield return new WaitForSeconds(0.5f);
-
     }
-    protected virtual void OnDie(){     
+    public virtual void OnDie(){     
         gameObject.SetActive(false);
+    }
+    public void SwitchState(EnemyState state){
+        var newState=state switch{
+            EnemyState.Move=>moveState,
+            EnemyState.Skill_1=>skill_1State,
+            EnemyState.Skill_2=>skill_2State,
+            EnemyState.Skill_3=>skill_3State,
+            _=>null
+        };
+        currentState.OnExit();
+        currentState=newState;
+        currentState.OnEnter(this);
     }
     private void OnDrawGizmosSelected()
     {
