@@ -59,20 +59,18 @@ public class NecromancerMoveState : BaseState
         switch (ran)
         {
             case 1:
-            Debug.Log("1");
                 return EnemyState.Skill_1;
             case 2:
-            Debug.Log("2");
                 return EnemyState.Skill_2;
+            case 3:
+                return EnemyState.Skill_3;
             default:
-            Debug.Log("3");
                 return EnemyState.Skill_3;
         }
     }
 
     private void Wait()
     {
-        Debug.Log("waiting");       
         waitCounter -= Time.deltaTime;
         if (waitCounter <= 0)
         {

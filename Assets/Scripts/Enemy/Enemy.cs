@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] public Transform target;
     [HideInInspector]public Animator anim;
     [HideInInspector]public Rigidbody2D rb;
+    [HideInInspector]public Character character;
     BaseState currentState;
     protected BaseState moveState;
     protected BaseState skill_1State;
@@ -25,6 +26,7 @@ public class Enemy : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        character=GetComponent<Character>();
     }
     private void OnEnable() {
         currentState=moveState;
@@ -76,6 +78,11 @@ public class Enemy : MonoBehaviour
         };
         currentState.OnExit();
         currentState=newState;
+        currentState.OnEnter(this);
+    }
+    public void SwitchToDefault(){
+        currentState.OnExit();
+        currentState=moveState;
         currentState.OnEnter(this);
     }
     private void OnDrawGizmosSelected()

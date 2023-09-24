@@ -12,7 +12,7 @@ public class Character : MonoBehaviour
     [Header("免疫伤害")]
     [SerializeField] float invulnerableDuration;
     [SerializeField] float invulnerableCounter;
-    [SerializeField] bool isInvulnerable;
+    public bool isInvulnerable;
     [Header("事件")]
     public UnityEvent<Character> OnGemChange;
     public UnityEvent<Character> OnHealthChange;
