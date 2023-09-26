@@ -7,7 +7,7 @@ public class GemProjectile : Projectile
     [SerializeField] Character playerCharacter;
     bool firstTime;
     private void Awake() {
-        playerCharacter=GameObject.Find("@Player").GetComponent<Character>();
+        playerCharacter=GameObject.Find("@Player")?.GetComponent<Character>();
         firstTime=true;
     }
     protected override void OnEnable()

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class TheBossNecromancer : Enemy
 {
-    [SerializeField] GameObject skill_1Minion;
-    [SerializeField] int timesToSummonSkill_1;
+
     protected override void Awake()
     {
         base.Awake();
@@ -14,11 +13,12 @@ public class TheBossNecromancer : Enemy
         skill_2State = new NecromancerSkill_2State();
         skill_3State = new NecromancerSkill_3State();
     }
-    public void Skill_1()
+    public void Skill(AnimationEvent animationEvent)
     {
-        for (int i = 0; i < timesToSummonSkill_1; i++)
+        for (int i = 0; i < animationEvent.intParameter; i++)
         {
-            PoolManager.Release(skill_1Minion, transform.position);
+            PoolManager.Release((GameObject)animationEvent.objectReferenceParameter, transform.position);
         }
     }
+
 }

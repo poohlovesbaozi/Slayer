@@ -105,4 +105,18 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.6
+    functionName: Skill
+    data: 
+    objectReferenceParameter: {fileID: 4457849278296623029, guid: b5956cb17e02f0049b1c3bb253db53f6, type: 3}
+    floatParameter: 0
+    intParameter: 5
+    messageOptions: 0
+  - time: 1.2
+    functionName: SwitchState
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

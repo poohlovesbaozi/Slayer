@@ -18,6 +18,8 @@ public class NecromancerMoveState : BaseState
     }
     public override void LogicUpdate()
     {
+        currentEnemy.anim.SetFloat("velocity", Mathf.Abs(currentEnemy.rb.velocity.x) + Mathf.Abs(currentEnemy.rb.velocity.y));
+        //can optimize
         if (currentEnemy.DetectTarget())
         {
             if (finishWaiting)
@@ -32,9 +34,10 @@ public class NecromancerMoveState : BaseState
     private void Move()
     {
         int faceDir = (int)currentEnemy.transform.localScale.x;
+        Vector3 moveDir=currentEnemy.target.position - currentEnemy.transform.position;
         if (Vector3.Distance(currentEnemy.transform.position, currentEnemy.target.position) > waitDistance)
         {
-            currentEnemy.rb.velocity = (currentEnemy.target.position - currentEnemy.transform.position * currentEnemy.spd).normalized;
+            currentEnemy.rb.velocity = ( moveDir* currentEnemy.spd).normalized;
         }
         else
         {
@@ -55,7 +58,7 @@ public class NecromancerMoveState : BaseState
 
     private EnemyState ChooseARandomState()
     {
-        int ran = Random.Range(1, 3);
+        int ran = Random.Range(1, 4);
         switch (ran)
         {
             case 1:

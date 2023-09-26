@@ -32,11 +32,9 @@ public class Enemy : MonoBehaviour
         currentState=moveState;
         currentState.OnEnter(this);
     }
-    private void Update()
+    protected virtual void Update()
     {
-        anim.SetFloat("velocity", Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.y));
         currentState.LogicUpdate();
-        
     }
     private void FixedUpdate()
     {
@@ -78,11 +76,6 @@ public class Enemy : MonoBehaviour
         };
         currentState.OnExit();
         currentState=newState;
-        currentState.OnEnter(this);
-    }
-    public void SwitchToDefault(){
-        currentState.OnExit();
-        currentState=moveState;
         currentState.OnEnter(this);
     }
     private void OnDrawGizmosSelected()

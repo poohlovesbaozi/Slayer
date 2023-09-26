@@ -10,6 +10,7 @@ public class LilsMoveState : BaseState
     }
     public override void LogicUpdate()
     {
+        currentEnemy.anim.SetFloat("velocity", Mathf.Abs(currentEnemy.rb.velocity.x) + Mathf.Abs(currentEnemy.rb.velocity.y));
         Move();
     }
     void Move()
@@ -17,7 +18,9 @@ public class LilsMoveState : BaseState
         if (currentEnemy.DetectTarget())
         {
             int faceDir = (int)currentEnemy.transform.localScale.x;
-            currentEnemy.rb.velocity = (currentEnemy.target.position - currentEnemy.transform.position * currentEnemy.spd).normalized;
+            //改了怪物的移动方向就会出问题
+            Vector3 moveDir=currentEnemy.target.position - currentEnemy.transform.position;
+            currentEnemy.rb.velocity = (moveDir * currentEnemy.spd).normalized;
             if (currentEnemy.target.position.x - currentEnemy.transform.position.x > 0)
             {
                 faceDir = 1;
