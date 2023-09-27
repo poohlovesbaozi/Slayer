@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TheBossNecromancer : Enemy
 {
-
+    [SerializeField] GameObject follower;
     protected override void Awake()
     {
         base.Awake();
@@ -19,6 +19,15 @@ public class TheBossNecromancer : Enemy
         {
             PoolManager.Release((GameObject)animationEvent.objectReferenceParameter, transform.position);
         }
+    }
+    public override void OnDie()
+    {
+        anim.SetBool("dead",true);
+    }
+    public void VanishToDie(){
+        follower.transform.position=new Vector3(transform.position.x,transform.position.y,0);     
+        follower.SetActive(true);
+        gameObject.SetActive(false);
     }
 
 }

@@ -82,6 +82,7 @@ public class FollowerController : PlayerController
         helpSign.enabled = true;
         followerDown = true;
         rescueCounter = rescueDuration;
+        followerRb.velocity=Vector3.zero;
         gameObject.layer = LayerMask.NameToLayer("Injured");
     }
     private void ToBeRescued()

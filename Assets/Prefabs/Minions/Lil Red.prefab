@@ -302,9 +302,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   checkRadius: 8
-  moveDir: {x: 0, y: 0}
   hitForce: 0.5
   spd: 0.5
+  item: {fileID: 780054717090332722, guid: 0826ea439f9474e4c84fdeddbdd9c030, type: 3}
   attacker: {fileID: 0}
   target: {fileID: 0}
-  Item: {fileID: 780054717090332722, guid: 0826ea439f9474e4c84fdeddbdd9c030, type: 3}
+  anim: {fileID: 0}
+  rb: {fileID: 0}
+  character: {fileID: 0}

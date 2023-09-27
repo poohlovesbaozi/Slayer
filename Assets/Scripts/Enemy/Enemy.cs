@@ -10,13 +10,14 @@ public class Enemy : MonoBehaviour
     [Header("数值")]
     [SerializeField] float hitForce;
     public float spd;
+    [SerializeField] GameObject item;
 
     [Header("组件")]
     public Transform attacker;
     [SerializeField] public Transform target;
-    [HideInInspector]public Animator anim;
-    [HideInInspector]public Rigidbody2D rb;
-    [HideInInspector]public Character character;
+    [HideInInspector] public Animator anim;
+    [HideInInspector] public Rigidbody2D rb;
+    [HideInInspector] public Character character;
     BaseState currentState;
     protected BaseState moveState;
     protected BaseState skill_1State;
@@ -26,10 +27,11 @@ public class Enemy : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        character=GetComponent<Character>();
+        character = GetComponent<Character>();
     }
-    private void OnEnable() {
-        currentState=moveState;
+    private void OnEnable()
+    {
+        currentState = moveState;
         currentState.OnEnter(this);
     }
     protected virtual void Update()
@@ -41,7 +43,8 @@ public class Enemy : MonoBehaviour
         currentState.LogicUpdate();
 
     }
-    private void OnDisable() {
+    private void OnDisable()
+    {
         currentState.OnExit();
     }
 
@@ -63,19 +66,24 @@ public class Enemy : MonoBehaviour
         Vector2 dir = (transform.position - attacker.position).normalized;
         rb.AddForce(dir * hitForce, ForceMode2D.Impulse);
     }
-    public virtual void OnDie(){     
+    public virtual void OnDie()
+    {
+        if (item && Random.Range(1, 4) == 1)
+            PoolManager.Release(item, transform.position);
         gameObject.SetActive(false);
     }
-    public void SwitchState(EnemyState state){
-        var newState=state switch{
-            EnemyState.Move=>moveState,
-            EnemyState.Skill_1=>skill_1State,
-            EnemyState.Skill_2=>skill_2State,
-            EnemyState.Skill_3=>skill_3State,
-            _=>null
+    public void SwitchState(EnemyState state)
+    {
+        var newState = state switch
+        {
+            EnemyState.Move => moveState,
+            EnemyState.Skill_1 => skill_1State,
+            EnemyState.Skill_2 => skill_2State,
+            EnemyState.Skill_3 => skill_3State,
+            _ => null
         };
         currentState.OnExit();
-        currentState=newState;
+        currentState = newState;
         currentState.OnEnter(this);
     }
     private void OnDrawGizmosSelected()
