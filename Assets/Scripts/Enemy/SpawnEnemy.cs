@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour
 {
     [SerializeField] GameObject minion;
+    [SerializeField] Color color;
     WaitForSeconds waitForSpawnInterval;
     [SerializeField] float spawnInterval;
     Vector2 faceDir;
@@ -47,8 +49,9 @@ public class SpawnEnemy : MonoBehaviour
             currentAmount++;
         }
     }
-    private void OnDrawGizmosSelected()
+ private void OnDrawGizmos() {
     {
+        Gizmos.color=color;
         Gizmos.DrawWireSphere(transform.position, checkRadius);
     }
-}
+}}

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7209749582998647729}
   - component: {fileID: 247765499468467634}
   - component: {fileID: 3591032583492635012}
+  - component: {fileID: 508403075501044610}
   m_Layer: 10
   m_Name: hammer
   m_TagString: Untagged
@@ -174,3 +175,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyGameObject: 0
   lifeTime: 3
+--- !u!114 &508403075501044610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855673481109642593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e628e9d3fd69b644a1c2b44245c4344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playAudioEvent: {fileID: 11400000, guid: a0edd62ef9887444fbf5ceb5cc3fb37b, type: 2}
+  audioClip: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
+  playOnEnable: 1

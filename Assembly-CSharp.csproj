@@ -52,14 +52,17 @@
      <Compile Include="Assets\Scripts\Skills\Hammer.cs" />
      <Compile Include="Assets\Scripts\Skills\Projectile.cs" />
      <Compile Include="Assets\Scripts\Skills\AutoDeactivate.cs" />
+     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Pool System\Pool.cs" />
      <Compile Include="Assets\Scripts\UI\PlayerHealthBar.cs" />
      <Compile Include="Assets\Scripts\Enemy\Lils\LilRed.cs" />
      <Compile Include="Assets\Scripts\Follower\FollowerController.cs" />
+     <Compile Include="Assets\Scripts\Audio\AudioDefinition.cs" />
      <Compile Include="Assets\Scripts\Enemy\Skull.cs" />
      <Compile Include="Assets\Scripts\Enemy\Necromancer\NecromancerSkill_2State.cs" />
      <Compile Include="Assets\Settings\InputSystem\PlayerInputControl.cs" />
      <Compile Include="Assets\Scripts\Enemy\SpawnEnemy.cs" />
+     <Compile Include="Assets\Scripts\ScriptableObject\PlayAudioEventSO.cs" />
      <Compile Include="Assets\Scripts\Pool System\PoolManager.cs" />
      <Compile Include="Assets\Scripts\Enemy\SkullMoveState.cs" />
      <Compile Include="Assets\Scripts\Enemy\Necromancer\NecromancerSkill_3State.cs" />
