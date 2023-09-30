@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Enemy : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class Enemy : MonoBehaviour
     [HideInInspector] public Animator anim;
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public Character character;
+    [SerializeField] PlayAudioEventSO playAudioEvent;
+    [SerializeField] AudioClip getHitClip;
     BaseState currentState;
     protected BaseState moveState;
     protected BaseState skill_1State;
@@ -40,7 +43,7 @@ public class Enemy : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        currentState.LogicUpdate();
+        currentState.PhysicsUpdate();
 
     }
     private void OnDisable()
@@ -62,7 +65,7 @@ public class Enemy : MonoBehaviour
     {
         this.attacker = attacker;
         anim.SetTrigger("Hit");
-        //TODO play audio clip 
+        playAudioEvent.OnEventRaised(getHitClip);
         Vector2 dir = (transform.position - attacker.position).normalized;
         rb.AddForce(dir * hitForce, ForceMode2D.Impulse);
     }

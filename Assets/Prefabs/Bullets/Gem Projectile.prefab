@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6249096345914468335}
   - component: {fileID: 6579402876636905314}
   - component: {fileID: 4274257923443116753}
+  - component: {fileID: -7616766217639425331}
   m_Layer: 0
   m_Name: Gem Projectile
   m_TagString: Untagged
@@ -175,3 +176,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  deactivateOnCollide: 1
+--- !u!114 &-7616766217639425331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6526123710145192076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e628e9d3fd69b644a1c2b44245c4344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playAudioEvent: {fileID: 11400000, guid: a0edd62ef9887444fbf5ceb5cc3fb37b, type: 2}
+  audioClip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
+  playOnEnable: 1
+  playOnDisable: 0

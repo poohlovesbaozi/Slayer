@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1141577347086428841}
   - component: {fileID: 5607155764670664326}
   - component: {fileID: 6898574488464134564}
+  - component: {fileID: -4173924325130808450}
   m_Layer: 0
   m_Name: Gem
   m_TagString: Untagged
@@ -139,3 +140,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.21875
+--- !u!114 &-4173924325130808450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780054717090332722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e628e9d3fd69b644a1c2b44245c4344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playAudioEvent: {fileID: 11400000, guid: a0edd62ef9887444fbf5ceb5cc3fb37b, type: 2}
+  audioClip: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
+  playOnEnable: 0
+  playOnDisable: 1

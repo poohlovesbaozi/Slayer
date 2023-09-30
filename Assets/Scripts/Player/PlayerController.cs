@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
@@ -9,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public PlayerInputControl inputControl;
     [Header("组件")]
     private Rigidbody2D rb;
+    [SerializeField]Image stickImage;
     [SerializeField] GameObject projectile;
     [Header("检测")]
     [SerializeField] float checkRadius;
@@ -32,6 +34,17 @@ public class PlayerController : MonoBehaviour
     {
         inputControl = new PlayerInputControl();
         rb = GetComponent<Rigidbody2D>();
+        inputControl.GamePlay.StickFollow.started+=ctx=>{
+            print('1');
+        };
+        inputControl.GamePlay.StickFollow.performed += ctx =>
+        {
+            stickImage.enabled=true;
+        };
+        inputControl.GamePlay.StickFollow.canceled += ctx =>
+        {
+            stickImage.enabled=false;
+        };
     }
     protected virtual void Start()
     {

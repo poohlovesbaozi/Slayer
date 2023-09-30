@@ -1,7 +1,4 @@
-using System;
-using System.Collections;
-using System.Security.Permissions;
-using UnityEditor.Callbacks;
+
 using UnityEngine;
 using UnityEngine.UI;
 

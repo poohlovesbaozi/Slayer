@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7063269133144768937}
   - component: {fileID: 174174036080299686}
   - component: {fileID: 6307335777159981387}
+  - component: {fileID: -8544589823912163585}
   m_Layer: 9
   m_Name: Skull
   m_TagString: Untagged
@@ -160,6 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
+  deactivateOnCollide: 1
 --- !u!114 &6307335777159981387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,8 +180,27 @@ MonoBehaviour:
   checkRadius: 10
   hitForce: 0
   spd: 0.7
+  item: {fileID: 0}
   attacker: {fileID: 0}
   target: {fileID: 0}
   anim: {fileID: 0}
   rb: {fileID: 0}
   character: {fileID: 0}
+  playAudioEvent: {fileID: 0}
+  getHitClip: {fileID: 0}
+--- !u!114 &-8544589823912163585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999106758985079714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e628e9d3fd69b644a1c2b44245c4344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playAudioEvent: {fileID: 11400000, guid: a0edd62ef9887444fbf5ceb5cc3fb37b, type: 2}
+  audioClip: {fileID: 8300000, guid: 80e397195ea2940b69ee7bdbded856a5, type: 3}
+  playOnEnable: 1
+  playOnDisable: 0

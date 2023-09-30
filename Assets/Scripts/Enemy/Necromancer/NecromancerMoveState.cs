@@ -12,32 +12,22 @@ public class NecromancerMoveState : BaseState
     {
         currentEnemy = enemy;
         finishWaiting = false;
-        waitDuration = 1.5f;
+        waitDuration = 2.5f;
         waitCounter = waitDuration;
-        waitDistance = 3f;
+        waitDistance = 7f;
     }
     public override void LogicUpdate()
     {
         currentEnemy.anim.SetFloat("velocity", Mathf.Abs(currentEnemy.rb.velocity.x) + Mathf.Abs(currentEnemy.rb.velocity.y));
-        //can optimize
-        if (currentEnemy.DetectTarget())
-        {
-            if (finishWaiting)
-            {
-                Debug.Log("into next state");
-                currentEnemy.SwitchState(ChooseARandomState());
-            }
-            Move();
-        }
     }
 
     private void Move()
     {
         int faceDir = (int)currentEnemy.transform.localScale.x;
-        Vector3 moveDir=currentEnemy.target.position - currentEnemy.transform.position;
+        Vector3 moveDir = currentEnemy.target.position - currentEnemy.transform.position;
         if (Vector3.Distance(currentEnemy.transform.position, currentEnemy.target.position) > waitDistance)
         {
-            currentEnemy.rb.velocity = ( moveDir* currentEnemy.spd).normalized;
+            currentEnemy.rb.velocity = (moveDir * currentEnemy.spd).normalized;
         }
         else
         {
@@ -83,7 +73,15 @@ public class NecromancerMoveState : BaseState
 
     public override void PhysicsUpdate()
     {
-
+        if (currentEnemy.DetectTarget())
+        {
+            if (finishWaiting)
+            {
+                Debug.Log("into next state");
+                currentEnemy.SwitchState(ChooseARandomState());
+            }
+            Move();
+        }
     }
 
     public override void OnExit()
