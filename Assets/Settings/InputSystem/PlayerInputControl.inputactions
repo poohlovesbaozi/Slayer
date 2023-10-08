@@ -43,9 +43,18 @@
                 },
                 {
                     "name": "StickFollow",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "fe2de875-0e52-4d9d-adf4-7940cf3e705b",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "TouchPos",
+                    "type": "Value",
+                    "id": "389ca397-ae51-45d0-93fb-a59231aa5c23",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -252,7 +261,18 @@
                 },
                 {
                     "name": "",
-                    "id": "95a65750-408a-4304-8a15-f56099fa8b1c",
+                    "id": "777fc83f-0f3f-4730-bebe-d91aba37e3ec",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "StickFollow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c8893652-6866-4c51-9b44-680957d2e717",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
@@ -263,12 +283,23 @@
                 },
                 {
                     "name": "",
-                    "id": "777fc83f-0f3f-4730-bebe-d91aba37e3ec",
-                    "path": "<Keyboard>/x",
+                    "id": "b1930b94-d033-4c1d-b3cf-ebdfe14640c6",
+                    "path": "<Touchscreen>/position",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "StickFollow",
+                    "groups": "",
+                    "action": "TouchPos",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ac886f4b-4e47-4798-ba2a-9a41d186e093",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TouchPos",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

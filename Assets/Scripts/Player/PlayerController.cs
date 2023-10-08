@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float checkRadius;
     [SerializeField] LayerMask enemyLayer;
     [SerializeField] Vector2 bottomOffset;
+    Vector2 touchPos;
     public bool isDead;
     [Header("移动")]
     [SerializeField] int faceDir;
@@ -34,12 +35,11 @@ public class PlayerController : MonoBehaviour
     {
         inputControl = new PlayerInputControl();
         rb = GetComponent<Rigidbody2D>();
-        inputControl.GamePlay.StickFollow.started+=ctx=>{
-            print('1');
-        };
         inputControl.GamePlay.StickFollow.performed += ctx =>
         {
             stickImage.enabled=true;
+            touchPos=inputControl.GamePlay.TouchPos.ReadValue<Vector2>();
+            stickImage.rectTransform.position=new Vector3(touchPos.x,touchPos.y,0);
         };
         inputControl.GamePlay.StickFollow.canceled += ctx =>
         {
@@ -93,6 +93,8 @@ public class PlayerController : MonoBehaviour
     }
     protected virtual void PlayerDie()
     {
+        //player stop to move after dying.
+        rb.velocity=Vector3.zero;
         isDead = true;
         inputControl.GamePlay.Disable();
     }

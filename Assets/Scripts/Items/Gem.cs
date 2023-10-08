@@ -9,12 +9,15 @@ public class Gem : MonoBehaviour
     [SerializeField] LayerMask playerLayer;
     [SerializeField] Transform target;
     [SerializeField] GameObject player;
+    [SerializeField] SceneLoadEventSO loadEvent;
     
     Vector2 moveDir;
     bool moving;
     private void OnEnable()
     {
+        player=GameObject.Find("@Player");
         moving = false;
+        loadEvent.loadRequestEvent+=OnLoadRequestEvent;
     }
     private void Update()
     {
@@ -27,7 +30,12 @@ public class Gem : MonoBehaviour
     }
     private void OnDisable()
     {
-        StopCoroutine(MoveToTarget(moveDir));
+        loadEvent.loadRequestEvent+=OnLoadRequestEvent;
+    }
+
+    private void OnLoadRequestEvent(GameSceneSO arg0, Vector3 arg1, bool arg2)
+    {
+        gameObject.SetActive(false);
     }
 
     IEnumerator MoveToTarget(Vector2 moveDir)
@@ -38,7 +46,6 @@ public class Gem : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D other)
     {
-        player=GameObject.Find("@Player");
         player.GetComponent<Character>().azureGem++;
         gameObject.SetActive(false);
     }

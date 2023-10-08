@@ -105,6 +105,7 @@ MonoBehaviour:
     m_Bits: 256
   target: {fileID: 0}
   player: {fileID: 0}
+  loadEvent: {fileID: 11400000, guid: c1d04d307202dff4285f575bd9f689d0, type: 2}
 --- !u!58 &6898574488464134564
 CircleCollider2D:
   m_ObjectHideFlags: 0

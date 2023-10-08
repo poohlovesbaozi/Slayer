@@ -69,6 +69,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7172571376649044579, guid: 1a24a8ab1583e284ab86f74ab6e7b0f3, type: 3}
+      propertyPath: loadEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: c1d04d307202dff4285f575bd9f689d0, type: 2}
+    - target: {fileID: 7172571376649044579, guid: 1a24a8ab1583e284ab86f74ab6e7b0f3, type: 3}
       propertyPath: getHitClip
       value: 
       objectReference: {fileID: 8300000, guid: 0994c12e202f342459a4212e7287f7e8, type: 3}

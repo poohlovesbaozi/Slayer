@@ -65,9 +65,18 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""StickFollow"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""fe2de875-0e52-4d9d-adf4-7940cf3e705b"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""TouchPos"",
+                    ""type"": ""Value"",
+                    ""id"": ""389ca397-ae51-45d0-93fb-a59231aa5c23"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -274,7 +283,18 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""95a65750-408a-4304-8a15-f56099fa8b1c"",
+                    ""id"": ""777fc83f-0f3f-4730-bebe-d91aba37e3ec"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""StickFollow"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c8893652-6866-4c51-9b44-680957d2e717"",
                     ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -285,12 +305,23 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""777fc83f-0f3f-4730-bebe-d91aba37e3ec"",
-                    ""path"": ""<Keyboard>/x"",
+                    ""id"": ""b1930b94-d033-4c1d-b3cf-ebdfe14640c6"",
+                    ""path"": ""<Touchscreen>/position"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""StickFollow"",
+                    ""groups"": """",
+                    ""action"": ""TouchPos"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ac886f4b-4e47-4798-ba2a-9a41d186e093"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TouchPos"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -883,6 +914,7 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         m_GamePlay_Fire = m_GamePlay.FindAction("Fire", throwIfNotFound: true);
         m_GamePlay_Test = m_GamePlay.FindAction("Test", throwIfNotFound: true);
         m_GamePlay_StickFollow = m_GamePlay.FindAction("StickFollow", throwIfNotFound: true);
+        m_GamePlay_TouchPos = m_GamePlay.FindAction("TouchPos", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -961,6 +993,7 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
     private readonly InputAction m_GamePlay_Fire;
     private readonly InputAction m_GamePlay_Test;
     private readonly InputAction m_GamePlay_StickFollow;
+    private readonly InputAction m_GamePlay_TouchPos;
     public struct GamePlayActions
     {
         private @PlayerInputControl m_Wrapper;
@@ -970,6 +1003,7 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         public InputAction @Fire => m_Wrapper.m_GamePlay_Fire;
         public InputAction @Test => m_Wrapper.m_GamePlay_Test;
         public InputAction @StickFollow => m_Wrapper.m_GamePlay_StickFollow;
+        public InputAction @TouchPos => m_Wrapper.m_GamePlay_TouchPos;
         public InputActionMap Get() { return m_Wrapper.m_GamePlay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -994,6 +1028,9 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
             @StickFollow.started += instance.OnStickFollow;
             @StickFollow.performed += instance.OnStickFollow;
             @StickFollow.canceled += instance.OnStickFollow;
+            @TouchPos.started += instance.OnTouchPos;
+            @TouchPos.performed += instance.OnTouchPos;
+            @TouchPos.canceled += instance.OnTouchPos;
         }
 
         private void UnregisterCallbacks(IGamePlayActions instance)
@@ -1013,6 +1050,9 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
             @StickFollow.started -= instance.OnStickFollow;
             @StickFollow.performed -= instance.OnStickFollow;
             @StickFollow.canceled -= instance.OnStickFollow;
+            @TouchPos.started -= instance.OnTouchPos;
+            @TouchPos.performed -= instance.OnTouchPos;
+            @TouchPos.canceled -= instance.OnTouchPos;
         }
 
         public void RemoveCallbacks(IGamePlayActions instance)
@@ -1200,6 +1240,7 @@ public partial class @PlayerInputControl: IInputActionCollection2, IDisposable
         void OnFire(InputAction.CallbackContext context);
         void OnTest(InputAction.CallbackContext context);
         void OnStickFollow(InputAction.CallbackContext context);
+        void OnTouchPos(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

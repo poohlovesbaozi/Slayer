@@ -8,6 +8,7 @@ public class TheBossNecromancer : Enemy
     protected override void Awake()
     {
         base.Awake();
+        follower=GameObject.Find("MiniSuspiciousMerchant");
         moveState = new NecromancerMoveState();
         skill_1State = new NecromancerSkill_1State();
         skill_2State = new NecromancerSkill_2State();

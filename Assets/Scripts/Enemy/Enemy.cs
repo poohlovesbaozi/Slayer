@@ -5,6 +5,7 @@ using UnityEngine.Audio;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] SceneLoadEventSO loadEvent;
     [Header("检测")]
     [SerializeField] LayerMask playerLayer;
     [SerializeField] float checkRadius;
@@ -36,6 +37,7 @@ public class Enemy : MonoBehaviour
     {
         currentState = moveState;
         currentState.OnEnter(this);
+        loadEvent.loadRequestEvent+=OnLoadRequestEvent;
     }
     protected virtual void Update()
     {
@@ -48,7 +50,13 @@ public class Enemy : MonoBehaviour
     }
     private void OnDisable()
     {
+        loadEvent.loadRequestEvent-=OnLoadRequestEvent;
         currentState.OnExit();
+    }
+
+    private void OnLoadRequestEvent(GameSceneSO arg0, Vector3 arg1, bool arg2)
+    {
+        gameObject.SetActive(false);
     }
 
     public bool DetectTarget()
