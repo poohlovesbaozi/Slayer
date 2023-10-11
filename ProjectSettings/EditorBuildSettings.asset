@@ -5,8 +5,8 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Level 1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Initial.unity
+    guid: 6403dba2a6aceef48acf5dcf37658d6c
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 4e5c0b2cace21ae4db67beac30ead840, type: 2}

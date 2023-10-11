@@ -21,8 +21,8 @@ public class Character : MonoBehaviour
 
     private void Start()
     {
-        OnGemChange?.Invoke(this);
-        OnHealthChange?.Invoke(this);
+        // OnGemChange?.Invoke(this);
+        // OnHealthChange?.Invoke(this);
     }
     private void OnEnable()
     {
@@ -31,8 +31,8 @@ public class Character : MonoBehaviour
     private void Update()
     {
 
-        OnGemChange?.Invoke(this);
-        OnHealthChange?.Invoke(this);
+        // OnGemChange?.Invoke(this);
+        // OnHealthChange?.Invoke(this);
         if (isInvulnerable)
         {
             invulnerableCounter -= Time.deltaTime;

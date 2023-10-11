@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class TheBossNecromancer : Enemy
 {
-    [SerializeField] GameObject follower;
+[SerializeField] GameObject follower;
+[SerializeField] TeleportPoint teleportPoint;
     protected override void Awake()
     {
         base.Awake();
-        follower=GameObject.Find("MiniSuspiciousMerchant");
         moveState = new NecromancerMoveState();
         skill_1State = new NecromancerSkill_1State();
         skill_2State = new NecromancerSkill_2State();
@@ -23,11 +23,11 @@ public class TheBossNecromancer : Enemy
     }
     public override void OnDie()
     {
+        follower.SetActive(true);
+        // teleportPoint.canInteract=true;
         anim.SetBool("dead",true);
     }
     public void VanishToDie(){
-        follower.transform.position=new Vector3(transform.position.x,transform.position.y,0);     
-        follower.SetActive(true);
         gameObject.SetActive(false);
     }
 

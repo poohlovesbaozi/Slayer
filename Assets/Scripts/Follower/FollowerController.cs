@@ -1,13 +1,16 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FollowerController : PlayerController
 {
-    [SerializeField] Image helpSign;
-    [SerializeField] Transform target;
-    Rigidbody2D followerRb;
+    [Header("player")]
     [SerializeField] Character playerCharacter;
+    [SerializeField] Transform target;
+    [SerializeField] Image helpSign;
+    Rigidbody2D followerRb;
     Character followerCharacter;
     [SerializeField] float followerSpd;
     [SerializeField] float stopDistance;
@@ -33,7 +36,11 @@ public class FollowerController : PlayerController
     //父类的inputControl不需要
     protected override void OnEnable()
     {
-
+        SceneManager.MoveGameObjectToScene(gameObject,SceneManager.GetSceneByName("Persistent"));
+        target=GameObject.Find("@Player")?.GetComponent<Transform>();
+        playerCharacter=target?.gameObject.GetComponent<Character>();
+        if (!FollowersData.followers.Contains(gameObject))
+        FollowersData.followers.Add(gameObject);
     }
     protected override void OnDisable()
     {

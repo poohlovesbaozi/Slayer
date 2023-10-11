@@ -10,40 +10,67 @@ public class SceneLoader : MonoBehaviour
 {
     [Header("监听")]
     [SerializeField] SceneLoadEventSO loadEvent;
+    [SerializeField] FadeEventSO fadeEvent;
+    [SerializeField] VoidEventSO newGameEvent;
+
+    [Header("位置")]
+    Vector3 posToGo;
+    [SerializeField] Vector3 menuPosition;
+    [SerializeField] Vector3 firstPosition;
+    [Header("场景")]
+    [SerializeField] GameSceneSO menuScene;
     [SerializeField] GameSceneSO firstLoadScene;
-    [SerializeField] Transform playerTrans;
     GameSceneSO currentLoadedScene;
     GameSceneSO sceneToLoad;
-    Vector3 posToGo;
+    [SerializeField] Transform playerTrans;
     bool fade;
     [SerializeField] float fadeDuration;
     private void Awake()
     {
-        currentLoadedScene = firstLoadScene;
-        currentLoadedScene.sceneReference.LoadSceneAsync(LoadSceneMode.Additive);
+        // currentLoadedScene = firstLoadScene;
+        // currentLoadedScene.sceneReference.LoadSceneAsync(LoadSceneMode.Additive);
+    }
+    private void Start()
+    {
+        loadEvent.RaiseLoadRequestEvent(menuScene, menuPosition, true);
+        // NewGame();
     }
     private void OnEnable()
     {
         loadEvent.loadRequestEvent += OnLoadRequestEvent;
+        newGameEvent.OnEventRaised += NewGame;
     }
     private void OnDisable()
     {
         loadEvent.loadRequestEvent -= OnLoadRequestEvent;
+        newGameEvent.OnEventRaised -= NewGame;
     }
 
+    void NewGame()
+    {
+        sceneToLoad = firstLoadScene;
+        loadEvent.RaiseLoadRequestEvent(sceneToLoad, firstPosition, true);
+    }
     private void OnLoadRequestEvent(GameSceneSO sceneToLoad, Vector3 posToGo, bool fade)
     {
         this.sceneToLoad = sceneToLoad;
         this.posToGo = posToGo;
         this.fade = fade;
         if (currentLoadedScene != null)
+        {
             StartCoroutine(UnLoadPreviousScene());
+        }
+        else
+        {
+            LoadNewScene();
+        }
     }
     IEnumerator UnLoadPreviousScene()
     {
         if (fade)
         {
             // TODO fade screen
+            fadeEvent.FadeIn(fadeDuration);
         }
         yield return new WaitForSeconds(fadeDuration);
         yield return currentLoadedScene.sceneReference.UnLoadScene();
@@ -63,10 +90,15 @@ public class SceneLoader : MonoBehaviour
     {
         //场景加载完成后，当前加载的场景就是之前将要加载的场景
         currentLoadedScene = sceneToLoad;
-        playerTrans.position=posToGo;
+        playerTrans.position = posToGo;
+        foreach (var follower in FollowersData.followers)
+        {
+            follower.transform.position = posToGo;
+        }
         if (fade)
         {
             //TODO
+            fadeEvent.FadeOut(fadeDuration);
         }
     }
 }

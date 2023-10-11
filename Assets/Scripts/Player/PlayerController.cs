@@ -28,8 +28,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Vector2 shootDir;
     [SerializeField] bool canFire;
     [Header("test")]
-    [SerializeField] List<Character> followers;
-    [SerializeField] Character followerChar;
+    
+    [SerializeField] Character testTarget;
     [SerializeField] Attack testAttacker;
     protected virtual void Awake()
     {
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
 #if UNITY_EDITOR
         if (inputControl.GamePlay.Test.IsPressed())
         {
-            followerChar.TakeDamage(testAttacker);
+            testTarget.TakeDamage(testAttacker);
         }
 #endif
         inputDirection = inputControl.GamePlay.Move.ReadValue<Vector2>();

@@ -9,13 +9,16 @@ public class Gem : MonoBehaviour
     [SerializeField] LayerMask playerLayer;
     [SerializeField] Transform target;
     [SerializeField] GameObject player;
+    Character playerCharacter;
     [SerializeField] SceneLoadEventSO loadEvent;
+    [SerializeField] CharacterEventSO onGemChangeEvent;
     
     Vector2 moveDir;
     bool moving;
     private void OnEnable()
     {
         player=GameObject.Find("@Player");
+        playerCharacter=player?.GetComponent<Character>();
         moving = false;
         loadEvent.loadRequestEvent+=OnLoadRequestEvent;
     }
@@ -46,7 +49,8 @@ public class Gem : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D other)
     {
-        player.GetComponent<Character>().azureGem++;
+        onGemChangeEvent?.RaiseEvent(playerCharacter);
+        playerCharacter.azureGem++;
         gameObject.SetActive(false);
     }
 

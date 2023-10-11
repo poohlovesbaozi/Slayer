@@ -8,13 +8,15 @@ public class TeleportPoint : MonoBehaviour, IInteractable
     [SerializeField] GameSceneSO sceneToGo;
     [SerializeField] SceneLoadEventSO loadEvent;
     Animator anim;
-    bool canInteract;
+    public bool canInteract;
     private void Awake()
     {
+        anim=GetComponent<Animator>();
         canInteract = false;
     }
     public void Activate()
     {
+        canInteract=true;
         anim.SetBool("canInteract", canInteract);
     }
     public void TriggerAction()
@@ -27,7 +29,6 @@ public class TeleportPoint : MonoBehaviour, IInteractable
         if (canInteract)
         {
             TriggerAction();
-            canInteract = false;
         }
     }
 }
