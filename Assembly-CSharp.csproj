@@ -47,9 +47,13 @@
      <Compile Include="Assets\Scripts\Enemy\BaseState.cs" />
      <Compile Include="Assets\Scripts\Items\Gem.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Transition\Initial Load.cs" />
      <Compile Include="Assets\Scripts\Skills\GemProjectile.cs" />
      <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy\FlyEye\FlyEyeSkillState.cs" />
+     <Compile Include="Assets\Scripts\Game Data\MinionStats.cs" />
      <Compile Include="Assets\Scripts\UI\GemCount.cs" />
+     <Compile Include="Assets\Scripts\Enemy\FlyEye\FlyEyeMoveState.cs" />
      <Compile Include="Assets\Scripts\General\Character.cs" />
      <Compile Include="Assets\Scripts\Skills\Hammer.cs" />
      <Compile Include="Assets\Scripts\Utilities\IInteractable.cs" />
@@ -68,9 +72,13 @@
      <Compile Include="Assets\Scripts\Enemy\Necromancer\NecromancerSkill_2State.cs" />
      <Compile Include="Assets\Settings\InputSystem\PlayerInputControl.cs" />
      <Compile Include="Assets\Scripts\AD\ADInititializer.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyCharacter.cs" />
+     <Compile Include="Assets\Scripts\Enemy\FlyEye\FlyEye.cs" />
      <Compile Include="Assets\Scripts\Transition\SceneLoader.cs" />
+     <Compile Include="Assets\Scripts\ScriptableObject\CharacterStatsSO.cs" />
      <Compile Include="Assets\Scripts\Enemy\SpawnEnemy.cs" />
      <Compile Include="Assets\Scripts\UI\Menu.cs" />
+     <Compile Include="Assets\Scripts\Game Data\CharacterStats.cs" />
      <Compile Include="Assets\Scripts\ScriptableObject\PlayAudioEventSO.cs" />
      <Compile Include="Assets\Scripts\Pool System\PoolManager.cs" />
      <Compile Include="Assets\Scripts\Enemy\SkullMoveState.cs" />
@@ -79,6 +87,7 @@
      <Compile Include="Assets\Scripts\Enemy\Necromancer\NecromancerMoveState.cs" />
      <Compile Include="Assets\Scripts\Enemy\Necromancer\TheBossNecromancer.cs" />
      <Compile Include="Assets\Scripts\Enemy\Necromancer\NecromancerSkill_1State.cs" />
+     <Compile Include="Assets\Scripts\ScriptableObject\MinionStatsSO.cs" />
      <Compile Include="Assets\Scripts\Utilities\Enums.cs" />
      <Compile Include="Assets\Scripts\UI\FadeCanvas.cs" />
      <Compile Include="Assets\Scripts\ScriptableObject\FadeEventSO.cs" />
@@ -100,7 +109,6 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\AddressableAssetsData\link.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />

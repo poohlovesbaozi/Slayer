@@ -8,6 +8,7 @@ public class SkullMoveState : BaseState
     public override void OnEnter(Enemy enemy)
     {
         currentEnemy = enemy;
+        currentEnemy.minionStats.CurrentSpd = currentEnemy.minionStats.NormalSpd;
     }
     public override void LogicUpdate()
     {
@@ -19,7 +20,7 @@ public class SkullMoveState : BaseState
         if (currentEnemy.DetectTarget())
         {
             Vector3 moveDir = currentEnemy.target.position - currentEnemy.transform.position;
-            currentEnemy.transform.Translate(moveDir * currentEnemy.spd * Time.deltaTime);
+            currentEnemy.transform.Translate(moveDir * currentEnemy.minionStats.CurrentSpd * Time.deltaTime);
         }
     }
 

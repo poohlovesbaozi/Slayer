@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     [Header("组件")]
+    [SerializeField] Canvas mainCanvas;
     [SerializeField] Button settingsButton;
     [SerializeField] GameObject pausePanel;
     [SerializeField] PlayerHealthBar playerHealthBar;
@@ -21,27 +22,39 @@ public class UIManager : MonoBehaviour
     [SerializeField] VoidEventSO pauseEvent;
     private void Awake()
     {
-        settingsButton.onClick.AddListener(TogglePausePanel);
+        // settingsButton.onClick.AddListener(TogglePausePanel);
     }
     private void OnEnable()
     {
         healthEvent.OnEventRaised += OnHealthEvent;
         gemEvent.OnEventRaised += OnGemChange;
         loadEvent.loadRequestEvent += OnLoadEvent;
-        syncVolumeEvent.OnEventRaised+=OnSyncVolumeEvent;
+        syncVolumeEvent.OnEventRaised += OnSyncVolumeEvent;
     }
     private void OnDisable()
     {
         healthEvent.OnEventRaised -= OnHealthEvent;
         gemEvent.OnEventRaised -= OnGemChange;
         loadEvent.loadRequestEvent -= OnLoadEvent;
-        syncVolumeEvent.OnEventRaised-=OnSyncVolumeEvent;
+        syncVolumeEvent.OnEventRaised -= OnSyncVolumeEvent;
+    }
+    public void ClosePanel(GameObject panel)
+    {
+        panel.SetActive(false);
+    }
+    public void TogglePanel(GameObject panel){
+        if (panel.activeInHierarchy){
+            panel.SetActive(false);
+        }
+        else{
+            panel.SetActive(true);
+        }
     }
 
     private void OnSyncVolumeEvent(float volume)
     {
         //slider的value和mixer的volume不一致
-        masterVolumeSlider.value=(volume+80)/100;
+        masterVolumeSlider.value = (volume + 80) / 100;
     }
 
     private void OnLoadEvent(GameSceneSO scene, Vector3 arg1, bool arg2)
@@ -51,15 +64,17 @@ public class UIManager : MonoBehaviour
         playerHealthBar.gameObject?.SetActive(!isMenu);
         gemCount.gameObject?.SetActive(!isMenu);
     }
-    void TogglePausePanel()
+    public void TogglePausePanel()
     {
         if (pausePanel.activeInHierarchy)
         {
+            mainCanvas.sortingOrder = 0;
             pausePanel.SetActive(false);
             Time.timeScale = 1;
         }
         else
         {
+            mainCanvas.sortingOrder = 50;
             pauseEvent.RaiseEvent();
             pausePanel.SetActive(true);
             Time.timeScale = 0;
@@ -68,12 +83,12 @@ public class UIManager : MonoBehaviour
 
     private void OnHealthEvent(Character character)
     {
-        float percentage = character.hp / character.maxHp;
+        float percentage = character.stats.CurrentHp / character.stats.MaxHp;
         character.GetComponentInChildren<PlayerHealthBar>().OnHealthChange(percentage);
 
     }
     void OnGemChange(Character character)
     {
-        gemCount.OnGemChange(character.azureGem);
+        gemCount.OnGemChange(character.stats.AzureGem);
     }
 }

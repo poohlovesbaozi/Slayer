@@ -14,7 +14,7 @@ public class NecromancerSkill_1State : BaseState
     }
     public override void LogicUpdate()
     {
-        currentEnemy.character.isInvulnerable=true;
+        
 
     }
 
@@ -25,7 +25,7 @@ public class NecromancerSkill_1State : BaseState
 
     public override void OnExit()
     {
-        currentEnemy.character.isInvulnerable=false;
+        
     }
 }
 

@@ -31,6 +31,7 @@ public class AudioManager : MonoBehaviour
 
     private void OnPauseEvent()
     {
+        //同步ui显示和音量
         float volume;
         mixer.GetFloat("masterVolume",out volume);
         syncVolumeEvent.RaiseEvent(volume);

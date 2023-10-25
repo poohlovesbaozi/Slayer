@@ -27,7 +27,7 @@ public class FollowerController : PlayerController
         followerCharacter = GetComponent<Character>();
         followerDown = true;
         helpSign.enabled = followerDown;
-        followerCharacter.hp = 0;
+        followerCharacter.stats.CurrentHp = 0;
     }
     protected override void Awake()
     {
@@ -96,24 +96,24 @@ public class FollowerController : PlayerController
         {
             rescueCounter -= Time.deltaTime;
             //逐渐增加血条，血条满时就会被救起
-            followerCharacter.hp+=Time.deltaTime/rescueDuration*followerCharacter.maxHp;
+            followerCharacter.stats.CurrentHp+=(int)(Time.deltaTime/rescueDuration*followerCharacter.stats.MaxHp);
             if (rescueCounter <= 0)
             {
-                followerCharacter.hp=70;
+                followerCharacter.stats.CurrentHp=70;
                 followerDown = false;
                 helpSign.enabled = false;
                 gameObject.layer = LayerMask.NameToLayer("Player");
             }
         }
         else{
-            followerCharacter.hp=0;
+            followerCharacter.stats.CurrentHp=0;
             rescueCounter=rescueDuration;
         }
     }
 
     protected override void DetectEnemy()
     {
-        if (playerCharacter.azureGem > 0)
+        if (playerCharacter.stats.AzureGem > 0)
         {
             base.DetectEnemy();
         }

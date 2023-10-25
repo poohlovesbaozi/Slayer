@@ -2,24 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
+    [Header("事件")]
     [SerializeField] SceneLoadEventSO loadEvent;
     [Header("检测")]
-    [SerializeField] LayerMask playerLayer;
-    [SerializeField] float checkRadius;
+    LayerMask playerLayer;
     [Header("数值")]
-    [SerializeField] float hitForce;
-    public float spd;
+
     [SerializeField] GameObject item;
 
     [Header("组件")]
+    public MinionStats minionStats;
     public Transform attacker;
     [SerializeField] public Transform target;
     [HideInInspector] public Animator anim;
     [HideInInspector] public Rigidbody2D rb;
-    [HideInInspector] public Character character;
     [SerializeField] PlayAudioEventSO playAudioEvent;
     [SerializeField] AudioClip getHitClip;
     BaseState currentState;
@@ -31,13 +31,14 @@ public class Enemy : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        character = GetComponent<Character>();
+
+        playerLayer = LayerMask.GetMask("Player");
     }
     private void OnEnable()
     {
         currentState = moveState;
         currentState.OnEnter(this);
-        loadEvent.loadRequestEvent+=OnLoadRequestEvent;
+        loadEvent.loadRequestEvent += OnLoadRequestEvent;
     }
     protected virtual void Update()
     {
@@ -50,18 +51,19 @@ public class Enemy : MonoBehaviour
     }
     private void OnDisable()
     {
-        loadEvent.loadRequestEvent-=OnLoadRequestEvent;
+        loadEvent.loadRequestEvent -= OnLoadRequestEvent;
         currentState.OnExit();
     }
 
     private void OnLoadRequestEvent(GameSceneSO arg0, Vector3 arg1, bool arg2)
     {
+        //切换场景时关闭所有敌人
         gameObject.SetActive(false);
     }
 
     public bool DetectTarget()
     {
-        var target = Physics2D.OverlapCircle(transform.position, checkRadius, playerLayer);
+        var target = Physics2D.OverlapCircle(transform.position, minionStats.CheckRadius, playerLayer);
         if (target)
         {
             this.target = target.transform;
@@ -75,7 +77,7 @@ public class Enemy : MonoBehaviour
         anim.SetTrigger("Hit");
         playAudioEvent.OnEventRaised(getHitClip);
         Vector2 dir = (transform.position - attacker.position).normalized;
-        rb.AddForce(dir * hitForce, ForceMode2D.Impulse);
+        rb.AddForce(dir * minionStats.HitForce, ForceMode2D.Impulse);
     }
     public virtual void OnDie()
     {
@@ -99,6 +101,6 @@ public class Enemy : MonoBehaviour
     }
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(transform.position, checkRadius);
+        Gizmos.DrawWireSphere(transform.position, minionStats.CheckRadius);
     }
 }

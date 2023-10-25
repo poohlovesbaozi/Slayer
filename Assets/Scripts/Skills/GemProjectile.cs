@@ -15,7 +15,7 @@ public class GemProjectile : Projectile
         base.OnEnable();
         //第一次执行时，即生成pool时，不执行，之后每次生成都执行一次。
         if (!firstTime)
-        playerCharacter.azureGem--;
+        playerCharacter.stats.AzureGem--;
         firstTime=false;
     }
 }

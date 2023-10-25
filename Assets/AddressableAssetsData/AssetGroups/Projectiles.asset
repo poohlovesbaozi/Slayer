@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Projectiles
+  m_EditorClassIdentifier: 
+  m_GroupName: Projectiles
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 391371dd6025f4245a5ab4fb4cab844b
+  m_SerializeEntries:
+  - m_GUID: c2a48c1d7c6fa3e41a3993ac14467fd0
+    m_Address: hammer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ad69bb66a2da83e4f9b5853ccdc9acff
+    m_Address: Gem Projectile
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d7768476a65ecd54e8e68ee94af8d18f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 41428d5302fe3e248b111d04de82bbb6, type: 2}
+    - {fileID: 11400000, guid: a0c992a6f442bb84ba9e951f18f6986e, type: 2}

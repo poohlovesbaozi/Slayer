@@ -12,7 +12,7 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] SceneLoadEventSO loadEvent;
     [SerializeField] FadeEventSO fadeEvent;
     [SerializeField] VoidEventSO newGameEvent;
-
+    [SerializeField] VoidEventSO backToMenuEvent;
     [Header("位置")]
     Vector3 posToGo;
     [SerializeField] Vector3 menuPosition;
@@ -39,17 +39,25 @@ public class SceneLoader : MonoBehaviour
     {
         loadEvent.loadRequestEvent += OnLoadRequestEvent;
         newGameEvent.OnEventRaised += NewGame;
+        backToMenuEvent.OnEventRaised+=BackToMenu;
     }
     private void OnDisable()
     {
         loadEvent.loadRequestEvent -= OnLoadRequestEvent;
         newGameEvent.OnEventRaised -= NewGame;
+        backToMenuEvent.OnEventRaised-=BackToMenu;
     }
 
     void NewGame()
     {
         sceneToLoad = firstLoadScene;
         loadEvent.RaiseLoadRequestEvent(sceneToLoad, firstPosition, true);
+    }
+    void BackToMenu(){
+        // if (currentLoadedScene.sceneType!=SceneType.Menu){
+        sceneToLoad=menuScene;
+        loadEvent.RaiseLoadRequestEvent(sceneToLoad,menuPosition,true);
+        // }
     }
     private void OnLoadRequestEvent(GameSceneSO sceneToLoad, Vector3 posToGo, bool fade)
     {

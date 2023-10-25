@@ -50,7 +50,7 @@ public class Gem : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         onGemChangeEvent?.RaiseEvent(playerCharacter);
-        playerCharacter.azureGem++;
+        playerCharacter.stats.AzureGem++;
         gameObject.SetActive(false);
     }
 

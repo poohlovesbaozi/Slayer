@@ -21,5 +21,6 @@ public class PlayerHealthBar : MonoBehaviour
     public void OnHealthChange(float percentage)
     {
         greenHealthImage.fillAmount = percentage;
+        Debug.Log(percentage);
     }
 }

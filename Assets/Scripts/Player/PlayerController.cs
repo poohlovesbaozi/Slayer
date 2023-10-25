@@ -12,27 +12,24 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField]Image stickImage;
     [SerializeField] GameObject projectile;
+    [SerializeField]CharacterStats characterStats;
     [Header("检测")]
+    [SerializeField]LayerMask enemyLayer;
     [SerializeField] float checkRadius;
-    [SerializeField] LayerMask enemyLayer;
     [SerializeField] Vector2 bottomOffset;
     Vector2 touchPos;
     public bool isDead;
     [Header("移动")]
-    [SerializeField] int faceDir;
-    public Vector2 inputDirection;
-    public float spd;
+    int faceDir;
+    Vector2 inputDirection;
     [Header("攻击")]
-    [SerializeField] float fireInterval;
     WaitForSeconds waitForFireInterval;
-    [SerializeField] Vector2 shootDir;
-    [SerializeField] bool canFire;
-    [Header("test")]
-    
-    [SerializeField] Character testTarget;
-    [SerializeField] Attack testAttacker;
+    Vector2 shootDir;
+    [SerializeField]bool canFire;
+
     protected virtual void Awake()
     {
+        enemyLayer=LayerMask.GetMask("Enemy");
         inputControl = new PlayerInputControl();
         rb = GetComponent<Rigidbody2D>();
         inputControl.GamePlay.StickFollow.performed += ctx =>
@@ -49,7 +46,7 @@ public class PlayerController : MonoBehaviour
     protected virtual void Start()
     {
         shootDir = new Vector2(0, 0);
-        waitForFireInterval = new(fireInterval);
+        waitForFireInterval = new(characterStats.FireInterval);
     }
     protected virtual void OnEnable()
     {
@@ -61,13 +58,6 @@ public class PlayerController : MonoBehaviour
     }
     protected virtual void Update()
     {
-        //directly abstract follower's hp
-#if UNITY_EDITOR
-        if (inputControl.GamePlay.Test.IsPressed())
-        {
-            testTarget.TakeDamage(testAttacker);
-        }
-#endif
         inputDirection = inputControl.GamePlay.Move.ReadValue<Vector2>();
     }
     private void FixedUpdate()
@@ -81,7 +71,7 @@ public class PlayerController : MonoBehaviour
     protected virtual void Move()
     {
         //人物移动
-        rb.velocity = inputDirection * spd * Time.deltaTime;
+        rb.velocity = inputDirection * characterStats.Spd * Time.deltaTime;
         //控制角色面朝方向
         faceDir = (int)transform.localScale.x;
         if (inputDirection.x > 0)

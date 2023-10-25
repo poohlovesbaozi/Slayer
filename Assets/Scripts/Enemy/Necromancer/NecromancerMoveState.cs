@@ -11,6 +11,7 @@ public class NecromancerMoveState : BaseState
     public override void OnEnter(Enemy enemy)
     {
         currentEnemy = enemy;
+        currentEnemy.minionStats.CurrentSpd=currentEnemy.minionStats.NormalSpd;
         finishWaiting = false;
         waitDuration = 2.5f;
         waitCounter = waitDuration;
@@ -27,7 +28,7 @@ public class NecromancerMoveState : BaseState
         Vector3 moveDir = currentEnemy.target.position - currentEnemy.transform.position;
         if (Vector3.Distance(currentEnemy.transform.position, currentEnemy.target.position) > waitDistance)
         {
-            currentEnemy.rb.velocity = (moveDir * currentEnemy.spd).normalized;
+            currentEnemy.rb.velocity = (moveDir * currentEnemy.minionStats.CurrentSpd).normalized;
         }
         else
         {
@@ -77,7 +78,6 @@ public class NecromancerMoveState : BaseState
         {
             if (finishWaiting)
             {
-                Debug.Log("into next state");
                 currentEnemy.SwitchState(ChooseARandomState());
             }
             Move();
@@ -86,6 +86,6 @@ public class NecromancerMoveState : BaseState
 
     public override void OnExit()
     {
-        Debug.Log("exit");
+
     }
 }

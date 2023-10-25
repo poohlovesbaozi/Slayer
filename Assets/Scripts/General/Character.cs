@@ -5,13 +5,11 @@ using System;
 public class Character : MonoBehaviour
 {
     [Header("数值")]
-    public float maxHp;
-    public float hp;
-    public int azureGem;
+    public CharacterStats stats;
 
     [Header("免疫伤害")]
     [SerializeField] float invulnerableDuration;
-    [SerializeField] float invulnerableCounter;
+    float invulnerableCounter;
     public bool isInvulnerable;
     [Header("事件")]
     public UnityEvent<Character> OnGemChange;
@@ -21,18 +19,14 @@ public class Character : MonoBehaviour
 
     private void Start()
     {
-        // OnGemChange?.Invoke(this);
-        // OnHealthChange?.Invoke(this);
+
     }
     private void OnEnable()
     {
-        hp = maxHp;
+        stats.CurrentHp = stats.MaxHp;
     }
     private void Update()
     {
-
-        // OnGemChange?.Invoke(this);
-        // OnHealthChange?.Invoke(this);
         if (isInvulnerable)
         {
             invulnerableCounter -= Time.deltaTime;
@@ -48,15 +42,15 @@ public class Character : MonoBehaviour
         {
             return;
         }
-        if (hp >= attacker.damage)
+        if (stats.CurrentHp >= attacker.damage)
         {
-            hp -= attacker.damage;
+            stats.CurrentHp -= attacker.damage;
             TriggerInvulnerable();
             OnTakeDamage?.Invoke(attacker.transform);
         }
         else
         {
-            hp = 0;
+            stats.CurrentHp = 0;
             //死了
             OnDie?.Invoke();
         }
