@@ -12,6 +12,8 @@ public class Character : MonoBehaviour
     float invulnerableCounter;
     public bool isInvulnerable;
     [Header("事件")]
+    [SerializeField]VoidEventSO newGameEvent;
+    public UnityEvent<Character>OnExpChange;
     public UnityEvent<Character> OnGemChange;
     public UnityEvent<Character> OnHealthChange;
     public UnityEvent<Transform> OnTakeDamage;
@@ -19,12 +21,26 @@ public class Character : MonoBehaviour
 
     private void Start()
     {
-
+        
     }
     private void OnEnable()
     {
         stats.CurrentHp = stats.MaxHp;
+        newGameEvent.OnEventRaised+=NewGame;
+        
     }
+    private void OnDisable() {
+        newGameEvent.OnEventRaised-=NewGame;
+    }
+
+    private void NewGame()
+    {
+        stats.AzureGem=0;
+        stats.Level=1;
+        stats.Exp=0;
+        stats.ExpToNextLevel=stats.Level*50;
+    }
+
     private void Update()
     {
         if (isInvulnerable)
@@ -55,6 +71,13 @@ public class Character : MonoBehaviour
             OnDie?.Invoke();
         }
         OnHealthChange?.Invoke(this);
+    }
+    public void LevelUp(){
+        if (stats.Exp>=stats.ExpToNextLevel){
+            stats.Level+=stats.Exp/stats.ExpToNextLevel;
+            stats.Exp=stats.Exp%stats.ExpToNextLevel;
+            stats.ExpToNextLevel=stats.Level*50;
+        }
     }
     public void TriggerInvulnerable()
     {

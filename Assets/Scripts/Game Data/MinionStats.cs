@@ -26,8 +26,8 @@ public class MinionStats : MonoBehaviour
         get{if (minionStats==null) return 0;else return minionStats.currentSpd;}
         set{minionStats.currentSpd=value;}
     }
-    public int Exp{
-        get{if (minionStats==null) return 0;else return minionStats.exp;}
+    public int DropRate{
+        get{if (minionStats==null) return 0;else return minionStats.dropRate;}
     }
     public float HitForce{
         get{if (minionStats==null) return 0;else return minionStats.hitForce;}

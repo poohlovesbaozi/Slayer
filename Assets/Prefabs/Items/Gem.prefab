@@ -106,6 +106,7 @@ MonoBehaviour:
   target: {fileID: 0}
   player: {fileID: 0}
   loadEvent: {fileID: 11400000, guid: c1d04d307202dff4285f575bd9f689d0, type: 2}
+  OnExpChangeEvent: {fileID: 11400000, guid: 6f28ced487090b344b21b5fda4c4bdb1, type: 2}
   onGemChangeEvent: {fileID: 11400000, guid: 04d08e6f3c308464580fa5f46257d34a, type: 2}
 --- !u!58 &6898574488464134564
 CircleCollider2D:

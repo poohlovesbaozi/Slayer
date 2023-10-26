@@ -81,7 +81,7 @@ public class Enemy : MonoBehaviour
     }
     public virtual void OnDie()
     {
-        if (item && Random.Range(1, 4) == 1)
+        if (item && Random.Range(1, minionStats.DropRate) == 1)
             PoolManager.Release(item, transform.position);
         gameObject.SetActive(false);
     }

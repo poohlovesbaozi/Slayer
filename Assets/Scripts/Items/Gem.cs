@@ -10,7 +10,10 @@ public class Gem : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] GameObject player;
     Character playerCharacter;
+    [Header("监听")]
     [SerializeField] SceneLoadEventSO loadEvent;
+    [Header("广播")]
+    [SerializeField] CharacterEventSO OnExpChangeEvent;
     [SerializeField] CharacterEventSO onGemChangeEvent;
     
     Vector2 moveDir;
@@ -47,10 +50,14 @@ public class Gem : MonoBehaviour
         yield return null;
         moving = false;
     }
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        //ui变动
         onGemChangeEvent?.RaiseEvent(playerCharacter);
         playerCharacter.stats.AzureGem++;
+        playerCharacter.stats.Exp++;
+        playerCharacter.LevelUp();
+        OnExpChangeEvent?.RaiseEvent(playerCharacter);
         gameObject.SetActive(false);
     }
 

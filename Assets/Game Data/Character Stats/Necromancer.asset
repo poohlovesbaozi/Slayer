@@ -19,4 +19,4 @@ MonoBehaviour:
   dashSpd: 0
   currentSpd: 0
   hitForce: 0
-  exp: 500
+  dropRate: 1

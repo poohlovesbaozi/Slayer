@@ -561,7 +561,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GUI_12
+      name: fill_1
       rect:
         serializedVersion: 2
         x: 2603
@@ -582,7 +582,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GUI_13
+      name: fill background_1
       rect:
         serializedVersion: 2
         x: 2603
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GUI_19
+      name: fill
       rect:
         serializedVersion: 2
         x: 2599
@@ -792,11 +792,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GUI_23
+      name: fill background
       rect:
         serializedVersion: 2
         x: 2599
-        y: 1479
+        y: 1478
         width: 312
         height: 51
       alignment: 0
@@ -1623,19 +1623,15 @@ TextureImporter:
     nameFileIdTable:
       GUI_0: 21300000
       GUI_1: 21300002
-      GUI_12: 21300024
-      GUI_13: 21300026
       GUI_14: 21300028
       GUI_15: 21300030
       GUI_16: 21300032
       GUI_17: 21300034
       GUI_18: 21300036
-      GUI_19: 21300038
       GUI_2: 21300004
       GUI_20: 21300040
       GUI_21: 21300042
       GUI_22: 21300044
-      GUI_23: 21300046
       GUI_24: 21300048
       GUI_25: 21300050
       GUI_26: 21300052
@@ -1683,6 +1679,10 @@ TextureImporter:
       GUI_settings: 21300072
       GUI_squareButton_1: 21300022
       GUI_squareButton_2: 21300020
+      fill: 21300038
+      fill background: 21300046
+      fill background_1: 21300026
+      fill_1: 21300024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

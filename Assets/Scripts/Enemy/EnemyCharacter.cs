@@ -14,6 +14,7 @@ public class EnemyCharacter : MonoBehaviour
     }
     public void TakeDamage(Attack attacker)
     {
+        print("get hit");
         if (stats.CurrentHp >= attacker.damage)
         {
             stats.CurrentHp -= attacker.damage;

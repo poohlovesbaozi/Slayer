@@ -94,6 +94,7 @@
      <Compile Include="Assets\Scripts\Follower\FollowerAnimation.cs" />
      <Compile Include="Assets\Scripts\UI\UIManager.cs" />
      <Compile Include="Assets\Scripts\Transition\TeleportPoint.cs" />
+     <Compile Include="Assets\Scripts\UI\PlayerExpBar.cs" />
      <Compile Include="Assets\Scripts\ScriptableObject\CharacterEventSO.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

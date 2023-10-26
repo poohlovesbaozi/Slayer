@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     [Header("组件")]
+    [SerializeField] PlayerExpBar playerExpBar;
     [SerializeField] Canvas mainCanvas;
     [SerializeField] Button settingsButton;
     [SerializeField] GameObject pausePanel;
@@ -14,6 +15,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] GemCount gemCount;
     [SerializeField] Slider masterVolumeSlider;
     [Header("监听")]
+    [SerializeField] CharacterEventSO expEvent;
     [SerializeField] CharacterEventSO healthEvent;
     [SerializeField] CharacterEventSO gemEvent;
     [SerializeField] SceneLoadEventSO loadEvent;
@@ -26,6 +28,7 @@ public class UIManager : MonoBehaviour
     }
     private void OnEnable()
     {
+        expEvent.OnEventRaised+=OnExpChange;
         healthEvent.OnEventRaised += OnHealthEvent;
         gemEvent.OnEventRaised += OnGemChange;
         loadEvent.loadRequestEvent += OnLoadEvent;
@@ -33,11 +36,13 @@ public class UIManager : MonoBehaviour
     }
     private void OnDisable()
     {
+        expEvent.OnEventRaised-=OnExpChange;
         healthEvent.OnEventRaised -= OnHealthEvent;
         gemEvent.OnEventRaised -= OnGemChange;
         loadEvent.loadRequestEvent -= OnLoadEvent;
         syncVolumeEvent.OnEventRaised -= OnSyncVolumeEvent;
     }
+
     public void ClosePanel(GameObject panel)
     {
         panel.SetActive(false);
@@ -63,6 +68,7 @@ public class UIManager : MonoBehaviour
         var isMenu = scene.sceneType == SceneType.Menu;
         playerHealthBar.gameObject?.SetActive(!isMenu);
         gemCount.gameObject?.SetActive(!isMenu);
+        playerExpBar.gameObject?.SetActive(!isMenu);
     }
     public void TogglePausePanel()
     {
@@ -83,12 +89,16 @@ public class UIManager : MonoBehaviour
 
     private void OnHealthEvent(Character character)
     {
-        float percentage = character.stats.CurrentHp / character.stats.MaxHp;
-        character.GetComponentInChildren<PlayerHealthBar>().OnHealthChange(percentage);
-
+        float percentage = (float)character.stats.CurrentHp /(float)character.stats.MaxHp;
+        playerHealthBar?.OnHealthChange(percentage);
     }
     void OnGemChange(Character character)
     {
         gemCount.OnGemChange(character.stats.AzureGem);
+    }
+    private void OnExpChange(Character character)
+    {
+        float percentage = (float)character.stats.Exp / (float)character.stats.ExpToNextLevel;
+        playerExpBar?.OnExpChange(percentage);
     }
 }
