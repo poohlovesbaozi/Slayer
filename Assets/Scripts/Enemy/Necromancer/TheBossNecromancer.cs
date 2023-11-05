@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class TheBossNecromancer : Enemy
 {
-[SerializeField] GameObject follower;
+
 [SerializeField] TeleportPoint teleportPoint;
+[Header("广播")]
+[SerializeField] VoidEventSO OnBossNecromancerDie;
     protected override void Awake()
     {
         base.Awake();
@@ -23,8 +25,8 @@ public class TheBossNecromancer : Enemy
     }
     public override void OnDie()
     {
-        follower.SetActive(true);
-        // teleportPoint.canInteract=true;
+        teleportPoint.gameObject.SetActive(true);
+        OnBossNecromancerDie.RaiseEvent();
         anim.SetBool("dead",true);
     }
     public void VanishToDie(){

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 
+
 public class PlayerController : MonoBehaviour
 {
     public PlayerInputControl inputControl;
@@ -12,10 +13,9 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField]Image stickImage;
     [SerializeField] GameObject projectile;
-    [SerializeField]CharacterStats characterStats;
+    [SerializeField]protected CharacterStats stats;
     [Header("检测")]
     [SerializeField]LayerMask enemyLayer;
-    [SerializeField] float checkRadius;
     [SerializeField] Vector2 bottomOffset;
     Vector2 touchPos;
     public bool isDead;
@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
 
     protected virtual void Awake()
     {
+        
         enemyLayer=LayerMask.GetMask("Enemy");
         inputControl = new PlayerInputControl();
         rb = GetComponent<Rigidbody2D>();
@@ -46,7 +47,7 @@ public class PlayerController : MonoBehaviour
     protected virtual void Start()
     {
         shootDir = new Vector2(0, 0);
-        waitForFireInterval = new(characterStats.FireInterval);
+        waitForFireInterval = new(stats.FireInterval);
     }
     protected virtual void OnEnable()
     {
@@ -71,7 +72,7 @@ public class PlayerController : MonoBehaviour
     protected virtual void Move()
     {
         //人物移动
-        rb.velocity = inputDirection * characterStats.Spd * Time.deltaTime;
+        rb.velocity = inputDirection * stats.Spd * Time.deltaTime;
         //控制角色面朝方向
         faceDir = (int)transform.localScale.x;
         if (inputDirection.x > 0)
@@ -91,7 +92,7 @@ public class PlayerController : MonoBehaviour
     #region 开火
     protected virtual void DetectEnemy()
     {
-        var obj = Physics2D.OverlapCircle(transform.position, checkRadius, enemyLayer);
+        var obj = Physics2D.OverlapCircle(transform.position, stats.CheckRadius, enemyLayer);
         if (obj && canFire)
         {
             //这边需要的是相对位置
@@ -113,6 +114,6 @@ public class PlayerController : MonoBehaviour
     #endregion
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(transform.position, checkRadius);
+        Gizmos.DrawWireSphere(transform.position, stats.CheckRadius);
     }
 }

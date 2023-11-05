@@ -1,0 +1,1612 @@
+fileFormatVersion: 2
+guid: 3124dddd4be8eb648a196ca2782aed4c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638345641412205505
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: MiniGraveDigger_Frame_0
+    originalName: 
+    pivot: {x: 0.6, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 31
+      width: 15
+      height: 14
+    spriteID: 4ee0b9c3129961a4eb6a9cd117835944
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 31}
+  - name: MiniGraveDigger_Frame_1
+    originalName: 
+    pivot: {x: 0.6, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 158
+      y: 77
+      width: 15
+      height: 13
+    spriteID: e527278c8d9cb2145a09f36018c91f33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 158, y: 77}
+  - name: MiniGraveDigger_Frame_2
+    originalName: 
+    pivot: {x: 0.6, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 181
+      y: 77
+      width: 15
+      height: 13
+    spriteID: f95a3069be6194f48a6ecfcbeaefa93a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 181, y: 77}
+  - name: MiniGraveDigger_Frame_3
+    originalName: 
+    pivot: {x: 0.6, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 152
+      y: 31
+      width: 15
+      height: 14
+    spriteID: c0a90fe8bae81564d96d749ca8076416
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 152, y: 31}
+  - name: MiniGraveDigger_Frame_4
+    originalName: 
+    pivot: {x: 0.6, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 175
+      y: 31
+      width: 15
+      height: 14
+    spriteID: f27271641de69474098c084901acbdfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 175, y: 31}
+  - name: MiniGraveDigger_Frame_5
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 77
+      width: 13
+      height: 14
+    spriteID: 10b451629188d224795037ec622c09b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 77}
+  - name: MiniGraveDigger_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 99
+      width: 12
+      height: 14
+    spriteID: 4f3d638a90cf51840a5bcc12fe1d9883
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 111, y: 99}
+  - name: MiniGraveDigger_Frame_7
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 77
+      width: 14
+      height: 14
+    spriteID: 033816733f855e14bbb9cf872d548161
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 77}
+  - name: MiniGraveDigger_Frame_8
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 77
+      width: 14
+      height: 14
+    spriteID: 2cde864d704ddc745b6abc0855e04270
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 77}
+  - name: MiniGraveDigger_Frame_9
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 77
+      width: 14
+      height: 14
+    spriteID: 9a615aad6632b0f4da2af4d55931e95d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 77}
+  - name: MiniGraveDigger_Frame_10
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 77
+      width: 14
+      height: 14
+    spriteID: 5ac0f1d40a2197d49b016316a7923138
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 77}
+  - name: MiniGraveDigger_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: -0.055555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 4
+      width: 16
+      height: 18
+    spriteID: 555b5f5c18d96e54ea11838047db1339
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 4}
+  - name: MiniGraveDigger_Frame_12
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.05263158}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 18
+      height: 19
+    spriteID: 9c60f5e91e7f8be40804f03c929dc772
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: MiniGraveDigger_Frame_13
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.05263158}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 4
+      width: 18
+      height: 19
+    spriteID: 14c2bc21f35961043a12b3b1555bd8d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 4}
+  - name: MiniGraveDigger_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: -0.055555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 4
+      width: 16
+      height: 18
+    spriteID: 563359f1ecdd1e64fa601b59801df98d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 80, y: 4}
+  - name: MiniGraveDigger_Frame_15
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 99
+      width: 14
+      height: 13
+    spriteID: 0c5195e753988644096705a92a6d38bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 99}
+  - name: MiniGraveDigger_Frame_16
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 77
+      width: 14
+      height: 14
+    spriteID: 9aaf33a5c8dbd284291ac95a47d9b38b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 77}
+  - name: MiniGraveDigger_Frame_17
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 114
+      y: 77
+      width: 14
+      height: 14
+    spriteID: 14221506c262c484a8fb178cdbd3d7ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 114, y: 77}
+  - name: MiniGraveDigger_Frame_18
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 99
+      width: 13
+      height: 14
+    spriteID: bceae14fedbd46c47853dfbd9913fad9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 99}
+  - name: MiniGraveDigger_Frame_19
+    originalName: 
+    pivot: {x: 0.3529412, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 31
+      width: 17
+      height: 13
+    spriteID: a43911bd170be3f46803ce6dee92cb43
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 31}
+  - name: MiniGraveDigger_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 99
+      width: 12
+      height: 13
+    spriteID: 6830757f958e0a1419ed3d3d5b59f7ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 99}
+  - name: MiniGraveDigger_Frame_21
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 90
+      y: 99
+      width: 13
+      height: 13
+    spriteID: 70994b1908e1cef46ba3148c7dbbf1c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 90, y: 99}
+  - name: MiniGraveDigger_Frame_22
+    originalName: 
+    pivot: {x: 0.29411766, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 31
+      width: 17
+      height: 13
+    spriteID: 8b1eb7f6fe6dcda459a8e7b8444aa6ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 31}
+  - name: MiniGraveDigger_Frame_23
+    originalName: 
+    pivot: {x: 0.33333334, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 77
+      width: 15
+      height: 13
+    spriteID: 68cd7089735db5f4eb040d8dfd9d3d57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 77}
+  - name: MiniGraveDigger_Frame_24
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.06666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 53
+      width: 14
+      height: 15
+    spriteID: 31f37405b218dfb4390d6332e7ee2148
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 53}
+  - name: MiniGraveDigger_Frame_25
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 99
+      width: 14
+      height: 13
+    spriteID: 3b133b47e70c1444696bd0f8068b77be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 99}
+  - name: MiniGraveDigger_Frame_26
+    originalName: 
+    pivot: {x: 0.6, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 198
+      y: 31
+      width: 15
+      height: 14
+    spriteID: 929d30d6ebfbcb14f9bad296b631e760
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 198, y: 31}
+  - name: MiniGraveDigger_Frame_27
+    originalName: 
+    pivot: {x: 0.5882353, y: -0.06666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 4
+      width: 17
+      height: 15
+    spriteID: 42369e5745b2189409a22f6960a01e72
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 4}
+  - name: MiniGraveDigger_Frame_28
+    originalName: 
+    pivot: {x: 0.5882353, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 31
+      width: 17
+      height: 13
+    spriteID: bccc30d7a067ddd449475b1be42b8015
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 31}
+  - name: MiniGraveDigger_Frame_29
+    originalName: 
+    pivot: {x: 0.6, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 221
+      y: 31
+      width: 15
+      height: 14
+    spriteID: aa06988aee3275248ace81b980721635
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 221, y: 31}
+  - name: MiniGraveDigger_Frame_30
+    originalName: 
+    pivot: {x: 0.5882353, y: -0.06666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 4
+      width: 17
+      height: 15
+    spriteID: 1cd6137a271c5ab488af7b3c170d00d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 4}
+  - name: MiniGraveDigger_Frame_31
+    originalName: 
+    pivot: {x: 0.5882353, y: -0.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 4
+      width: 17
+      height: 16
+    spriteID: 241504fe90cc0b941b0fe8d540f4ebff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 4}
+  - name: MiniGraveDigger_Frame_32
+    originalName: 
+    pivot: {x: 0.5882353, y: -0.083333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 214
+      y: 53
+      width: 17
+      height: 12
+    spriteID: d9cc1305a7b86af4c91242f4d4c26300
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 214, y: 53}
+  - name: MiniGraveDigger_Frame_33
+    originalName: 
+    pivot: {x: 0.6, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 53
+      width: 15
+      height: 14
+    spriteID: 60f5b40a9ecd19f4d96e178737a3e271
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 53}
+  - name: MiniGraveDigger_Frame_34
+    originalName: 
+    pivot: {x: 0.6, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 71
+      y: 53
+      width: 15
+      height: 14
+    spriteID: f5b19bc19a0e2634fab65b1644fff29f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 53}
+  - name: MiniGraveDigger_Frame_35
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 99
+      width: 13
+      height: 14
+    spriteID: bc789b279584a844cbf0b273ead9a85b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 99}
+  - name: MiniGraveDigger_Frame_36
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.06666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 53
+      width: 13
+      height: 15
+    spriteID: 69ca4a04aaed98b46903ff496cb6371a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 53}
+  - name: MiniGraveDigger_Frame_37
+    originalName: 
+    pivot: {x: 0.5882353, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 31
+      width: 17
+      height: 14
+    spriteID: 0e945672582586346a3b09b910d833bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 31}
+  - name: MiniGraveDigger_Frame_38
+    originalName: 
+    pivot: {x: 0.35714287, y: -0.06666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 94
+      y: 53
+      width: 14
+      height: 15
+    spriteID: 47983aff16d16104095d4c97d88c85c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 94, y: 53}
+  - name: MiniGraveDigger_Frame_39
+    originalName: 
+    pivot: {x: 0.33333334, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 53
+      width: 15
+      height: 14
+    spriteID: 4d63f75c8b9540b41b563a72c8f50e5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 116, y: 53}
+  - name: MiniGraveDigger_Frame_40
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 77
+      width: 14
+      height: 14
+    spriteID: 6394ab58d0b13ca41893bc037e720573
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 77}
+  - name: MiniGraveDigger_Frame_41
+    originalName: 
+    pivot: {x: 0.6, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 53
+      width: 15
+      height: 14
+    spriteID: 2508ecc0260b4224691a46156d4a6c68
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 139, y: 53}
+  - name: MiniGraveDigger_Frame_42
+    originalName: 
+    pivot: {x: 0.6666667, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 4
+      width: 18
+      height: 14
+    spriteID: 175cdc38ebf35344f99c3274d52b96d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 4}
+  - name: MiniGraveDigger_Frame_43
+    originalName: 
+    pivot: {x: 0.64705884, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 31
+      width: 17
+      height: 14
+    spriteID: c9b9c4628dc03324c89ed37595989d44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 29, y: 31}
+  - name: MiniGraveDigger_Frame_44
+    originalName: 
+    pivot: {x: 0.6, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 162
+      y: 53
+      width: 15
+      height: 14
+    spriteID: 560e24de5f5856344929cfd4de6d27a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 162, y: 53}
+  - name: MiniGraveDigger_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: -0.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 53
+      width: 14
+      height: 16
+    spriteID: 231eae70d86077f4193c678efec3ab3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 53}
+  - name: MiniGraveDigger_Frame_46
+    originalName: 
+    pivot: {x: 0.4117647, y: -0.06666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 179
+      y: 4
+      width: 17
+      height: 15
+    spriteID: f063bd4e1fcb746489f9f7f253f6ca73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 179, y: 4}
+  - name: MiniGraveDigger_Frame_47
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 230
+      y: 4
+      width: 19
+      height: 13
+    spriteID: ff38f2d720d904741b8259e6cf1f1dd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 230, y: 4}
+  - name: MiniGraveDigger_Frame_48
+    originalName: 
+    pivot: {x: 0.42857143, y: -0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 185
+      y: 53
+      width: 21
+      height: 10
+    spriteID: 75047caf81d94c744b2fc4e8b7da1cf1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 185, y: 53}
+  - name: MiniGraveDigger_Frame_49
+    originalName: 
+    pivot: {x: 0.42857143, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 151
+      y: 99
+      width: 21
+      height: 7
+    spriteID: 89310ddbcc9d6bd42aff60d0d405f091
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 151, y: 99}
+  - name: MiniGraveDigger_Frame_50
+    originalName: 
+    pivot: {x: 0.42857143, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 99
+      width: 21
+      height: 6
+    spriteID: 4edea2b608e4256458b446367164e8e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 99}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1805624436
+    name: MiniGraveDigger
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: MiniGraveDigger_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 14
+      spriteId: 4ee0b9c3129961a4eb6a9cd117835944
+    - name: MiniGraveDigger_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 13
+      spriteId: e527278c8d9cb2145a09f36018c91f33
+    - name: MiniGraveDigger_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 13
+      spriteId: f95a3069be6194f48a6ecfcbeaefa93a
+    - name: MiniGraveDigger_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 14
+      spriteId: c0a90fe8bae81564d96d749ca8076416
+    - name: MiniGraveDigger_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 14
+      spriteId: f27271641de69474098c084901acbdfe
+    - name: MiniGraveDigger_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 9
+        y: 1
+        width: 13
+        height: 14
+      spriteId: 10b451629188d224795037ec622c09b3
+    - name: MiniGraveDigger_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 10
+        y: 1
+        width: 12
+        height: 14
+      spriteId: 4f3d638a90cf51840a5bcc12fe1d9883
+    - name: MiniGraveDigger_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 8
+        y: 1
+        width: 14
+        height: 14
+      spriteId: 033816733f855e14bbb9cf872d548161
+    - name: MiniGraveDigger_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 8
+        y: 1
+        width: 14
+        height: 14
+      spriteId: 2cde864d704ddc745b6abc0855e04270
+    - name: MiniGraveDigger_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 8
+        y: 1
+        width: 14
+        height: 14
+      spriteId: 9a615aad6632b0f4da2af4d55931e95d
+    - name: MiniGraveDigger_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 8
+        y: 1
+        width: 14
+        height: 14
+      spriteId: 5ac0f1d40a2197d49b016316a7923138
+    - name: MiniGraveDigger_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 8
+        y: 1
+        width: 16
+        height: 18
+      spriteId: 555b5f5c18d96e54ea11838047db1339
+    - name: MiniGraveDigger_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 8
+        y: 1
+        width: 18
+        height: 19
+      spriteId: 9c60f5e91e7f8be40804f03c929dc772
+    - name: MiniGraveDigger_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 8
+        y: 1
+        width: 18
+        height: 19
+      spriteId: 14c2bc21f35961043a12b3b1555bd8d9
+    - name: MiniGraveDigger_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 8
+        y: 1
+        width: 16
+        height: 18
+      spriteId: 563359f1ecdd1e64fa601b59801df98d
+    - name: MiniGraveDigger_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 8
+        y: 1
+        width: 14
+        height: 13
+      spriteId: 0c5195e753988644096705a92a6d38bf
+    - name: MiniGraveDigger_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 8
+        y: 1
+        width: 14
+        height: 14
+      spriteId: 9aaf33a5c8dbd284291ac95a47d9b38b
+    - name: MiniGraveDigger_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 8
+        y: 1
+        width: 14
+        height: 14
+      spriteId: 14221506c262c484a8fb178cdbd3d7ed
+    - name: MiniGraveDigger_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 9
+        y: 1
+        width: 13
+        height: 14
+      spriteId: bceae14fedbd46c47853dfbd9913fad9
+    - name: MiniGraveDigger_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 10
+        y: 1
+        width: 17
+        height: 13
+      spriteId: a43911bd170be3f46803ce6dee92cb43
+    - name: MiniGraveDigger_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 10
+        y: 1
+        width: 12
+        height: 13
+      spriteId: 6830757f958e0a1419ed3d3d5b59f7ac
+    - name: MiniGraveDigger_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 10
+        y: 1
+        width: 13
+        height: 13
+      spriteId: 70994b1908e1cef46ba3148c7dbbf1c5
+    - name: MiniGraveDigger_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 11
+        y: 1
+        width: 17
+        height: 13
+      spriteId: 8b1eb7f6fe6dcda459a8e7b8444aa6ac
+    - name: MiniGraveDigger_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 11
+        y: 1
+        width: 15
+        height: 13
+      spriteId: 68cd7089735db5f4eb040d8dfd9d3d57
+    - name: MiniGraveDigger_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 8
+        y: 1
+        width: 14
+        height: 15
+      spriteId: 31f37405b218dfb4390d6332e7ee2148
+    - name: MiniGraveDigger_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 8
+        y: 1
+        width: 14
+        height: 13
+      spriteId: 3b133b47e70c1444696bd0f8068b77be
+    - name: MiniGraveDigger_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 14
+      spriteId: 929d30d6ebfbcb14f9bad296b631e760
+    - name: MiniGraveDigger_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 6
+        y: 1
+        width: 17
+        height: 15
+      spriteId: 42369e5745b2189409a22f6960a01e72
+    - name: MiniGraveDigger_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 6
+        y: 1
+        width: 17
+        height: 13
+      spriteId: bccc30d7a067ddd449475b1be42b8015
+    - name: MiniGraveDigger_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 14
+      spriteId: aa06988aee3275248ace81b980721635
+    - name: MiniGraveDigger_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 6
+        y: 1
+        width: 17
+        height: 15
+      spriteId: 1cd6137a271c5ab488af7b3c170d00d1
+    - name: MiniGraveDigger_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 6
+        y: 1
+        width: 17
+        height: 16
+      spriteId: 241504fe90cc0b941b0fe8d540f4ebff
+    - name: MiniGraveDigger_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 6
+        y: 1
+        width: 17
+        height: 12
+      spriteId: d9cc1305a7b86af4c91242f4d4c26300
+    - name: MiniGraveDigger_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 14
+      spriteId: 60f5b40a9ecd19f4d96e178737a3e271
+    - name: MiniGraveDigger_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 14
+      spriteId: f5b19bc19a0e2634fab65b1644fff29f
+    - name: MiniGraveDigger_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 9
+        y: 1
+        width: 13
+        height: 14
+      spriteId: bc789b279584a844cbf0b273ead9a85b
+    - name: MiniGraveDigger_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 10
+        y: 1
+        width: 13
+        height: 15
+      spriteId: 69ca4a04aaed98b46903ff496cb6371a
+    - name: MiniGraveDigger_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 6
+        y: 1
+        width: 17
+        height: 14
+      spriteId: 0e945672582586346a3b09b910d833bc
+    - name: MiniGraveDigger_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 11
+        y: 1
+        width: 14
+        height: 15
+      spriteId: 47983aff16d16104095d4c97d88c85c6
+    - name: MiniGraveDigger_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 11
+        y: 1
+        width: 15
+        height: 14
+      spriteId: 4d63f75c8b9540b41b563a72c8f50e5c
+    - name: MiniGraveDigger_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 8
+        y: 1
+        width: 14
+        height: 14
+      spriteId: 6394ab58d0b13ca41893bc037e720573
+    - name: MiniGraveDigger_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 14
+      spriteId: 2508ecc0260b4224691a46156d4a6c68
+    - name: MiniGraveDigger_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 4
+        y: 1
+        width: 18
+        height: 14
+      spriteId: 175cdc38ebf35344f99c3274d52b96d8
+    - name: MiniGraveDigger_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 5
+        y: 1
+        width: 17
+        height: 14
+      spriteId: c9b9c4628dc03324c89ed37595989d44
+    - name: MiniGraveDigger_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 7
+        y: 1
+        width: 15
+        height: 14
+      spriteId: 560e24de5f5856344929cfd4de6d27a2
+    - name: MiniGraveDigger_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 9
+        y: 1
+        width: 14
+        height: 16
+      spriteId: 231eae70d86077f4193c678efec3ab3e
+    - name: MiniGraveDigger_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 9
+        y: 1
+        width: 17
+        height: 15
+      spriteId: f063bd4e1fcb746489f9f7f253f6ca73
+    - name: MiniGraveDigger_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 13
+      spriteId: ff38f2d720d904741b8259e6cf1f1dd3
+    - name: MiniGraveDigger_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 7
+        y: 1
+        width: 21
+        height: 10
+      spriteId: 75047caf81d94c744b2fc4e8b7da1cf1
+    - name: MiniGraveDigger_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 7
+        y: 1
+        width: 21
+        height: 7
+      spriteId: 89310ddbcc9d6bd42aff60d0d405f091
+    - name: MiniGraveDigger_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 7
+        y: 1
+        width: 21
+        height: 6
+      spriteId: 4edea2b608e4256458b446367164e8e4
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 32, y: 32}

@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     [Header("事件")]
     [SerializeField] SceneLoadEventSO loadEvent;
     [Header("检测")]
-    LayerMask playerLayer;
+    [SerializeField]LayerMask playerLayer;
     [Header("数值")]
 
     [SerializeField] GameObject item;
@@ -67,15 +67,14 @@ public class Enemy : MonoBehaviour
         if (target)
         {
             this.target = target.transform;
-            return true;
         }
-        return false;
+        return target;
     }
     public void OnTakeDamage(Transform attacker)
     {
         this.attacker = attacker;
         anim.SetTrigger("Hit");
-        playAudioEvent.OnEventRaised(getHitClip);
+        playAudioEvent?.OnEventRaised(getHitClip);
         Vector2 dir = (transform.position - attacker.position).normalized;
         rb.AddForce(dir * minionStats.HitForce, ForceMode2D.Impulse);
     }

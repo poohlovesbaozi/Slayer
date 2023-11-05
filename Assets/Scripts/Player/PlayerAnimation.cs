@@ -24,7 +24,4 @@ public class PlayerAnimation : MonoBehaviour
         anim.SetFloat("velocity",Mathf.Abs(rb.velocity.x)+Mathf.Abs(rb.velocity.y));
         anim.SetBool("isDead",playerController.isDead);
     }
-    public void PlayerGetHit(){
-        anim.SetTrigger("hit");
-    }
 }

@@ -6,7 +6,7 @@ public class Attack : MonoBehaviour
 {
     public int damage;
     [SerializeField] bool deactivateOnCollide;
-    private void OnTriggerStay2D(Collider2D other) {
+    private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag=="player"){
         other.GetComponent<Character>()?.TakeDamage(this);
         }

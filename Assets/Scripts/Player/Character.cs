@@ -4,6 +4,8 @@ using System;
 
 public class Character : MonoBehaviour
 {
+    [Header("组件")]
+    Animator anim;
     [Header("数值")]
     public CharacterStats stats;
 
@@ -13,20 +15,23 @@ public class Character : MonoBehaviour
     public bool isInvulnerable;
     [Header("事件")]
     [SerializeField]VoidEventSO newGameEvent;
-    public UnityEvent<Character>OnExpChange;
+    [SerializeField] CharacterEventSO OnLevelChangeEvent;
     public UnityEvent<Character> OnGemChange;
     public UnityEvent<Character> OnHealthChange;
-    public UnityEvent<Transform> OnTakeDamage;
     public UnityEvent OnDie;
-
-    private void Start()
-    {
-        
+    private void Awake() {
+        anim=GetComponent<Animator>();
+        stats=stats.GetComponent<CharacterStats>();
     }
+
     private void OnEnable()
     {
         stats.CurrentHp = stats.MaxHp;
+        //主要是follower血量更新
         newGameEvent.OnEventRaised+=NewGame;
+    }
+    private void Start()
+    {
         
     }
     private void OnDisable() {
@@ -43,6 +48,7 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
+        // OnHealthChange.Invoke(this);
         if (isInvulnerable)
         {
             invulnerableCounter -= Time.deltaTime;
@@ -58,11 +64,11 @@ public class Character : MonoBehaviour
         {
             return;
         }
+        anim.SetTrigger("hit");
         if (stats.CurrentHp >= attacker.damage)
         {
             stats.CurrentHp -= attacker.damage;
             TriggerInvulnerable();
-            OnTakeDamage?.Invoke(attacker.transform);
         }
         else
         {
@@ -74,9 +80,12 @@ public class Character : MonoBehaviour
     }
     public void LevelUp(){
         if (stats.Exp>=stats.ExpToNextLevel){
-            stats.Level+=stats.Exp/stats.ExpToNextLevel;
+            int levelToAdd=stats.Exp/stats.ExpToNextLevel;
+            stats.AbilityPoint+=levelToAdd;
+            stats.Level+=levelToAdd;
             stats.Exp=stats.Exp%stats.ExpToNextLevel;
             stats.ExpToNextLevel=stats.Level*50;
+            OnLevelChangeEvent?.RaiseEvent(this);
         }
     }
     public void TriggerInvulnerable()

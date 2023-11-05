@@ -2391,13 +2391,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_108
+      name: circle
       rect:
         serializedVersion: 2
-        x: 159
-        y: 80
-        width: 530
-        height: 561
+        x: 205
+        y: 366
+        width: 211
+        height: 210
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2538,7 +2538,6 @@ TextureImporter:
       1_105: -637981222
       1_106: -397041217
       1_107: -2080774928
-      1_108: -720160565
       1_109: -1322874895
       1_11: 1377339923
       1_110: 67302627
@@ -2640,6 +2639,7 @@ TextureImporter:
       1_97: 2039625371
       1_98: -1692761832
       1_99: -102724947
+      circle: -720160565
       sun: -1400757676
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

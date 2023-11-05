@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FlyEye : Enemy
 {
-    public float a;
     protected override void Awake()
     {
         base.Awake();

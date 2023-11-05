@@ -12,40 +12,69 @@ public class CharacterStats : MonoBehaviour
         get { if (characterStats == null) return 0; else return characterStats.maxHp; }
         set { characterStats.maxHp = value; }
     }
-    public int CurrentHp{
-        get{if (characterStats == null) return 0; else return characterStats.currentHp;}
-        set{characterStats.currentHp = value;}
+    public int CurrentHp
+    {
+        get { if (characterStats == null) return 0; else return characterStats.currentHp; }
+        set { characterStats.currentHp = value; }
     }
-    public int AzureGem{
-        get{if (characterStats == null) return 0; else return characterStats.azureGem;}
-        set{characterStats.azureGem = value;}
+    public int AzureGem
+    {
+        get { if (characterStats == null) return 0; else return characterStats.azureGem; }
+        set { characterStats.azureGem = value; }
     }
-    public float InvulnerableDuration{
-        get{if (characterStats == null) return 0; else return characterStats.invulnerableDuration;}
-        set{characterStats.invulnerableDuration = value;}
+    public float InvulnerableDuration
+    {
+        get { if (characterStats == null) return 0; else return characterStats.invulnerableDuration; }
+        set { characterStats.invulnerableDuration = value; }
     }
-    public float CheckRadius{
-        get{if (characterStats == null) return 0; else return characterStats.checkRadius;}
+    public float CheckRadius
+    {
+        get { if (characterStats == null) return 0; else return characterStats.checkRadius; }
     }
-    public float Spd{
-        get{if (characterStats == null) return 0; else return characterStats.spd;}
-        set{characterStats.spd = value;}
+    public float Spd
+    {
+        get { if (characterStats == null) return 0; else return characterStats.spd; }
+        set { characterStats.spd = value; }
     }
-    public float FireInterval{
-        get{if (characterStats == null) return 0; else return characterStats.fireInterval;}
-        set{characterStats.fireInterval = value;}
+    public float FireInterval
+    {
+        get { if (characterStats == null) return 0; else return characterStats.fireInterval; }
+        set { characterStats.fireInterval = value; }
     }
-    public int Level{
-        get{if (characterStats == null) return 0; else return characterStats.level;}
-        set{characterStats.level = value;}
+    public int Level
+    {
+        get { if (characterStats == null) return 0; else return characterStats.level; }
+        set { characterStats.level = value; }
     }
-    public int Exp{
-        get{if (characterStats == null) return 0; else return characterStats.exp;}
-        set{characterStats.exp = value;}
-    } 
-    public int ExpToNextLevel{
-        get{if (characterStats == null) return 0; else return characterStats.expToNextLevel;}
-        set{characterStats.expToNextLevel = value;}
+    public int Exp
+    {
+        get { if (characterStats == null) return 0; else return characterStats.exp; }
+        set { characterStats.exp = value; }
+    }
+    public int ExpToNextLevel
+    {
+        get { if (characterStats == null) return 0; else return characterStats.expToNextLevel; }
+        set { characterStats.expToNextLevel = value; }
+    }
+    public int AbilityPoint
+    {
+        get { if (characterStats == null) return 0; else return characterStats.abilityPoint; }
+        set { characterStats.abilityPoint = value; }
+    }
+    public float Attack
+    {
+        get { if (characterStats == null) return 0; else return characterStats.attack; }
+        set { characterStats.attack = value; }
+    }
+    public int UpgradeLimit
+    {
+        get { if (characterStats == null) return 0; else return characterStats.upgradeLimit; }
+        set { characterStats.upgradeLimit = value; }
+    }
+    public int CurrentUpgradedTimes
+    {
+        get { if (characterStats == null) return 0; else return characterStats.currentUpgradedTimes; }
+        set { characterStats.currentUpgradedTimes = value; }
     }
     #endregion
 }

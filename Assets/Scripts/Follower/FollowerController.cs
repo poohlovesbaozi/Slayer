@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
+
 
 public class FollowerController : PlayerController
 {
     [Header("player")]
-    [SerializeField] Character playerCharacter;
+    Character playerCharacter;
     [SerializeField] Transform target;
+    [Header("组件")]
+    Character character;
     [SerializeField] Image helpSign;
     Rigidbody2D followerRb;
-    Character followerCharacter;
-    [SerializeField] float followerSpd;
+    // [SerializeField]CharacterStats stats;
     [SerializeField] float stopDistance;
     public bool followerDown;
     int followerFaceDir;
@@ -21,31 +25,33 @@ public class FollowerController : PlayerController
     float rescueCounter;
     [SerializeField] float rescueCheckRadius;
     [SerializeField] LayerMask playerLayer;
-    protected override void Start()
-    {
-        base.Start();
-        followerCharacter = GetComponent<Character>();
-        followerDown = true;
-        helpSign.enabled = followerDown;
-        followerCharacter.stats.CurrentHp = 0;
-    }
+    [Header("监听")]
+    [SerializeField] VoidEventSO OnBossNecromancerDieEvent;
     protected override void Awake()
     {
+        character = GetComponent<Character>();
+        stats = GetComponent<CharacterStats>();
         followerRb = GetComponent<Rigidbody2D>();
+        rescueCounter=rescueDuration;
     }
     //父类的inputControl不需要
     protected override void OnEnable()
     {
-        SceneManager.MoveGameObjectToScene(gameObject,SceneManager.GetSceneByName("Persistent"));
-        target=GameObject.Find("@Player")?.GetComponent<Transform>();
-        playerCharacter=target?.gameObject.GetComponent<Character>();
-        if (!FollowersData.followers.Contains(gameObject))
-        FollowersData.followers.Add(gameObject);
+        target = GameObject.Find("@Player")?.GetComponent<Transform>();
+        playerCharacter = target?.gameObject.GetComponent<Character>();
+    }
+    protected override void Start()
+    {
+        stats.CurrentHp = 0;
+        base.Start();
+        followerDown = true;
+        helpSign.enabled = followerDown;
     }
     protected override void OnDisable()
     {
-
+        
     }
+
     protected override void Update()
     {
 
@@ -66,7 +72,7 @@ public class FollowerController : PlayerController
     {
         if (Vector3.Distance(transform.position, target.position) > stopDistance)
         {
-            followerRb.velocity = (target.position - transform.position) * followerSpd * Time.deltaTime;
+            followerRb.velocity = (target.position - transform.position) * stats.Spd * Time.deltaTime;
         }
         else
         {
@@ -86,28 +92,32 @@ public class FollowerController : PlayerController
         helpSign.enabled = true;
         followerDown = true;
         rescueCounter = rescueDuration;
-        followerRb.velocity=Vector3.zero;
+        followerRb.velocity = Vector3.zero;
         gameObject.layer = LayerMask.NameToLayer("Injured");
     }
     private void ToBeRescued()
     {
+
         //TODO maybe sound?
         if (Physics2D.OverlapCircle(transform.position, rescueCheckRadius, playerLayer))
         {
             rescueCounter -= Time.deltaTime;
             //逐渐增加血条，血条满时就会被救起
-            followerCharacter.stats.CurrentHp+=(int)(Time.deltaTime/rescueDuration*followerCharacter.stats.MaxHp);
+            // stats.CurrentHp += (int)(Time.deltaTime / rescueDuration * stats.MaxHp);
+            stats.CurrentHp++;
+            character.OnHealthChange.Invoke(character);
             if (rescueCounter <= 0)
             {
-                followerCharacter.stats.CurrentHp=70;
+                stats.CurrentHp = 70;
                 followerDown = false;
                 helpSign.enabled = false;
                 gameObject.layer = LayerMask.NameToLayer("Player");
             }
         }
-        else{
-            followerCharacter.stats.CurrentHp=0;
-            rescueCounter=rescueDuration;
+        else
+        {
+            stats.CurrentHp = 0;
+            rescueCounter = rescueDuration;
         }
     }
 
@@ -121,5 +131,6 @@ public class FollowerController : PlayerController
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, rescueCheckRadius);
+        Gizmos.DrawWireSphere(transform.position, stats.CheckRadius);
     }
 }

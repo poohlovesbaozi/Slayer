@@ -1422,7 +1422,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GUI_60
+      name: Plus
       rect:
         serializedVersion: 2
         x: 63
@@ -1443,7 +1443,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GUI_61
+      name: Minus
       rect:
         serializedVersion: 2
         x: 230
@@ -1664,8 +1664,6 @@ TextureImporter:
       GUI_58: 21300102
       GUI_59: 21300104
       GUI_6: 21300012
-      GUI_60: 21300106
-      GUI_61: 21300108
       GUI_62: 21300110
       GUI_63: 21300112
       GUI_64: 21300114
@@ -1679,6 +1677,8 @@ TextureImporter:
       GUI_settings: 21300072
       GUI_squareButton_1: 21300022
       GUI_squareButton_2: 21300020
+      Minus: 21300108
+      Plus: 21300106
       fill: 21300038
       fill background: 21300046
       fill background_1: 21300026

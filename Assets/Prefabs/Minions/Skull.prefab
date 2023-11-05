@@ -182,9 +182,8 @@ MonoBehaviour:
   target: {fileID: 0}
   anim: {fileID: 0}
   rb: {fileID: 0}
-  character: {fileID: 0}
-  playAudioEvent: {fileID: 0}
-  getHitClip: {fileID: 0}
+  playAudioEvent: {fileID: 11400000, guid: a0edd62ef9887444fbf5ceb5cc3fb37b, type: 2}
+  getHitClip: {fileID: 8300000, guid: 80e397195ea2940b69ee7bdbded856a5, type: 3}
 --- !u!114 &-8544589823912163585
 MonoBehaviour:
   m_ObjectHideFlags: 0

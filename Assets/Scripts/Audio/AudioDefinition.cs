@@ -9,13 +9,17 @@ public class AudioDefinition : MonoBehaviour
     [SerializeField] AudioClip audioClip;
     [SerializeField] bool playOnEnable;
     [SerializeField] bool playOnDisable;
-    private void OnEnable() {
-    if (playOnEnable){
-        PlayAudioClip();
-    }    
+    private void OnEnable()
+    {
+        if (playOnEnable)
+        {
+            PlayAudioClip();
+        }
     }
-    private void OnDisable() {
-        if (playOnDisable){
+    private void OnDisable()
+    {
+        if (playOnDisable)
+        {
             PlayAudioClip();
         }
     }

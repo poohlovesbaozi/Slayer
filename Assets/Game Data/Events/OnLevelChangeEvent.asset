@@ -9,14 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c4c9eecc55b3e44997fc0fa436325e1, type: 3}
-  m_Name: Necromancer
+  m_Script: {fileID: 11500000, guid: a9849a1b96ab1124592c234de69a9331, type: 3}
+  m_Name: OnLevelChangeEvent
   m_EditorClassIdentifier: 
-  maxHp: 500
-  currentHp: 0
-  checkRadius: 8
-  normalSpd: 100
-  dashSpd: 0
-  currentSpd: 0
-  hitForce: 0
-  dropRate: 1
