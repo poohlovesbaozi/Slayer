@@ -6,7 +6,3 @@ public enum SceneType
 {
     Location, Menu
 }
-public enum AbilityType
-{
-    Attack, AttackInterval, MaxHealth
-}

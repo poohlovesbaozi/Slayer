@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class FlyEyeMoveState : BaseState
 {
-    float dashDistance;
+    float waitCounter;
     public override void OnEnter(Enemy enemy)
     {
+
         currentEnemy = enemy;
-        currentEnemy.minionStats.CurrentSpd=currentEnemy.minionStats.NormalSpd;
+        currentEnemy.minionStats.CurrentSpd = currentEnemy.minionStats.NormalSpd;
+        waitCounter = currentEnemy.minionStats.WaitDuration;
     }
     public override void LogicUpdate()
     {
@@ -16,6 +18,8 @@ public class FlyEyeMoveState : BaseState
     }
     void Move()
     {
+        if (waitCounter > 0)
+            waitCounter -= Time.deltaTime;
         if (currentEnemy.DetectTarget())
         {
             int faceDir = (int)currentEnemy.transform.localScale.x;
@@ -36,6 +40,10 @@ public class FlyEyeMoveState : BaseState
 
     public override void PhysicsUpdate()
     {
+        if (currentEnemy.target && waitCounter <= 0 && Vector3.Distance(currentEnemy.transform.position, currentEnemy.target.position) <= currentEnemy.minionStats.WaitDistance && currentEnemy.DetectTarget())
+        {
+            currentEnemy.SwitchState(EnemyState.Skill_1);
+        }
         Move();
     }
     public override void OnExit()

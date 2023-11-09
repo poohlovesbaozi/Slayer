@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Gem : MonoBehaviour
 {
+    [SerializeField] int expValue;
+    [SerializeField] int gemValue;
     [SerializeField] float checkRadius;
     [SerializeField] LayerMask playerLayer;
     [SerializeField] Transform target;
@@ -54,8 +56,8 @@ public class Gem : MonoBehaviour
     {
         //ui变动
         onGemChangeEvent?.RaiseEvent(playerCharacter);
-        playerCharacter.stats.AzureGem++;
-        playerCharacter.stats.Exp++;
+        playerCharacter.stats.AzureGem+=gemValue;
+        playerCharacter.stats.Exp+=expValue;
         playerCharacter.LevelUp();
         OnExpChangeEvent?.RaiseEvent(playerCharacter);
         gameObject.SetActive(false);

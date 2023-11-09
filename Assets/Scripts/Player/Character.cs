@@ -26,9 +26,9 @@ public class Character : MonoBehaviour
 
     private void OnEnable()
     {
-        stats.CurrentHp = stats.MaxHp;
         //主要是follower血量更新
         newGameEvent.OnEventRaised+=NewGame;
+        stats.CurrentHp = stats.MaxHp;
     }
     private void Start()
     {

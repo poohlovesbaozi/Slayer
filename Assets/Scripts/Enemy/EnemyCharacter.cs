@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class EnemyCharacter : MonoBehaviour
 {
    [SerializeField] MinionStats stats;
-    public UnityEvent<Transform> OnTakeDamage;
+    public UnityEvent OnTakeDamage;
     public UnityEvent OnDie;
     private void OnEnable()
     {
@@ -18,7 +18,7 @@ public class EnemyCharacter : MonoBehaviour
         {
             stats.CurrentHp -= attacker.damage;
 
-            OnTakeDamage?.Invoke(attacker.transform);
+            OnTakeDamage?.Invoke();
         }
         else
         {

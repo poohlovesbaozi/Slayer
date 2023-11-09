@@ -6,6 +6,12 @@ using UnityEngine;
 public class CharacterStats : MonoBehaviour
 {
     [SerializeField] CharacterStatsSO characterStats;
+    [SerializeField] CharacterStatsSO templateStats;
+    private void Awake()
+    {
+        if (templateStats != null)
+            characterStats = Instantiate(templateStats);
+    }
     #region Read from DataSO
     public int MaxHp
     {
@@ -71,10 +77,20 @@ public class CharacterStats : MonoBehaviour
         get { if (characterStats == null) return 0; else return characterStats.upgradeLimit; }
         set { characterStats.upgradeLimit = value; }
     }
-    public int CurrentUpgradedTimes
+    public int CurrentAtkUpgradedTimes
     {
-        get { if (characterStats == null) return 0; else return characterStats.currentUpgradedTimes; }
-        set { characterStats.currentUpgradedTimes = value; }
+        get { if (characterStats == null) return 0; else return characterStats.currentAtkUpgradedTimes; }
+        set { characterStats.currentAtkUpgradedTimes = value; }
+    }
+    public int CurrentFireIntervalUpgradedTimes
+    {
+        get { if (characterStats == null) return 0; else return characterStats.currentFireIntervalUpgradedTimes; }
+        set { characterStats.currentFireIntervalUpgradedTimes = value; }
+    }
+    public int CurrentMaxHpUpgradedTimes
+    {
+        get { if (characterStats == null) return 0; else return characterStats.currentMaxHpUpgradedTimes; }
+        set { characterStats.currentMaxHpUpgradedTimes = value; }
     }
     #endregion
 }

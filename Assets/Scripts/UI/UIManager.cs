@@ -18,7 +18,6 @@ public class UIManager : MonoBehaviour
     [Header("监听")]
     [SerializeField] CharacterEventSO levelEvent;
     [SerializeField] CharacterEventSO expEvent;
-
     [SerializeField] CharacterEventSO gemEvent;
     [SerializeField] SceneLoadEventSO loadEvent;
     [SerializeField] FloatEventSO syncVolumeEvent;

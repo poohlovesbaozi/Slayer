@@ -110659,7 +110659,7 @@ PrefabInstance:
     - target: {fileID: 7556428207283848038, guid: 4063e4d59ab2cf843b0b42549750b448, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 780054717090332722, guid: 0826ea439f9474e4c84fdeddbdd9c030, type: 3}
+      objectReference: {fileID: 8632807346864031139, guid: 658c04c71212fae468b9d66fe4b1fdfc, type: 3}
     - target: {fileID: 7556428207283848038, guid: 4063e4d59ab2cf843b0b42549750b448, type: 3}
       propertyPath: follower
       value: 

@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 7420489463738661477}
   - component: {fileID: 6744333724093350486}
   - component: {fileID: 261282407777860739}
+  - component: {fileID: 2934771292123289263}
   - component: {fileID: 4845588344791206038}
   - component: {fileID: 2909233655141188897}
   - component: {fileID: 7172571376649044579}
-  - component: {fileID: 2934771292123289263}
   - component: {fileID: -5589488848216060576}
   m_Layer: 9
   m_Name: Lil Red
@@ -107,7 +107,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 2304
+    m_Bits: 3447
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -199,6 +199,20 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0035660267, y: 0.4090668}
   m_Size: {x: 0.5649471, y: 0.8181336}
   m_Direction: 0
+--- !u!114 &2934771292123289263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7530421276635104848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b0a077c48f5054e8e800dd27e3752a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionStats: {fileID: 0}
+  templateStats: {fileID: 11400000, guid: 9bafd594361f932408fdfffe295e6869, type: 2}
 --- !u!114 &4845588344791206038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +261,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadEvent: {fileID: 11400000, guid: c1d04d307202dff4285f575bd9f689d0, type: 2}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   item: {fileID: 780054717090332722, guid: 0826ea439f9474e4c84fdeddbdd9c030, type: 3}
   minionStats: {fileID: 2934771292123289263}
   attacker: {fileID: 0}
@@ -255,19 +272,6 @@ MonoBehaviour:
   rb: {fileID: 0}
   playAudioEvent: {fileID: 11400000, guid: a0edd62ef9887444fbf5ceb5cc3fb37b, type: 2}
   getHitClip: {fileID: 8300000, guid: 0994c12e202f342459a4212e7287f7e8, type: 3}
---- !u!114 &2934771292123289263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7530421276635104848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91b0a077c48f5054e8e800dd27e3752a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minionStats: {fileID: 11400000, guid: 9bafd594361f932408fdfffe295e6869, type: 2}
 --- !u!114 &-5589488848216060576
 MonoBehaviour:
   m_ObjectHideFlags: 0

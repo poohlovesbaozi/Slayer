@@ -16,7 +16,6 @@ public class Enemy : MonoBehaviour
 
     [Header("组件")]
     public MinionStats minionStats;
-    public Transform attacker;
     [SerializeField] public Transform target;
     [HideInInspector] public Animator anim;
     [HideInInspector] public Rigidbody2D rb;
@@ -70,19 +69,16 @@ public class Enemy : MonoBehaviour
         }
         return target;
     }
-    public void OnTakeDamage(Transform attacker)
+    public void OnTakeDamage()
     {
-        this.attacker = attacker;
         anim.SetTrigger("Hit");
         playAudioEvent?.OnEventRaised(getHitClip);
-        Vector2 dir = (transform.position - attacker.position).normalized;
-        rb.AddForce(dir * minionStats.HitForce, ForceMode2D.Impulse);
     }
     public virtual void OnDie()
     {
         if (item && Random.Range(1, minionStats.DropRate) == 1)
             PoolManager.Release(item, transform.position);
-        gameObject.SetActive(false);
+        // gameObject.SetActive(false);
     }
     public void SwitchState(EnemyState state)
     {

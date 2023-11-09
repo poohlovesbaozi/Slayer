@@ -5,17 +5,13 @@ using UnityEngine.Scripting.APIUpdating;
 public class NecromancerMoveState : BaseState
 {
     bool finishWaiting;
-    float waitDuration;
     float waitCounter;
-    float waitDistance;
     public override void OnEnter(Enemy enemy)
     {
         currentEnemy = enemy;
         currentEnemy.minionStats.CurrentSpd=currentEnemy.minionStats.NormalSpd;
         finishWaiting = false;
-        waitDuration = 2.5f;
-        waitCounter = waitDuration;
-        waitDistance = 7f;
+        waitCounter = currentEnemy.minionStats.WaitDuration;
     }
     public override void LogicUpdate()
     {
@@ -26,7 +22,7 @@ public class NecromancerMoveState : BaseState
     {
         int faceDir = (int)currentEnemy.transform.localScale.x;
         Vector3 moveDir = currentEnemy.target.position - currentEnemy.transform.position;
-        if (Vector3.Distance(currentEnemy.transform.position, currentEnemy.target.position) > waitDistance)
+        if (Vector3.Distance(currentEnemy.transform.position, currentEnemy.target.position) > currentEnemy.minionStats.WaitDistance)
         {
             currentEnemy.rb.velocity = (moveDir * currentEnemy.minionStats.CurrentSpd).normalized;
         }

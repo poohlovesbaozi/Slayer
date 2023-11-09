@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
     int faceDir;
     Vector2 inputDirection;
     [Header("攻击")]
-    WaitForSeconds waitForFireInterval;
     Vector2 shootDir;
     [SerializeField]bool canFire;
 
@@ -47,7 +46,6 @@ public class PlayerController : MonoBehaviour
     protected virtual void Start()
     {
         shootDir = new Vector2(0, 0);
-        waitForFireInterval = new(stats.FireInterval);
     }
     protected virtual void OnEnable()
     {
@@ -108,7 +106,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator FireCoroutine()
     {
         PoolManager.Release(projectile, transform.position, shootDir);
-        yield return waitForFireInterval;
+        yield return new WaitForSeconds(stats.FireInterval);
         canFire = true;
     }
     #endregion

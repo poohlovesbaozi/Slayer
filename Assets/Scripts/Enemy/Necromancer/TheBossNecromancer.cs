@@ -25,6 +25,7 @@ public class TheBossNecromancer : Enemy
     }
     public override void OnDie()
     {
+        base.OnDie();
         teleportPoint.gameObject.SetActive(true);
         OnBossNecromancerDie.RaiseEvent();
         anim.SetBool("dead",true);

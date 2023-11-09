@@ -12,4 +12,6 @@ public class MinionStatsSO : ScriptableObject
     public float currentSpd;
     public float hitForce;
     public int dropRate;
+    public float waitDuration;
+    public float waitDistance;
 }

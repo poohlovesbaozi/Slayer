@@ -59,6 +59,10 @@ PrefabInstance:
     - target: {fileID: 2934771292123289263, guid: 1a24a8ab1583e284ab86f74ab6e7b0f3, type: 3}
       propertyPath: minionStats
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2934771292123289263, guid: 1a24a8ab1583e284ab86f74ab6e7b0f3, type: 3}
+      propertyPath: templateStats
+      value: 
       objectReference: {fileID: 11400000, guid: 0e9dcb59379468b469092c8605c3a9aa, type: 2}
     - target: {fileID: 3166597434449663763, guid: 1a24a8ab1583e284ab86f74ab6e7b0f3, type: 3}
       propertyPath: m_Sprite
@@ -86,7 +90,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: a0edd62ef9887444fbf5ceb5cc3fb37b, type: 2}
     - target: {fileID: 7420489463738661477, guid: 1a24a8ab1583e284ab86f74ab6e7b0f3, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 2304
+      value: 3328
       objectReference: {fileID: 0}
     - target: {fileID: 7420489463738661477, guid: 1a24a8ab1583e284ab86f74ab6e7b0f3, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x

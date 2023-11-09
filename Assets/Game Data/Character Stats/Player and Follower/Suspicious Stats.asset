@@ -25,4 +25,6 @@ MonoBehaviour:
   abilityPoint: 0
   attack: 0
   upgradeLimit: 9
-  currentUpgradedTimes: 0
+  currentAtkUpgradedTimes: 0
+  currentFireIntervalUpgradedTimes: 0
+  currentMaxHpUpgradedTimes: 0
