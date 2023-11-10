@@ -16,7 +16,7 @@ MonoBehaviour:
   currentHp: 0
   checkRadius: 8
   normalSpd: 150
-  dashSpd: 500
+  dashSpd: 10
   currentSpd: 150
   hitForce: 0.5
   dropRate: 4

@@ -7,7 +7,6 @@ public class FlyEyeMoveState : BaseState
     float waitCounter;
     public override void OnEnter(Enemy enemy)
     {
-
         currentEnemy = enemy;
         currentEnemy.minionStats.CurrentSpd = currentEnemy.minionStats.NormalSpd;
         waitCounter = currentEnemy.minionStats.WaitDuration;

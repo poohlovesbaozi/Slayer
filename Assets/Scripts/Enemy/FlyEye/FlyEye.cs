@@ -19,7 +19,8 @@ public class FlyEye : Enemy
         gameObject.SetActive(false);
     }
     public void Charge(){
-        rb.AddForce(((Vector2)target.position*minionStats.DashSpd).normalized,ForceMode2D.Impulse);
+        Vector2 dir=((Vector2)(target.position-transform.position)).normalized*minionStats.DashSpd;
+        rb.AddForce(dir,ForceMode2D.Impulse);
     }
     public void StopCharging(){
         rb.velocity=Vector2.zero;
