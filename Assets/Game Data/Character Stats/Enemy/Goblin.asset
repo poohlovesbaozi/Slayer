@@ -18,5 +18,7 @@ MonoBehaviour:
   normalSpd: 150
   dashSpd: 0
   currentSpd: 0
-  hitForce: 0.5
+  hitForce: 0
   dropRate: 3
+  waitDuration: 2
+  waitDistance: 3

@@ -177,12 +177,12 @@ TextureImporter:
       name: Take Hit_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 52
+        y: 49
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.32510972}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -198,12 +198,12 @@ TextureImporter:
       name: Take Hit_1
       rect:
         serializedVersion: 2
-        x: 150
-        y: 0
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 202
+        y: 49
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.49426606, y: 0.3337108}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: Take Hit_2
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 348
+        y: 49
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.4856653, y: 0.32797667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -240,12 +240,12 @@ TextureImporter:
       name: Take Hit_3
       rect:
         serializedVersion: 2
-        x: 450
-        y: 0
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 499
+        y: 49
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.45699462, y: 0.3222426}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,6 +272,10 @@ TextureImporter:
       Take Hit_1: -889859373511162655
       Take Hit_2: -3088938797480143695
       Take Hit_3: -9206091644520726168
+      Take Hit_4: -1794453840
+      Take Hit_5: -1047278478
+      Take Hit_6: -825828276
+      Take Hit_7: 1162540653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

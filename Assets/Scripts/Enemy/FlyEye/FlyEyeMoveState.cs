@@ -39,7 +39,7 @@ public class FlyEyeMoveState : BaseState
 
     public override void PhysicsUpdate()
     {
-        if (currentEnemy.target && waitCounter <= 0 && Vector3.Distance(currentEnemy.transform.position, currentEnemy.target.position) <= currentEnemy.minionStats.WaitDistance && currentEnemy.DetectTarget())
+        if (currentEnemy.target && waitCounter <= 0 && Vector3.Distance(currentEnemy.transform.position, currentEnemy.target.position) <= currentEnemy.minionStats.WaitDistance)
         {
             currentEnemy.SwitchState(EnemyState.Skill_1);
         }

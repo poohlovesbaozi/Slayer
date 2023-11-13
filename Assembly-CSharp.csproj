@@ -80,7 +80,7 @@
     <Compile Include="Assets\Scripts\Player\Character.cs" />
     <Compile Include="Assets\Scripts\UI\GemCount.cs" />
     <Compile Include="Assets\Scripts\Enemy\FlyEye\FlyEyeMoveState.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Goblin.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Goblin\Goblin.cs" />
     <Compile Include="Assets\Scripts\Skills\Hammer.cs" />
     <Compile Include="Assets\Scripts\Utilities\IInteractable.cs" />
     <Compile Include="Assets\Scripts\Skills\Projectile.cs" />
@@ -95,6 +95,7 @@
     <Compile Include="Assets\Scripts\Audio\AudioDefinition.cs" />
     <Compile Include="Assets\Scripts\Follower\FollowersData.cs" />
     <Compile Include="Assets\Scripts\Enemy\Necromancer\NecromancerSkill_2State.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Goblin\GoblinMoveState.cs" />
     <Compile Include="Assets\Settings\InputSystem\PlayerInputControl.cs" />
     <Compile Include="Assets\Scripts\AD\ADInititializer.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyCharacter.cs" />
@@ -122,6 +123,7 @@
     <Compile Include="Assets\Scripts\UI\PlayerExpBar.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\CharacterEventSO.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Goblin\GoblinAttackState.cs" />
     <Compile Include="Assets\Scripts\Enemy\Skull\SkullMoveState.cs" />
   </ItemGroup>
   <ItemGroup>

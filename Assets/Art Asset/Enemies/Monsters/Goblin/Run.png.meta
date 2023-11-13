@@ -189,12 +189,12 @@ TextureImporter:
       name: Run_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 49
+        y: 51
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.568936, y: 0.31417435}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,12 +210,12 @@ TextureImporter:
       name: Run_1
       rect:
         serializedVersion: 2
-        x: 150
-        y: 0
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 49
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.54795563, y: 0.3501407}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: Run_2
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 349
+        y: 49
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.58645266, y: 0.3318968}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,12 +252,12 @@ TextureImporter:
       name: Run_3
       rect:
         serializedVersion: 2
-        x: 450
-        y: 0
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 503
+        y: 49
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5144092, y: 0.3463057}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,12 +273,12 @@ TextureImporter:
       name: Run_4
       rect:
         serializedVersion: 2
-        x: 600
-        y: 0
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 653
+        y: 52
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5192114, y: 0.2886705}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,12 +294,12 @@ TextureImporter:
       name: Run_5
       rect:
         serializedVersion: 2
-        x: 750
-        y: 0
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 804
+        y: 49
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5240149, y: 0.3126851}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,12 +315,12 @@ TextureImporter:
       name: Run_6
       rect:
         serializedVersion: 2
-        x: 900
-        y: 0
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 954
+        y: 49
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5048035, y: 0.30307922}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,12 +336,12 @@ TextureImporter:
       name: Run_7
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 0
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1102
+        y: 49
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3318968}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -366,12 +366,18 @@ TextureImporter:
     nameFileIdTable:
       Run_0: 4944230376442633554
       Run_1: -2274363484027164459
+      Run_10: -939481919
+      Run_11: -1143711380
+      Run_12: 1855633837
+      Run_13: -178753293
       Run_2: 8284087734974297348
       Run_3: 5304202850863732263
       Run_4: 2833043080597125133
       Run_5: -2217414122262695004
       Run_6: -4440497016933152808
       Run_7: 8676454946275842879
+      Run_8: -536793541
+      Run_9: -1123234662
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
