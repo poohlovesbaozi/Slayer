@@ -15,7 +15,7 @@ MonoBehaviour:
   maxHp: 700
   currentHp: 0
   checkRadius: 8
-  normalSpd: 150
+  normalSpd: 1.5
   dashSpd: 0
   currentSpd: 0
   hitForce: 0

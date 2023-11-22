@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Player Stats
   m_EditorClassIdentifier: 
   maxHp: 100
-  currentHp: 100
+  currentHp: 0
   azureGem: 9
   invulnerableDuration: 1
   checkRadius: 5

@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject projectile;
     [SerializeField]protected CharacterStats stats;
     [Header("检测")]
+    [SerializeField] float checkRadius;
     [SerializeField]LayerMask enemyLayer;
     [SerializeField] Vector2 bottomOffset;
     Vector2 touchPos;
@@ -80,7 +81,7 @@ public class PlayerController : MonoBehaviour
 
         transform.localScale = new Vector3(faceDir, 1, 1);
     }
-    protected virtual void PlayerDie()
+    public virtual void PlayerDie()
     {
         //player stop to move after dying.
         rb.velocity=Vector3.zero;
@@ -95,6 +96,7 @@ public class PlayerController : MonoBehaviour
         {
             //这边需要的是相对位置
             shootDir = obj.transform.position - transform.position;
+            shootDir.Normalize();
             Fire();
             canFire = false;
         }
@@ -112,6 +114,6 @@ public class PlayerController : MonoBehaviour
     #endregion
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(transform.position, stats.CheckRadius);
+        Gizmos.DrawWireSphere(transform.position, checkRadius);
     }
 }

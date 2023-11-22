@@ -25,8 +25,6 @@ public class FollowerController : PlayerController
     float rescueCounter;
     [SerializeField] float rescueCheckRadius;
     [SerializeField] LayerMask playerLayer;
-    [Header("监听")]
-    [SerializeField] VoidEventSO OnBossNecromancerDieEvent;
     protected override void Awake()
     {
         character = GetComponent<Character>();
@@ -87,7 +85,7 @@ public class FollowerController : PlayerController
 
         transform.localScale = new Vector3(followerFaceDir, 1, 1);
     }
-    protected override void PlayerDie()
+    public override void PlayerDie()
     {
         helpSign.enabled = true;
         followerDown = true;
@@ -131,6 +129,5 @@ public class FollowerController : PlayerController
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, rescueCheckRadius);
-        Gizmos.DrawWireSphere(transform.position, stats.CheckRadius);
     }
 }

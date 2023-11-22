@@ -24,7 +24,7 @@ public class NecromancerMoveState : BaseState
         Vector3 moveDir = currentEnemy.target.position - currentEnemy.transform.position;
         if (Vector3.Distance(currentEnemy.transform.position, currentEnemy.target.position) > currentEnemy.minionStats.WaitDistance)
         {
-            currentEnemy.rb.velocity = (moveDir * currentEnemy.minionStats.CurrentSpd).normalized;
+            currentEnemy.rb.velocity = moveDir.normalized * currentEnemy.minionStats.CurrentSpd;
         }
         else
         {

@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class FollowersData : MonoBehaviour
 {
+    [Header("监听")]
     [SerializeField] VoidEventSO OnNecromancerDie;
+    [SerializeField] VoidEventSO OnNightBorneDie;
     [SerializeField] GameObject suspicious;
+    [SerializeField] GameObject hunter;
     public static List<GameObject> followers;
     private void Awake()
     {

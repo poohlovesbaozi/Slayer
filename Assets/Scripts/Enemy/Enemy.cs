@@ -71,7 +71,7 @@ public class Enemy : MonoBehaviour
     }
     public void OnTakeDamage()
     {
-        anim.SetTrigger("Hit");
+        anim.SetTrigger("hit");
         playAudioEvent?.OnEventRaised(getHitClip);
     }
     public virtual void OnDie()

@@ -6,10 +6,12 @@ public class Projectile : MonoBehaviour
 {
     [Header("属性")]
     [SerializeField] float flySpd;
+    Rigidbody2D rb;
     public Vector2 shootDir;
 
     protected virtual void OnEnable()
     {
+        rb=GetComponent<Rigidbody2D>();
         StartCoroutine(FlyTowardsEnemy());
         //TODO play audio clip
     }
@@ -21,7 +23,7 @@ public class Projectile : MonoBehaviour
     {
         while (gameObject.activeSelf)
         {
-            transform.Translate(shootDir * flySpd * Time.deltaTime);
+            rb.AddForce(shootDir*flySpd,ForceMode2D.Impulse);
             yield return null;
         }
 

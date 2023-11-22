@@ -10,7 +10,6 @@ public class Character : MonoBehaviour
     public CharacterStats stats;
 
     [Header("免疫伤害")]
-    [SerializeField] float invulnerableDuration;
     float invulnerableCounter;
     public bool isInvulnerable;
     [Header("事件")]
@@ -93,7 +92,7 @@ public class Character : MonoBehaviour
         if (!isInvulnerable)
         {
             isInvulnerable = true;
-            invulnerableCounter = invulnerableDuration;
+            invulnerableCounter = stats.InvulnerableDuration;
         }
     }
 }
