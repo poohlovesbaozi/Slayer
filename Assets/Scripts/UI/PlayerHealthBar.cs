@@ -28,6 +28,9 @@ public class PlayerHealthBar : MonoBehaviour
     public void OnHealthChange(Character character)
     {
         percentage = (float)character.stats.CurrentHp /(float)character.stats.MaxHp;
+        if (percentage>1){
+            percentage=1;
+        }
         greenHealthImage.fillAmount = percentage;
     }
 }

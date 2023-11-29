@@ -10,35 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Scenes
+  m_Name: Items
   m_EditorClassIdentifier: 
-  m_GroupName: Scenes
+  m_GroupName: Items
   m_Data:
     m_SerializedData: []
-  m_GUID: 209a472f008732b4e848a517ddc5b738
+  m_GUID: f31ab2ba7bfe3c64fbb835b9bfdeee78
   m_SerializeEntries:
-  - m_GUID: 2cda990e2423bbf4892e6590ba056729
-    m_Address: Level 1
+  - m_GUID: 0826ea439f9474e4c84fdeddbdd9c030
+    m_Address: Gem_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 918931e675b49fc40a2cc75d77dac963
-    m_Address: Level 2
+  - m_GUID: 6237da86ebc754c4ab1330455cafbd26
+    m_Address: Gem_3
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e6d48b09eb997c1429699b4fe8d7d29a
-    m_Address: Menu
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f1c924e51151f474a90af39df2c249ff
-    m_Address: Persistent
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: bc4f5241efcf99f44a3200e48135ada2
-    m_Address: Level 3
+  - m_GUID: 658c04c71212fae468b9d66fe4b1fdfc
+    m_Address: Gem_200
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -46,5 +36,5 @@ MonoBehaviour:
   m_Settings: {fileID: 11400000, guid: d7768476a65ecd54e8e68ee94af8d18f, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 70366b340f2e29d41926aae2be61267f, type: 2}
-    - {fileID: 11400000, guid: 03c9eae55cb88b6408e79f499f5e13ca, type: 2}
+    - {fileID: 11400000, guid: c057e1c335fb1814990ff0a629fc9681, type: 2}
+    - {fileID: 11400000, guid: ab24171fb74026e4abb8e0a629ed147f, type: 2}

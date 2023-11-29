@@ -9,6 +9,7 @@ public class Attack : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag=="player"){
         other.GetComponent<Character>()?.TakeDamage(this);
+        print("hit");
         }
         else if (other.gameObject.tag=="enemy"){
         other.GetComponent<EnemyCharacter>()?.TakeDamage(this);

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoblinAttackState : BaseState
+public class MushroomAttackState : BaseState
 {
     public override void OnEnter(Enemy enemy)
     {
@@ -13,11 +13,13 @@ public class GoblinAttackState : BaseState
     public override void LogicUpdate()
     {
     }
+
+
+
     public override void PhysicsUpdate()
     {
     }
     public override void OnExit()
     {
-        
     }
 }

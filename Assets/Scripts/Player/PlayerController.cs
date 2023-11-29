@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject projectile;
     [SerializeField]protected CharacterStats stats;
     [Header("检测")]
-    [SerializeField] float checkRadius;
     [SerializeField]LayerMask enemyLayer;
     [SerializeField] Vector2 bottomOffset;
     Vector2 touchPos;
@@ -114,6 +113,6 @@ public class PlayerController : MonoBehaviour
     #endregion
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(transform.position, checkRadius);
+        Gizmos.DrawWireSphere(transform.position, stats.CheckRadius);
     }
 }
