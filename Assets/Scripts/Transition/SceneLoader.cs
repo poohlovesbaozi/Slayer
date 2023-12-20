@@ -8,6 +8,7 @@ using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
+    [SerializeField] GameObject player;
     [Header("监听")]
     [SerializeField] SceneLoadEventSO loadEvent;
     [SerializeField] FadeEventSO fadeEvent;
@@ -18,6 +19,7 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] Vector3 menuPosition;
     [SerializeField] Vector3 firstPosition;
     [Header("场景")]
+
     [SerializeField] GameSceneSO menuScene;
     [SerializeField] GameSceneSO firstLoadScene;
     GameSceneSO currentLoadedScene;
@@ -35,29 +37,24 @@ public class SceneLoader : MonoBehaviour
         loadEvent.RaiseLoadRequestEvent(menuScene, menuPosition, true);
         // NewGame();
     }
+    public void Reset(){
+        SceneManager.LoadSceneAsync(0,LoadSceneMode.Additive);
+    }
     private void OnEnable()
     {
         loadEvent.loadRequestEvent += OnLoadRequestEvent;
         newGameEvent.OnEventRaised += NewGame;
-        backToMenuEvent.OnEventRaised+=BackToMenu;
     }
     private void OnDisable()
     {
         loadEvent.loadRequestEvent -= OnLoadRequestEvent;
         newGameEvent.OnEventRaised -= NewGame;
-        backToMenuEvent.OnEventRaised-=BackToMenu;
     }
 
     void NewGame()
     {
         sceneToLoad = firstLoadScene;
         loadEvent.RaiseLoadRequestEvent(sceneToLoad, firstPosition, true);
-    }
-    void BackToMenu(){
-        // if (currentLoadedScene.sceneType!=SceneType.Menu){
-        sceneToLoad=menuScene;
-        loadEvent.RaiseLoadRequestEvent(sceneToLoad,menuPosition,true);
-        // }
     }
     private void OnLoadRequestEvent(GameSceneSO sceneToLoad, Vector3 posToGo, bool fade)
     {

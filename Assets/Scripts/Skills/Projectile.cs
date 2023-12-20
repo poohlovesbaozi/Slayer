@@ -5,6 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [Header("属性")]
+    protected Attack attack;
     [SerializeField] float flySpd;
     Rigidbody2D rb;
     public Vector2 shootDir;
@@ -12,6 +13,7 @@ public class Projectile : MonoBehaviour
     protected virtual void OnEnable()
     {
         rb=GetComponent<Rigidbody2D>();
+        attack=GetComponent<Attack>();
         StartCoroutine(FlyTowardsEnemy());
         //TODO play audio clip
     }

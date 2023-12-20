@@ -15,7 +15,7 @@ MonoBehaviour:
   maxHp: 100
   currentHp: 0
   azureGem: 0
-  invulnerableDuration: 0.5
+  invulnerableDuration: 0.1
   checkRadius: 8
   spd: 50
   fireInterval: 1

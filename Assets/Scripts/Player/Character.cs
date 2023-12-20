@@ -39,15 +39,15 @@ public class Character : MonoBehaviour
 
     private void NewGame()
     {
-        stats.AzureGem=0;
-        stats.Level=1;
-        stats.Exp=0;
-        stats.ExpToNextLevel=stats.Level*50;
+        // stats.AzureGem=0;
+        // stats.Level=1;
+        // stats.Exp=0;
+        // stats.ExpToNextLevel=stats.Level*50;
     }
 
     private void Update()
     {
-        // OnHealthChange.Invoke(this);
+        OnHealthChange?.Invoke(this);
         if (isInvulnerable)
         {
             invulnerableCounter -= Time.deltaTime;
@@ -64,9 +64,9 @@ public class Character : MonoBehaviour
             return;
         }
         anim.SetTrigger("hit");
-        if (stats.CurrentHp >= attacker.damage)
+        if (stats.CurrentHp >= attacker.currentDamage)
         {
-            stats.CurrentHp -= attacker.damage;
+            stats.CurrentHp -= attacker.currentDamage;
             TriggerInvulnerable();
         }
         else
@@ -75,7 +75,7 @@ public class Character : MonoBehaviour
             //死了
             OnDie?.Invoke();
         }
-        OnHealthChange?.Invoke(this);
+        // OnHealthChange?.Invoke(this);
     }
     public void LevelUp(){
         if (stats.Exp>=stats.ExpToNextLevel){

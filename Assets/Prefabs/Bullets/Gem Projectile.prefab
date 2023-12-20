@@ -119,6 +119,7 @@ MonoBehaviour:
   flySpd: 0.1
   shootDir: {x: 0, y: 0}
   playerCharacter: {fileID: 0}
+  onGemChangeEvent: {fileID: 11400000, guid: 04d08e6f3c308464580fa5f46257d34a, type: 2}
 --- !u!61 &6579402876636905314
 BoxCollider2D:
   m_ObjectHideFlags: 0

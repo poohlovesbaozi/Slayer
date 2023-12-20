@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    public int damage;
+    [SerializeField] int damage;
+    public int currentDamage;
     [SerializeField] bool deactivateOnCollide;
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.tag=="player"){
-        other.GetComponent<Character>()?.TakeDamage(this);
-        print("hit");
+    private void OnEnable()
+    {
+        currentDamage = damage;
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "player")
+        {
+            other.GetComponent<Character>()?.TakeDamage(this);
+            print("hit");
         }
-        else if (other.gameObject.tag=="enemy"){
-        other.GetComponent<EnemyCharacter>()?.TakeDamage(this);
-        gameObject.SetActive(!deactivateOnCollide);
+        else if (other.gameObject.tag == "enemy")
+        {
+            other.GetComponent<EnemyCharacter>()?.TakeDamage(this);
+            gameObject.SetActive(!deactivateOnCollide);
         }
     }
 }

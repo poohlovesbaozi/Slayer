@@ -3,7 +3,7 @@ using TMPro;
 
 public class LevelUpPanel : MonoBehaviour
 {
-    [SerializeField] float attackValue;
+    [SerializeField] int attackValue;
     [SerializeField] float attackIntervalValue;
     [SerializeField] int maxHpValue;
     [SerializeField] private CharacterStats playerStats;

@@ -123,6 +123,149 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &8472958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8472959}
+  - component: {fileID: 8472960}
+  m_Layer: 0
+  m_Name: Lil Black Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8472959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8472958}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.66, y: -15.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 281808789}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8472960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8472958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 2418019116385002839, guid: 01476b1e1781fe14fb95b47dc4ecc743, type: 3}
+  color: {r: 0, g: 0, b: 0, a: 1}
+  spawnInterval: 0.5
+  maxAmount: 20
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1 &21173906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 21173907}
+  m_Layer: 0
+  m_Name: Necromancer Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &21173907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21173906}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15, y: -0.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2031835641}
+  - {fileID: 1823291290}
+  - {fileID: 1207067875}
+  - {fileID: 1441114282}
+  - {fileID: 111304757}
+  - {fileID: 1619623851}
+  m_Father: {fileID: 1506925811}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &21527141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 21527142}
+  - component: {fileID: 21527143}
+  m_Layer: 0
+  m_Name: Lil Black Spawn Point (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &21527142
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21527141}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.46, y: -7.32, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 281808789}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &21527143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21527141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 2418019116385002839, guid: 01476b1e1781fe14fb95b47dc4ecc743, type: 3}
+  color: {r: 0, g: 0, b: 0, a: 1}
+  spawnInterval: 0.5
+  maxAmount: 20
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &21961319
 GameObject:
   m_ObjectHideFlags: 0
@@ -45957,6 +46100,219 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &111304756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 111304757}
+  - component: {fileID: 111304758}
+  m_Layer: 0
+  m_Name: Necromancer Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &111304757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111304756}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.47, y: 23.61, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 21173907}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &111304758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111304756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 6037151417819445066, guid: 4063e4d59ab2cf843b0b42549750b448, type: 3}
+  color: {r: 0.6698113, g: 0.2132745, b: 0.12953897, a: 1}
+  spawnInterval: 10
+  maxAmount: 2
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1 &237734945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 237734946}
+  - component: {fileID: 237734947}
+  m_Layer: 0
+  m_Name: Mushroom Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &237734946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237734945}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.73, y: -5.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1861508846}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &237734947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237734945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 9030832180452803074, guid: 5ce2064a6c72f25459ee2c93a0184ab1, type: 3}
+  color: {r: 0.21462265, g: 0.4009059, b: 0.8584906, a: 1}
+  spawnInterval: 3
+  maxAmount: 5
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1 &281808788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 281808789}
+  m_Layer: 0
+  m_Name: Lil Black Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &281808789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281808788}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.84, y: 18.84, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8472959}
+  - {fileID: 2064626320}
+  - {fileID: 21527142}
+  - {fileID: 549847922}
+  - {fileID: 859380098}
+  - {fileID: 2089862583}
+  m_Father: {fileID: 1506925811}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &469616660
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1760363164}
+    m_Modifications:
+    - target: {fileID: 396224945694691979, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_Name
+      value: Fly Eye (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 396224945694691979, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.780457
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -16.584078
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.28393033
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790275768752953081, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+--- !u!4 &469616661 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+  m_PrefabInstance: {fileID: 469616660}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &526741816
 GameObject:
   m_ObjectHideFlags: 0
@@ -46005,6 +46361,129 @@ Transform:
   - {fileID: 778276313}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &549847921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 549847922}
+  - component: {fileID: 549847923}
+  m_Layer: 0
+  m_Name: Lil Black Spawn Point (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &549847922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549847921}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.7, y: -4.74, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 281808789}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &549847923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549847921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 2418019116385002839, guid: 01476b1e1781fe14fb95b47dc4ecc743, type: 3}
+  color: {r: 0, g: 0, b: 0, a: 1}
+  spawnInterval: 0.5
+  maxAmount: 20
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1001 &709227716
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1760363164}
+    m_Modifications:
+    - target: {fileID: 396224945694691979, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_Name
+      value: Fly Eye (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 396224945694691979, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.320457
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -19.704077
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.28393033
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790275768752953081, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+--- !u!4 &709227717 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+  m_PrefabInstance: {fileID: 709227716}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &778276312
 GameObject:
   m_ObjectHideFlags: 0
@@ -60289,6 +60768,182 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &842447806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 842447807}
+  - component: {fileID: 842447808}
+  m_Layer: 0
+  m_Name: Mushroom Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &842447807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842447806}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.33, y: 3.51, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1861508846}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &842447808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842447806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 9030832180452803074, guid: 5ce2064a6c72f25459ee2c93a0184ab1, type: 3}
+  color: {r: 0.21462265, g: 0.4009059, b: 0.8584906, a: 1}
+  spawnInterval: 3
+  maxAmount: 5
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1 &859380097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 859380098}
+  - component: {fileID: 859380099}
+  m_Layer: 0
+  m_Name: Lil Black Spawn Point (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &859380098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859380097}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.79, y: 1.96, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 281808789}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &859380099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859380097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 2418019116385002839, guid: 01476b1e1781fe14fb95b47dc4ecc743, type: 3}
+  color: {r: 0, g: 0, b: 0, a: 1}
+  spawnInterval: 0.5
+  maxAmount: 20
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1001 &873994421
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1760363164}
+    m_Modifications:
+    - target: {fileID: 396224945694691979, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_Name
+      value: Fly Eye (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 396224945694691979, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.6504574
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.225922
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.28393033
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790275768752953081, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+--- !u!4 &873994422 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+  m_PrefabInstance: {fileID: 873994421}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &890716492
 GameObject:
   m_ObjectHideFlags: 0
@@ -76319,6 +76974,76 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &972246075
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1760363164}
+    m_Modifications:
+    - target: {fileID: 396224945694691979, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_Name
+      value: Fly Eye (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 396224945694691979, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.6504574
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -16.584078
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.28393033
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790275768752953081, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+--- !u!4 &972246076 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+  m_PrefabInstance: {fileID: 972246075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1179445382
 GameObject:
   m_ObjectHideFlags: 0
@@ -81742,6 +82467,713 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1184731645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1184731646}
+  - component: {fileID: 1184731647}
+  m_Layer: 0
+  m_Name: Mushroom Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1184731646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184731645}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.62, y: 0.55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1861508846}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1184731647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184731645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 9030832180452803074, guid: 5ce2064a6c72f25459ee2c93a0184ab1, type: 3}
+  color: {r: 0.21462265, g: 0.4009059, b: 0.8584906, a: 1}
+  spawnInterval: 3
+  maxAmount: 5
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1001 &1204334663
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1760363164}
+    m_Modifications:
+    - target: {fileID: 396224945694691979, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_Name
+      value: Fly Eye (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 396224945694691979, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.720457
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.225922
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.28393033
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790275768752953081, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+--- !u!4 &1204334664 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+  m_PrefabInstance: {fileID: 1204334663}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1207067874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1207067875}
+  - component: {fileID: 1207067876}
+  m_Layer: 0
+  m_Name: Necromancer Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1207067875
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207067874}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.37, y: 12.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 21173907}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1207067876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207067874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 6037151417819445066, guid: 4063e4d59ab2cf843b0b42549750b448, type: 3}
+  color: {r: 0.6698113, g: 0.2132745, b: 0.12953897, a: 1}
+  spawnInterval: 10
+  maxAmount: 2
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1 &1441114281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1441114282}
+  - component: {fileID: 1441114283}
+  m_Layer: 0
+  m_Name: Necromancer Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1441114282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441114281}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.91, y: 16.24, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 21173907}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1441114283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441114281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 6037151417819445066, guid: 4063e4d59ab2cf843b0b42549750b448, type: 3}
+  color: {r: 0.6698113, g: 0.2132745, b: 0.12953897, a: 1}
+  spawnInterval: 10
+  maxAmount: 2
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1 &1506925810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1506925811}
+  m_Layer: 0
+  m_Name: $EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1506925811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506925810}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.9396064, y: 4.2623754, z: -4.585302}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 21173907}
+  - {fileID: 1861508846}
+  - {fileID: 281808789}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1539801701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1539801702}
+  - component: {fileID: 1539801703}
+  m_Layer: 0
+  m_Name: Mushroom Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1539801702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539801701}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.52, y: -11.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1861508846}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1539801703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539801701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 9030832180452803074, guid: 5ce2064a6c72f25459ee2c93a0184ab1, type: 3}
+  color: {r: 0.21462265, g: 0.4009059, b: 0.8584906, a: 1}
+  spawnInterval: 3
+  maxAmount: 5
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1 &1619623850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1619623851}
+  - component: {fileID: 1619623852}
+  m_Layer: 0
+  m_Name: Necromancer Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1619623851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619623850}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.08, y: 27.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 21173907}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1619623852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619623850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 6037151417819445066, guid: 4063e4d59ab2cf843b0b42549750b448, type: 3}
+  color: {r: 0.6698113, g: 0.2132745, b: 0.12953897, a: 1}
+  spawnInterval: 10
+  maxAmount: 2
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1 &1760363163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1760363164}
+  m_Layer: 0
+  m_Name: Bosses
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1760363164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760363163}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.719543, y: 21.644077, z: 0.28393033}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1571176345190906362}
+  - {fileID: 469616661}
+  - {fileID: 972246076}
+  - {fileID: 873994422}
+  - {fileID: 1204334664}
+  - {fileID: 709227717}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1771627307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1771627308}
+  - component: {fileID: 1771627309}
+  m_Layer: 0
+  m_Name: Mushroom Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1771627308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771627307}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.83, y: 10.17, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1861508846}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1771627309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771627307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 9030832180452803074, guid: 5ce2064a6c72f25459ee2c93a0184ab1, type: 3}
+  color: {r: 0.21462265, g: 0.4009059, b: 0.8584906, a: 1}
+  spawnInterval: 3
+  maxAmount: 5
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1 &1823291289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1823291290}
+  - component: {fileID: 1823291291}
+  m_Layer: 0
+  m_Name: Necromancer Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1823291290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823291289}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.62, y: 3.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 21173907}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1823291291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823291289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 6037151417819445066, guid: 4063e4d59ab2cf843b0b42549750b448, type: 3}
+  color: {r: 0.6698113, g: 0.2132745, b: 0.12953897, a: 1}
+  spawnInterval: 10
+  maxAmount: 2
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1 &1861508845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1861508846}
+  m_Layer: 0
+  m_Name: Mushroom Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1861508846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861508845}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.5, y: 13.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1771627308}
+  - {fileID: 237734946}
+  - {fileID: 1184731646}
+  - {fileID: 842447807}
+  - {fileID: 1539801702}
+  m_Father: {fileID: 1506925811}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2031835640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2031835641}
+  - component: {fileID: 2031835642}
+  m_Layer: 0
+  m_Name: Necromancer Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2031835641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031835640}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.59, y: 2.89, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 21173907}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2031835642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031835640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 6037151417819445066, guid: 4063e4d59ab2cf843b0b42549750b448, type: 3}
+  color: {r: 0.6698113, g: 0.2132745, b: 0.12953897, a: 1}
+  spawnInterval: 10
+  maxAmount: 2
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1 &2064626319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2064626320}
+  - component: {fileID: 2064626321}
+  m_Layer: 0
+  m_Name: Lil Black Spawn Point (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2064626320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064626319}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.95, y: -14.27, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 281808789}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2064626321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064626319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 2418019116385002839, guid: 01476b1e1781fe14fb95b47dc4ecc743, type: 3}
+  color: {r: 0, g: 0, b: 0, a: 1}
+  spawnInterval: 0.5
+  maxAmount: 20
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1 &2089862582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2089862583}
+  - component: {fileID: 2089862584}
+  m_Layer: 0
+  m_Name: Lil Black Spawn Point (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2089862583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089862582}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.49, y: 4.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 281808789}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2089862584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089862582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc02f2d026d09142b7fb875e174bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minion: {fileID: 2418019116385002839, guid: 01476b1e1781fe14fb95b47dc4ecc743, type: 3}
+  color: {r: 0, g: 0, b: 0, a: 1}
+  spawnInterval: 0.5
+  maxAmount: 20
+  currentAmount: 0
+  checkRadius: 6
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &2126606219
 GameObject:
   m_ObjectHideFlags: 0
@@ -81879,9 +83311,81 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!1001 &1571176345190906361
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1760363164}
+    m_Modifications:
+    - target: {fileID: 396224945694691979, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_Name
+      value: Fly Eye
+      objectReference: {fileID: 0}
+    - target: {fileID: 396224945694691979, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.780457
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.175922
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.28393033
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790275768752953081, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+--- !u!4 &1571176345190906362 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6445803235403971394, guid: 7e08b1e4a746aa444ae9a4a3caad2eee, type: 3}
+  m_PrefabInstance: {fileID: 1571176345190906361}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 526741818}
   - {fileID: 2126606222}
+  - {fileID: 1506925811}
+  - {fileID: 1760363164}

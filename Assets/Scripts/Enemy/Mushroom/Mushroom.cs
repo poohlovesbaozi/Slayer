@@ -8,7 +8,7 @@ public class Mushroom : Enemy
     {
         base.Awake();
         moveState=new MushroomMoveState();
-        skill_1State=new MushroomMoveState();
+        skill_1State=new MushroomAttackState();
     }
      public override void OnDie()
     {

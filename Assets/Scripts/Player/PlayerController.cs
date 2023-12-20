@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     Vector2 inputDirection;
     [Header("攻击")]
     Vector2 shootDir;
-    [SerializeField]bool canFire;
+    [SerializeField] protected bool canFire;
 
     protected virtual void Awake()
     {
@@ -106,6 +106,7 @@ public class PlayerController : MonoBehaviour
     }
     IEnumerator FireCoroutine()
     {
+        if (projectile)
         PoolManager.Release(projectile, transform.position, shootDir);
         yield return new WaitForSeconds(stats.FireInterval);
         canFire = true;

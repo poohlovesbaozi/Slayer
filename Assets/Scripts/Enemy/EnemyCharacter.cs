@@ -14,9 +14,9 @@ public class EnemyCharacter : MonoBehaviour
     }
     public void TakeDamage(Attack attacker)
     {
-        if (stats.CurrentHp >= attacker.damage)
+        if (stats.CurrentHp >= attacker.currentDamage)
         {
-            stats.CurrentHp -= attacker.damage;
+            stats.CurrentHp -= attacker.currentDamage;
 
             OnTakeDamage?.Invoke();
         }

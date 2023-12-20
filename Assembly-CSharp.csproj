@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Enemy\Skull\Skull.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\VoidEventSO.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\FloatEvnetSO.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Skeleton\SkeletonMoveState.cs" />
     <Compile Include="Assets\Scripts\General\Attack.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\SceneLoadEventSO.cs" />
     <Compile Include="Assets\Scripts\Enemy\BaseState.cs" />
@@ -84,6 +85,8 @@
     <Compile Include="Assets\Scripts\Skills\Hammer.cs" />
     <Compile Include="Assets\Scripts\Utilities\IInteractable.cs" />
     <Compile Include="Assets\Scripts\Skills\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Skeleton\SkeletonShieldState.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Evil Wizard\Evil Wizard.cs" />
     <Compile Include="Assets\Scripts\Skills\AutoDeactivate.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Pool System\Pool.cs" />
@@ -96,12 +99,14 @@
     <Compile Include="Assets\Scripts\ScriptableObject\GameSceneSO.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioDefinition.cs" />
     <Compile Include="Assets\Scripts\Follower\FollowersData.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Skeleton\SkeletonAttackState.cs" />
     <Compile Include="Assets\Scripts\Enemy\Necromancer\NecromancerSkill_2State.cs" />
     <Compile Include="Assets\Scripts\Enemy\Goblin\GoblinMoveState.cs" />
     <Compile Include="Assets\Settings\InputSystem\PlayerInputControl.cs" />
     <Compile Include="Assets\Scripts\AD\ADInititializer.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyCharacter.cs" />
     <Compile Include="Assets\Scripts\Enemy\FlyEye\FlyEye.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Evil Wizard\EvilWizardMoveState.cs" />
     <Compile Include="Assets\Scripts\Transition\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\Enemy\NightBorne\NightBorneMoveState.cs" />
     <Compile Include="Assets\Scripts\UI\LevelUpPanel.cs" />
@@ -112,6 +117,7 @@
     <Compile Include="Assets\Scripts\ScriptableObject\PlayAudioEventSO.cs" />
     <Compile Include="Assets\Scripts\Pool System\PoolManager.cs" />
     <Compile Include="Assets\Scripts\Enemy\Necromancer\NecromancerSkill_3State.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Evil Wizard\EvilWizardAttackState.cs" />
     <Compile Include="Assets\Scripts\Enemy\Lils\LilsMoveState.cs" />
     <Compile Include="Assets\Scripts\Enemy\Necromancer\NecromancerMoveState.cs" />
     <Compile Include="Assets\Scripts\Enemy\Necromancer\TheBossNecromancer.cs" />
@@ -124,6 +130,7 @@
     <Compile Include="Assets\Scripts\Follower\FollowerAnimation.cs" />
     <Compile Include="Assets\Scripts\Enemy\Mushroom\MushroomMoveState.cs" />
     <Compile Include="Assets\Scripts\UI\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Skeleton\Skeleton.cs" />
     <Compile Include="Assets\Scripts\Skills\Arrow.cs" />
     <Compile Include="Assets\Scripts\Transition\TeleportPoint.cs" />
     <Compile Include="Assets\Scripts\UI\PlayerExpBar.cs" />

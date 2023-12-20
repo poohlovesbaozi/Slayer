@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01eb54d0f9459634784f218ac5486b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  expValue: 1
+  expValue: 10
   gemValue: 1
   checkRadius: 1
   playerLayer:

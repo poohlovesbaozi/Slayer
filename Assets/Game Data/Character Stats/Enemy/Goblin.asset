@@ -21,4 +21,4 @@ MonoBehaviour:
   hitForce: 0
   dropRate: 3
   waitDuration: 2
-  waitDistance: 3
+  waitDistance: 2

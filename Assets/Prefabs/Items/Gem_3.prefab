@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 780054717090332722, guid: 0826ea439f9474e4c84fdeddbdd9c030, type: 3}
       propertyPath: m_Name
-      value: Gem_2
+      value: Gem_3
       objectReference: {fileID: 0}
     - target: {fileID: 1141577347086428841, guid: 0826ea439f9474e4c84fdeddbdd9c030, type: 3}
       propertyPath: m_Color.b
@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5607155764670664326, guid: 0826ea439f9474e4c84fdeddbdd9c030, type: 3}
       propertyPath: expValue
-      value: 3
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5607155764670664326, guid: 0826ea439f9474e4c84fdeddbdd9c030, type: 3}
       propertyPath: gemValue

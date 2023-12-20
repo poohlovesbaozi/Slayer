@@ -16,7 +16,7 @@ public class CharacterStatsSO : ScriptableObject
     public int exp;
     public int expToNextLevel;
     public int abilityPoint;
-    public float attack;
+    public int attack;
     public int upgradeLimit;
     public int currentAtkUpgradedTimes;
     public int currentFireIntervalUpgradedTimes;

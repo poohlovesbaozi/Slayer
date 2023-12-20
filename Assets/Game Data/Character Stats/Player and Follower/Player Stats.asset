@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 100
   currentHp: 0
-  azureGem: 9
-  invulnerableDuration: 1
+  azureGem: 0
+  invulnerableDuration: 0.1
   checkRadius: 5
   spd: 200
   fireInterval: 1
   level: 1
-  exp: 9
+  exp: 0
   expToNextLevel: 50
   abilityPoint: 0
   attack: 0

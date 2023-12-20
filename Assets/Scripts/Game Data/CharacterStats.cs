@@ -67,7 +67,7 @@ public class CharacterStats : MonoBehaviour
         get { if (characterStats == null) return 0; else return characterStats.abilityPoint; }
         set { characterStats.abilityPoint = value; }
     }
-    public float Attack
+    public int Attack
     {
         get { if (characterStats == null) return 0; else return characterStats.attack; }
         set { characterStats.attack = value; }

@@ -5,10 +5,13 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
+using TMPro;
 
 
 public class FollowerController : PlayerController
 {
+    [SerializeField] bool isSkill;
+    [SerializeField] bool needGem;
     [Header("player")]
     Character playerCharacter;
     [SerializeField] Transform target;
@@ -17,6 +20,7 @@ public class FollowerController : PlayerController
     [SerializeField] Image helpSign;
     Rigidbody2D followerRb;
     // [SerializeField]CharacterStats stats;
+    Animator anim;
     [SerializeField] float stopDistance;
     public bool followerDown;
     int followerFaceDir;
@@ -30,7 +34,8 @@ public class FollowerController : PlayerController
         character = GetComponent<Character>();
         stats = GetComponent<CharacterStats>();
         followerRb = GetComponent<Rigidbody2D>();
-        rescueCounter=rescueDuration;
+        anim = GetComponent<Animator>();
+        rescueCounter = rescueDuration;
     }
     //父类的inputControl不需要
     protected override void OnEnable()
@@ -47,7 +52,7 @@ public class FollowerController : PlayerController
     }
     protected override void OnDisable()
     {
-        
+
     }
 
     protected override void Update()
@@ -103,7 +108,7 @@ public class FollowerController : PlayerController
             //逐渐增加血条，血条满时就会被救起
             // stats.CurrentHp += (int)(Time.deltaTime / rescueDuration * stats.MaxHp);
             stats.CurrentHp++;
-            character.OnHealthChange.Invoke(character);
+            // character.OnHealthChange.Invoke(character);
             if (rescueCounter <= 0)
             {
                 stats.CurrentHp = 70;
@@ -117,14 +122,39 @@ public class FollowerController : PlayerController
             stats.CurrentHp = 0;
             rescueCounter = rescueDuration;
         }
+        // character.OnHealthChange.Invoke(character);
     }
 
     protected override void DetectEnemy()
     {
-        if (playerCharacter.stats.AzureGem > 0)
+        if (needGem)
         {
-            base.DetectEnemy();
+            if (playerCharacter.stats.AzureGem > 0)
+            {
+                base.DetectEnemy();
+            }
         }
+        else
+            base.DetectEnemy();
+    }
+    protected override void Fire()
+    {
+        if (!isSkill)
+            base.Fire();
+        else
+            StartCoroutine(HealCoroutine());
+    }
+    IEnumerator HealCoroutine()
+    {
+        anim.SetTrigger("attack");
+        foreach (GameObject follower in FollowersData.followers)
+        {
+            Character character = follower?.GetComponent<Character>();
+            if (character.stats.CurrentHp < character.stats.MaxHp)
+                character.stats.CurrentHp += stats.Attack;
+        }
+        yield return new WaitForSeconds(stats.FireInterval);
+        canFire = true;
     }
     private void OnDrawGizmosSelected()
     {
