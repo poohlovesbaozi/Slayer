@@ -208,7 +208,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -218,7 +218,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &1678983224773289984
 BoxCollider2D:
@@ -370,6 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
+  currentDamage: 0
   deactivateOnCollide: 0
 --- !u!114 &1203704499673717688
 MonoBehaviour:
@@ -388,6 +389,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   item: {fileID: 8632807346864031139, guid: ca1d212caf2bd3b4fab38ba085b50369, type: 3}
+  wizardFire: {fileID: 0}
+  wizardFire_1: {fileID: 0}
   minionStats: {fileID: 4746842292154185854}
   target: {fileID: 0}
   anim: {fileID: 0}
@@ -409,7 +412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9106958954751042564
 Transform:
   m_ObjectHideFlags: 0

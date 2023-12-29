@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scripts\UI\PlayerHealthBar.cs" />
     <Compile Include="Assets\Scripts\Enemy\Lils\LilRed.cs" />
     <Compile Include="Assets\Scripts\Follower\FollowerController.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObject\BoolEventSO.cs" />
     <Compile Include="Assets\Scripts\AD\ADInterstitial.cs" />
     <Compile Include="Assets\Scripts\Enemy\Mushroom\MushroomAttackState.cs" />
     <Compile Include="Assets\Scripts\Enemy\NightBorne\NightBorneAttackState.cs" />
@@ -126,6 +127,7 @@
     <Compile Include="Assets\Scripts\ScriptableObject\MinionStatsSO.cs" />
     <Compile Include="Assets\Scripts\Utilities\Enums.cs" />
     <Compile Include="Assets\Scripts\UI\FadeCanvas.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Skeleton\SkeletonFire.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\FadeEventSO.cs" />
     <Compile Include="Assets\Scripts\Follower\FollowerAnimation.cs" />
     <Compile Include="Assets\Scripts\Enemy\Mushroom\MushroomMoveState.cs" />

@@ -111,7 +111,7 @@ AnimationClip:
     data: 
     objectReferenceParameter: {fileID: 4457849278296623029, guid: b5956cb17e02f0049b1c3bb253db53f6, type: 3}
     floatParameter: 0
-    intParameter: 5
+    intParameter: 2
     messageOptions: 0
   - time: 1.2
     functionName: SwitchState

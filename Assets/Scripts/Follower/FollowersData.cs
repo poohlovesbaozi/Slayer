@@ -8,6 +8,7 @@ public class FollowersData : MonoBehaviour
     [Header("监听")]
     [SerializeField] VoidEventSO OnNecromancerDie;
     [SerializeField] VoidEventSO OnNightBorneDie;
+    [SerializeField] VoidEventSO OnEvilWizardDie;
     [SerializeField] GameObject smith;
     [SerializeField] GameObject suspicious;
     [SerializeField] GameObject hunter;
@@ -22,10 +23,14 @@ public class FollowersData : MonoBehaviour
     private void OnEnable()
     {
         OnNecromancerDie.OnEventRaised += NecromancerDie;
+        OnNightBorneDie.OnEventRaised += NightBorneDie;
+        OnEvilWizardDie.OnEventRaised += EvilWizardDie;
     }
     private void OnDisable()
     {
         OnNecromancerDie.OnEventRaised -= NecromancerDie;
+        OnNightBorneDie.OnEventRaised -= NightBorneDie;
+        OnEvilWizardDie.OnEventRaised -= EvilWizardDie;
     }
 
     private void NecromancerDie()
@@ -34,20 +39,25 @@ public class FollowersData : MonoBehaviour
         if (!followers.Contains(suspicious))
             followers.Add(suspicious);
     }
-    private void NightBorneDie(){
+    private void NightBorneDie()
+    {
         hunter.SetActive(true);
         if (!followers.Contains(hunter))
             followers.Add(hunter);
     }
-    private void Level_3BossDie(){
+    private void EvilWizardDie()
+    {
         digger.SetActive(true);
-        if (!followers.Contains(digger)){
+        if (!followers.Contains(digger))
+        {
             followers.Add(digger);
         }
     }
-    private void Level_4BossDie(){
+    private void Level_4BossDie()
+    {
         nun.SetActive(true);
-        if (!followers.Contains(nun)){
+        if (!followers.Contains(nun))
+        {
             followers.Add(nun);
         }
     }

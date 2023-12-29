@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     [Header("攻击")]
     Vector2 shootDir;
     [SerializeField] protected bool canFire;
+    [Header("广播")]
+    [SerializeField] BoolEventSO gameOverEvent;
 
     protected virtual void Awake()
     {
@@ -86,6 +88,8 @@ public class PlayerController : MonoBehaviour
         rb.velocity=Vector3.zero;
         isDead = true;
         inputControl.GamePlay.Disable();
+        //means not beat the game yet
+        gameOverEvent?.RaiseEvent(false);
     }
     #region 开火
     protected virtual void DetectEnemy()

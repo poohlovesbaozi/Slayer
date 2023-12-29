@@ -15,6 +15,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject item;
 
     [Header("组件")]
+    public GameObject wizardFire;
+    public GameObject wizardFire_1;
     public MinionStats minionStats;
     [SerializeField] public Transform target;
     [HideInInspector] public Animator anim;

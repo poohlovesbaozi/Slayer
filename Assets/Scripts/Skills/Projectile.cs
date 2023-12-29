@@ -10,25 +10,15 @@ public class Projectile : MonoBehaviour
     Rigidbody2D rb;
     public Vector2 shootDir;
 
+    //OnEnable会在初始化对象池时执行一次，所以对于实际发射所需执行的功能，则需要放在onenable之后。
     protected virtual void OnEnable()
     {
         rb=GetComponent<Rigidbody2D>();
-        attack=GetComponent<Attack>();
-        StartCoroutine(FlyTowardsEnemy());
-        //TODO play audio clip
+        attack=GetComponent<Attack>(); 
     }
-    //需要在disable的时候停止协程，否则协程会一直执行，其中的参数不会更新。
-    private void OnDisable() {
-        StopCoroutine(FlyTowardsEnemy());
-    }
-    IEnumerator FlyTowardsEnemy()
-    {
-        while (gameObject.activeSelf)
-        {
-            rb.AddForce(shootDir*flySpd,ForceMode2D.Impulse);
-            yield return null;
-        }
+    private void Start() {
 
+        rb.AddForce(shootDir*flySpd,ForceMode2D.Impulse);
     }
 
 

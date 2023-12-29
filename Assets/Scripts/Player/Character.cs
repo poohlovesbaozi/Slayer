@@ -13,7 +13,6 @@ public class Character : MonoBehaviour
     float invulnerableCounter;
     public bool isInvulnerable;
     [Header("事件")]
-    [SerializeField]VoidEventSO newGameEvent;
     [SerializeField] CharacterEventSO OnLevelChangeEvent;
     public UnityEvent<Character> OnGemChange;
     public UnityEvent<Character> OnHealthChange;
@@ -26,7 +25,6 @@ public class Character : MonoBehaviour
     private void OnEnable()
     {
         //主要是follower血量更新
-        newGameEvent.OnEventRaised+=NewGame;
         stats.CurrentHp = stats.MaxHp;
     }
     private void Start()
@@ -34,15 +32,6 @@ public class Character : MonoBehaviour
         
     }
     private void OnDisable() {
-        newGameEvent.OnEventRaised-=NewGame;
-    }
-
-    private void NewGame()
-    {
-        // stats.AzureGem=0;
-        // stats.Level=1;
-        // stats.Exp=0;
-        // stats.ExpToNextLevel=stats.Level*50;
     }
 
     private void Update()

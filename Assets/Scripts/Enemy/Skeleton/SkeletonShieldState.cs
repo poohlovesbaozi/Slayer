@@ -9,7 +9,7 @@ public class SkeletonShieldState : BaseState
     {
         currentEnemy = enemy;
         currentEnemy.rb.velocity = Vector3.zero;
-        currentEnemy.anim.SetTrigger("shield");
+        currentEnemy.anim.SetBool("shield",true);
         waitCounter = currentEnemy.minionStats.WaitDuration;
     }
     public override void LogicUpdate()
@@ -23,5 +23,6 @@ public class SkeletonShieldState : BaseState
     }
     public override void OnExit()
     {
+        currentEnemy.anim.SetBool("shield",false);
     }
 }

@@ -15,12 +15,16 @@ public class UIManager : MonoBehaviour
     [SerializeField] PlayerHealthBar playerHealthBar;
     [SerializeField] GemCount gemCount;
     [SerializeField] Slider masterVolumeSlider;
+    [SerializeField] GameObject gameOverPanel;
+    [SerializeField] GameObject loseText;
+    [SerializeField] GameObject winText;
     [Header("监听")]
     [SerializeField] CharacterEventSO levelEvent;
     [SerializeField] CharacterEventSO expEvent;
     [SerializeField] CharacterEventSO gemEvent;
     [SerializeField] SceneLoadEventSO loadEvent;
     [SerializeField] FloatEventSO syncVolumeEvent;
+    [SerializeField] BoolEventSO gameOverEvent;
     [Header("广播")]
     [SerializeField] VoidEventSO pauseEvent;
     private void Awake()
@@ -35,6 +39,7 @@ public class UIManager : MonoBehaviour
         gemEvent.OnEventRaised += OnGemChange;
         loadEvent.loadRequestEvent += OnLoadEvent;
         syncVolumeEvent.OnEventRaised += OnSyncVolumeEvent;
+        gameOverEvent.OnEventRaised+=GameOver;
     }
     private void OnDisable()
     {
@@ -44,6 +49,14 @@ public class UIManager : MonoBehaviour
         gemEvent.OnEventRaised -= OnGemChange;
         loadEvent.loadRequestEvent -= OnLoadEvent;
         syncVolumeEvent.OnEventRaised -= OnSyncVolumeEvent;
+        gameOverEvent.OnEventRaised-=GameOver;
+    }
+
+    private void GameOver(bool beaten)
+    {
+        gameOverPanel.SetActive(true);
+        winText.SetActive(beaten);
+        loseText.SetActive(!beaten);
     }
 
     public void ClosePanel(GameObject panel)
