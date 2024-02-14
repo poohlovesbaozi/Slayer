@@ -18,7 +18,7 @@ public class TheBossNightBorne : Enemy
     public override void OnDie()
     {
         base.OnDie();
-        teleportPoint.gameObject.SetActive(true);
+        teleportPoint?.gameObject.SetActive(true);
         OnBossNightBorneDie.RaiseEvent();
         anim.SetBool("dead", true);
     }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Mushroom : Enemy
 {
+    [SerializeField] TeleportPoint teleportPoint;
+    [SerializeField] VoidEventSO OnBossMushroomDie;
     protected override void Awake()
     {
         base.Awake();
@@ -13,6 +15,8 @@ public class Mushroom : Enemy
      public override void OnDie()
     {
         base.OnDie();
+        teleportPoint?.gameObject.SetActive(true);
+        OnBossMushroomDie?.RaiseEvent();
         anim.SetBool("dead", true);
     }
     public void VanishToDie()

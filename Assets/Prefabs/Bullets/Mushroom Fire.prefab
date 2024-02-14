@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1668568028960089911
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 457276458077092012, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.782825
+      objectReference: {fileID: 0}
+    - target: {fileID: 457276458077092012, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.3457837
+      objectReference: {fileID: 0}
+    - target: {fileID: 457276458077092012, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457276458077092012, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 457276458077092012, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457276458077092012, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457276458077092012, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457276458077092012, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457276458077092012, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457276458077092012, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755580599166938959, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6415094
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755580599166938959, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5012833
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755580599166938959, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: m_Color.r
+      value: 0.33588463
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908157887328685479, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: damage
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252616325001377731, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 4696039471936813480}
+    - target: {fileID: 6252616325001377731, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: flySpd
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418855921603817930, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+      propertyPath: m_Name
+      value: Mushroom Fire
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+--- !u!50 &4696039471936813480 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 6200435020633267871, guid: 189502005dc534243bf0e7f8b6ca83c1, type: 3}
+  m_PrefabInstance: {fileID: 1668568028960089911}
+  m_PrefabAsset: {fileID: 0}

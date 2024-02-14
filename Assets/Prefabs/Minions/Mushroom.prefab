@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+  currentDamage: 0
   deactivateOnCollide: 1
 --- !u!60 &2893658230022451976
 PolygonCollider2D:
@@ -144,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+  currentDamage: 0
   deactivateOnCollide: 1
 --- !u!60 &5299992506121463992
 PolygonCollider2D:
@@ -488,7 +490,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ea914d48c3fd6498696e4bac7a090c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 2
+  currentDamage: 0
   deactivateOnCollide: 0
 --- !u!114 &254751242302106369
 MonoBehaviour:
@@ -507,9 +510,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   item: {fileID: 8632807346864031139, guid: cb99e581a2defd34fa870d93b0b05c94, type: 3}
+  projectile_0: {fileID: 8201868488361563901, guid: 8a92d98b33a01ee4b9cfc7f9b90199bc, type: 3}
+  projectile_1: {fileID: 0}
   minionStats: {fileID: 5095664778482837902}
   target: {fileID: 0}
   anim: {fileID: 0}
   rb: {fileID: 0}
   playAudioEvent: {fileID: 11400000, guid: a0edd62ef9887444fbf5ceb5cc3fb37b, type: 2}
   getHitClip: {fileID: 8300000, guid: 0994c12e202f342459a4212e7287f7e8, type: 3}
+  teleportPoint: {fileID: 0}
+  OnBossMushroomDie: {fileID: 0}

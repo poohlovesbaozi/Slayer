@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Skeleton : Enemy
 {
+    [SerializeField] VoidEventSO OnBossSkeletonDie;
+    [SerializeField] TeleportPoint teleportPoint;
    protected override void Awake()
     {
         base.Awake();
@@ -14,6 +16,8 @@ public class Skeleton : Enemy
     public override void OnDie()
     {
         base.OnDie();
+        teleportPoint?.gameObject.SetActive(true);
+        OnBossSkeletonDie?.RaiseEvent();
         anim.SetBool("dead", true);
     }
     public void VanishToDie()

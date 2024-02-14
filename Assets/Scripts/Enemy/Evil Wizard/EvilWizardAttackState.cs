@@ -14,20 +14,20 @@ public class EvilWizardAttackState : BaseState
         currentEnemy.anim.SetTrigger("attack");
         int a = Random.Range(0, 3);
         if (a == 1)
-            currentEnemy.wizardFire?.SetActive(true);
+            currentEnemy.projectile_0?.SetActive(true);
         else if (a == 2)
-            currentEnemy.wizardFire_1?.SetActive(true);
+            currentEnemy.projectile_1?.SetActive(true);
         else
         {
-            currentEnemy.wizardFire?.SetActive(true);
-            currentEnemy.wizardFire_1?.SetActive(true);
+            currentEnemy.projectile_0?.SetActive(true);
+            currentEnemy.projectile_1?.SetActive(true);
         }
     }
 
     public override void OnExit()
     {
-        currentEnemy.wizardFire?.SetActive(false);
-        currentEnemy.wizardFire_1?.SetActive(false);
+        currentEnemy.projectile_0?.SetActive(false);
+        currentEnemy.projectile_1?.SetActive(false);
     }
 
     public override void PhysicsUpdate()

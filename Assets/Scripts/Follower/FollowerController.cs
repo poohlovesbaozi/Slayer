@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 using System;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using TMPro;
+using System.Runtime.Remoting.Messaging;
 
 
 public class FollowerController : PlayerController
 {
+    [Header("声音")]
+    [SerializeField] PlayAudioEventSO playAudioEvent;
+    [SerializeField] AudioClip healAudio;
     [SerializeField] bool isSkill;
     [SerializeField] bool needGem;
     [Header("player")]
@@ -150,6 +154,7 @@ public class FollowerController : PlayerController
         foreach (GameObject follower in FollowersData.followers)
         {
             Character character = follower?.GetComponent<Character>();
+            playAudioEvent?.RaiseEvent(healAudio);
             if (character.stats.CurrentHp < character.stats.MaxHp)
                 character.stats.CurrentHp += stats.Attack;
         }

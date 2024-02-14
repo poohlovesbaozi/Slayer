@@ -43,7 +43,8 @@ public class Gem : MonoBehaviour
 
     private void OnLoadRequestEvent(GameSceneSO arg0, Vector3 arg1, bool arg2)
     {
-        gameObject.SetActive(false);
+        if (arg0.sceneType!=SceneType.Menu)
+        gameObject?.SetActive(false);
     }
 
     IEnumerator MoveToTarget(Vector2 moveDir)

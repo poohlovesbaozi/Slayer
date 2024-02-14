@@ -389,14 +389,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   item: {fileID: 8632807346864031139, guid: ca1d212caf2bd3b4fab38ba085b50369, type: 3}
-  wizardFire: {fileID: 0}
-  wizardFire_1: {fileID: 0}
+  projectile_0: {fileID: 5104551006176405445, guid: f2bda53551d9d6141b958e8561fa5ce1, type: 3}
+  projectile_1: {fileID: 0}
   minionStats: {fileID: 4746842292154185854}
   target: {fileID: 0}
   anim: {fileID: 0}
   rb: {fileID: 0}
   playAudioEvent: {fileID: 11400000, guid: a0edd62ef9887444fbf5ceb5cc3fb37b, type: 2}
   getHitClip: {fileID: 8300000, guid: 0994c12e202f342459a4212e7287f7e8, type: 3}
+  OnBossSkeletonDie: {fileID: 11400000, guid: a6a16d647f75fcc4e8d7df2076c16f35, type: 2}
 --- !u!1 &3321565508581655314
 GameObject:
   m_ObjectHideFlags: 0

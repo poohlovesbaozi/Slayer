@@ -15,8 +15,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject item;
 
     [Header("组件")]
-    public GameObject wizardFire;
-    public GameObject wizardFire_1;
+    public GameObject projectile_0;
+    public GameObject projectile_1;
     public MinionStats minionStats;
     [SerializeField] public Transform target;
     [HideInInspector] public Animator anim;
@@ -38,22 +38,22 @@ public class Enemy : MonoBehaviour
     private void OnEnable()
     {
         currentState = moveState;
-        currentState.OnEnter(this);
+        currentState?.OnEnter(this);
         loadEvent.loadRequestEvent += OnLoadRequestEvent;
     }
     protected virtual void Update()
     {
-        currentState.LogicUpdate();
+        currentState?.LogicUpdate();
     }
     private void FixedUpdate()
     {
-        currentState.PhysicsUpdate();
+        currentState?.PhysicsUpdate();
 
     }
     private void OnDisable()
     {
         loadEvent.loadRequestEvent -= OnLoadRequestEvent;
-        currentState.OnExit();
+        currentState?.OnExit();
     }
 
     private void OnLoadRequestEvent(GameSceneSO arg0, Vector3 arg1, bool arg2)

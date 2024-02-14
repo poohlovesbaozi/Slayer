@@ -22,7 +22,7 @@ MonoBehaviour:
   level: 1
   exp: 0
   expToNextLevel: 50
-  abilityPoint: 0
+  abilityPoint: 30
   attack: 0
   upgradeLimit: 9
   currentAtkUpgradedTimes: 0

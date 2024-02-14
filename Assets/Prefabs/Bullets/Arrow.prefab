@@ -133,7 +133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663e2e6278deaa7459ed7882d12c7b7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flySpd: 0.1
+  flySpd: 5
+  rb: {fileID: 2305961960650951965}
   shootDir: {x: 0, y: 0}
 --- !u!50 &2305961960650951965
 Rigidbody2D:

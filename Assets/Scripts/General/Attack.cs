@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    [SerializeField] int damage;
+    [SerializeField] public int damage;
     public int currentDamage;
     [SerializeField] bool deactivateOnCollide;
     private void OnEnable()
@@ -16,7 +16,6 @@ public class Attack : MonoBehaviour
         if (other.gameObject.tag == "player")
         {
             other.GetComponent<Character>()?.TakeDamage(this);
-            print("hit");
         }
         else if (other.gameObject.tag == "enemy")
         {

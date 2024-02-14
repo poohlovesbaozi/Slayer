@@ -162,7 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfdb4e5972d21f54782bd7e80a2cc735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flySpd: 10
+  flySpd: 5
+  rb: {fileID: -7173423506808398095}
   shootDir: {x: 0, y: 0}
 --- !u!114 &3591032583492635012
 MonoBehaviour:
@@ -220,4 +221,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4

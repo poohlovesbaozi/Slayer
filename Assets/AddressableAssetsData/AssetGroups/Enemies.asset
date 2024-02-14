@@ -42,6 +42,26 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e08b1e4a746aa444ae9a4a3caad2eee
+    m_Address: Fly Eye
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e458c113d122554c894a3c35085a9c1
+    m_Address: Goblin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ce2064a6c72f25459ee2c93a0184ab1
+    m_Address: Mushroom
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43bed78d1f234a74c82c13d7e5509b80
+    m_Address: Skeleton
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: d7768476a65ecd54e8e68ee94af8d18f, type: 2}
   m_SchemaSet:

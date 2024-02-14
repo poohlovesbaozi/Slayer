@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4c9eecc55b3e44997fc0fa436325e1, type: 3}
   m_Name: Evil Wizard
   m_EditorClassIdentifier: 
-  maxHp: 10000
+  maxHp: 15000
   currentHp: 0
   checkRadius: 10
   normalSpd: 2

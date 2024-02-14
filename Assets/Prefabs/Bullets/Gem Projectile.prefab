@@ -116,10 +116,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482b4d1103d8dfe49bb9d6b1e81e5174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flySpd: 0.1
+  flySpd: 5
+  rb: {fileID: 0}
   shootDir: {x: 0, y: 0}
   playerCharacter: {fileID: 0}
+  susCharacter: {fileID: 0}
   onGemChangeEvent: {fileID: 11400000, guid: 04d08e6f3c308464580fa5f46257d34a, type: 2}
+  onNecromancerDie: {fileID: 11400000, guid: 93f8bcf41c164cd43ba77f5e83b3a96e, type: 2}
 --- !u!61 &6579402876636905314
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -178,6 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 35
+  currentDamage: 0
   deactivateOnCollide: 1
 --- !u!114 &-7616766217639425331
 MonoBehaviour:

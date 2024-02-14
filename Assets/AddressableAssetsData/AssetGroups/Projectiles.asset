@@ -32,6 +32,26 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a92d98b33a01ee4b9cfc7f9b90199bc
+    m_Address: Mushroom Fire
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 189502005dc534243bf0e7f8b6ca83c1
+    m_Address: NightBorne Fire
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d867931dce0a38241b3344c104b384a9
+    m_Address: Shovel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f2bda53551d9d6141b958e8561fa5ce1
+    m_Address: Skeleton Fire
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: d7768476a65ecd54e8e68ee94af8d18f, type: 2}
   m_SchemaSet:

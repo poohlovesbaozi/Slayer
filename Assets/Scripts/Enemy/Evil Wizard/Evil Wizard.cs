@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EvilWizard : Enemy
 {
-    [SerializeField] VoidEventSO OnBossWizardDie;
     protected override void Awake()
     {
         base.Awake();
@@ -18,8 +17,6 @@ public class EvilWizard : Enemy
     public override void OnDie()
     {
         base.OnDie();
-        // teleportPoint.gameObject.SetActive(true);
-        OnBossWizardDie.RaiseEvent();
         anim.SetBool("dead", true);
     }
     public void VanishToDie()
