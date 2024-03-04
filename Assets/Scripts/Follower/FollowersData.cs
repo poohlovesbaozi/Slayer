@@ -26,44 +26,51 @@ public class FollowersData : MonoBehaviour
     {
         OnNecromancerDie.OnEventRaised += Level_1BossDie;
         OnNightBorneDie.OnEventRaised += Level_2BossDie;
-        OnSkeletonDie.OnEventRaised+=Level_3BossDie;
+        OnSkeletonDie.OnEventRaised += Level_3BossDie;
         OnEvilWizardDie.OnEventRaised += Level_4BossDie;
     }
     private void OnDisable()
     {
         OnNecromancerDie.OnEventRaised -= Level_1BossDie;
         OnNightBorneDie.OnEventRaised -= Level_2BossDie;
-        OnSkeletonDie.OnEventRaised-=Level_3BossDie;
+        OnSkeletonDie.OnEventRaised -= Level_3BossDie;
         OnEvilWizardDie.OnEventRaised -= Level_4BossDie;
     }
 
     private void Level_1BossDie()
     {
-        suspicious.SetActive(true);
         if (!followers.Contains(suspicious))
+        {
+            suspicious.SetActive(true);
             followers.Add(suspicious);
-        print(followers[1].name);
+            print(followers[1].name);
+        }
     }
     private void Level_2BossDie()
     {
-        hunter.SetActive(true);
-        if (!followers.Contains(hunter))
-            followers.Add(hunter);
+        if (!followers.Contains(digger))
+        {
+            digger.SetActive(true);
+            followers.Add(digger);
+            print(followers[2].name);
+        }
     }
     private void Level_3BossDie()
     {
-        digger.SetActive(true);
-        if (!followers.Contains(digger))
+        if (!followers.Contains(hunter))
         {
-            followers.Add(digger);
+            hunter.SetActive(true);
+            followers.Add(hunter);
+            print(followers[3].name);
         }
     }
     private void Level_4BossDie()
     {
-        nun.SetActive(true);
         if (!followers.Contains(nun))
         {
+            nun.SetActive(true);
             followers.Add(nun);
+            print(followers[4].name);
         }
     }
 

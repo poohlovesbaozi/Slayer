@@ -55,6 +55,7 @@ public class LevelUpPanel : MonoBehaviour
             OnPointChange();
             stats.CurrentMaxHpUpgradedTimes++;
             stats.MaxHp += maxHpValue;
+            stats.CurrentHp=stats.MaxHp;
         }
     }
     public void OnPointChange()

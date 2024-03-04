@@ -1,13 +1,11 @@
-using System;
-using System.Collections;
 using UnityEngine;
-
 public class Projectile : MonoBehaviour
 {
     [Header("属性")]
-    [SerializeField]protected Attack attack;
+    [SerializeField] protected Attack attack;
     [SerializeField] float flySpd;
-    [SerializeField]Rigidbody2D rb;
+    [SerializeField] Rigidbody2D rb;
+    [SerializeField] bool penetratable;
     public Vector2 shootDir;
     bool firstInit = true;
 
@@ -30,5 +28,9 @@ public class Projectile : MonoBehaviour
             rb.AddForce(shootDir * flySpd, ForceMode2D.Impulse);
         }
     }
-
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!penetratable)
+            gameObject.SetActive(false);
+    }
 }

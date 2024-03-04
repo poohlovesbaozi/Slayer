@@ -133,8 +133,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663e2e6278deaa7459ed7882d12c7b7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack: {fileID: 5239628949879604321}
   flySpd: 5
   rb: {fileID: 2305961960650951965}
+  penetratable: 1
   shootDir: {x: 0, y: 0}
 --- !u!50 &2305961960650951965
 Rigidbody2D:
@@ -163,3 +165,14 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &5239628949879604321 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7209749582998647729, guid: c2a48c1d7c6fa3e41a3993ac14467fd0, type: 3}
+  m_PrefabInstance: {fileID: 3222549623676270544}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2839305917462866609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ea914d48c3fd6498696e4bac7a090c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
